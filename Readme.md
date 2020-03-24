@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Максим  Березинец](https://up.htmlacademy.ru/adaptive/19/user/60877).
-* Наставник: `Неизвестно`.
+* Наставник: `Анатолий Пазюк`.
 
 ---
 
