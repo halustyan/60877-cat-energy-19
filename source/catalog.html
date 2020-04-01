@@ -4,23 +4,37 @@
         <meta charset="utf-8">
         <title>Каталог продукции</title>
     </head>
-    <body>
+    <body class="body">
         <header class="page-header">
             <div class="page-header__menu">
                 <div class="page-header__menu-logos-links">
-                    <a href="" class="page-header__logo-site"> <img src="img/logo-mobile.svg" alt="logo site" class="page-header__logo-site-image" width="33" height="38"></a>
+                    <a href="" class="page-header__logo-site"> 
+						<img src="img/logo-mobile.svg" alt="logo site" class="page-header__logo-site-image" width="33" height="38">
+					</a>
                     <a href=""  class="page-header__logo-page"> 
-						<img src="img/logo-mobile-header.svg.png" class="page-header__logo-page-image" alt="">
-					</a>
+                        <img src="img/logo-mobile-header.svg.png" class="page-header__logo-page-image" alt="">
+                    </a>
                     <a class="page-header__logo-mobile_menu"> 
-						<img src="img/mobile-menu.svg" class="page-header__logo-menu-image" alt="">
-					</a>
+                        <img src="img/mobile-menu.svg" class="page-header__logo-menu-image" alt="">
+                    </a>
                 </div>
                 <nav class="menu-main">
                     <ul class="menu-main__sub">
-                        <li class="menu-main__sub-menu-elem"><a href="#" class="menu-main__sub-menu-elem-link">Главная</a></li>
-                        <li class="menu-main__sub-menu-elem"><a href="catalog.html" class="menu-main__sub-menu-elem-link">Каталог продукции</a></li>
-                        <li class="menu-main__sub-menu-elem"><a href="form.html" class="menu-main__sub-menu-elem-link">Подбор программы</a></li>
+                        <li class="menu-main__sub-menu-elem">
+							<a href="#" class="menu-main__sub-menu-elem-link">
+								Главная
+							</a>
+						</li>
+                        <li class="menu-main__sub-menu-elem">
+							<a href="catalog.html" class="menu-main__sub-menu-elem-link">
+								Каталог продукции
+							</a>
+						</li>
+                        <li class="menu-main__sub-menu-elem">
+							<a href="form.html" class="menu-main__sub-menu-elem-link">
+								Подбор программы
+							</a>
+						</li>
                     </ul>
                 </nav>
             </div>
@@ -28,7 +42,7 @@
         <main class="main">
             <h1 class="main__main-text">Каталог продукции</h1>
             <section class="main__goods">
-				<h2>Каталог нашей продукции</h2>
+                <h2>Каталог нашей продукции</h2>
                 <div class="main__good">
                     <img src="img/catalog-1-mobile.jpg" alt="" class="main__catalog-mobile-image">
                     <div class="main__good-content">
@@ -168,16 +182,106 @@
                     <button class="find-all-goods__show-all-goods">Показать все</button>
                 </div>
             </section>
+            <section cite="additional-goods">
+                <div class="additional-goods__header">
+                    <span class="additional-goods__header-sub-span">
+                       Дополнительные товары
+                    </span>
+                    <div class="additional-goods__header-line">
+                    </div>
+                </div>
+                <article class="additional-goods__article">
+                    <span class="additional-goods__article-header">
+						Сахарозаменитель
+					</span>
+                    <div class="additional-goods__article-content">
+                        <span class="additional-goods__article-how-many-weight">
+                        1 упаковка (100 г)
+                        </span>
+                        <span additional-goods__article-how-many-price>
+                        200 Р.
+                        </span>
+                    </div>
+                    <button class="additional-goods__article-order">
+						Заказать
+					</button>
+                </article>
+                <article class="additional-goods__article">
+                    <span class="additional-goods__article-header">
+						Питьевая вода
+					</span>
+                    <div class="additional-goods__article-content">
+                        <span class="additional-goods__article-how-many-weight">
+                        5 литров
+                        </span>
+                        <span additional-goods__article-how-many-price>
+                        50 Р.
+                        </span>
+                    </div>
+                    <button class="additional-goods__article-order">
+						Заказать
+					</button>
+                </article>
+                <article class="additional-goods__article">
+                    <span class="additional-goods__article-header">
+						Молоко
+					</span>
+                    <div class="additional-goods__article-content">
+                        <span class="additional-goods__article-how-many-weight">
+                        1 литр
+                        </span>
+                        <span additional-goods__article-how-many-price>
+                        100 Р.
+                        </span>
+                    </div>
+                    <button class="additional-goods__article-order">
+						Заказать
+					</button>
+                </article>
+                <article class="additional-goods__article">
+                    <span class="additional-goods__article-header">
+						Витамины
+					</span>
+                    <div class="additional-goods__article-content">
+                        <span class="additional-goods__article-how-many-weight">
+                        1 упаковка (30 г)
+                        </span>
+                        <span additional-goods__article-how-many-price>
+                        300 Р.
+                        </span>
+                    </div>
+                    <button class="additional-goods__article-order">Заказать</button>
+                </article>
+                <div class="additional-goods__green-background">
+                    <img src="img/gift.svg" alt="gift" class="additional-goods__background-img">
+                    <span class="additional-goods__green-background-text">
+                    Закажите все 
+                    и получите чехол 
+                    для кота в подарок!
+                    </span>
+                </div>
+            </section>
         </main>
         <footer class="footer">
             <img src="img/footer-logo.svg" alt="footer_logo" class="footer__footer-logo">
             <ul class="footer__social-links">
-                <li><a href="https://vk.com"></a></li>
-                <li><a href="https://instagramm.com"></a></li>
-                <li><a href="https://facebook.com"></a></li>
+                <li class="footer__social-links-li">
+                    <a href="https://vk.com" class="footer__vk-link">
+                    </a>
+                </li>
+                <li class="footer__social-links-li">
+                    <a href="https://instagramm.com" class="footer__instagramm-link">
+                    </a>
+                </li>
+                <li class="footer__social-links-li">
+                    <a href="https://facebook.com" class="footer__facebook-link">
+                    </a>
+                </li>
             </ul>
             <div class="right-logo">
-                <a href="" class="right-logo__link-organization">HTML Academy</a>
+                <a href="https://htmlacademy.ru" class="right-logo__link-organization">
+                HTML Academy
+                </a>
                 <img src="img/htmlacademy_footer_logo.svg" alt="" class="right-logo__logo-organization">
             </div>
         </footer>
