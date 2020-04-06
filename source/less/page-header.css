@@ -1,0 +1,39 @@
+/* LESS Document */
+@font-face {
+  font-family: Oswald-Medium;
+  /* Имя шрифта */
+  src: url("../fonts/oswaldmedium.woff") /* Путь к файлу со шрифтом */;
+}
+@font-face {
+  font-family: Oswald-Regular;
+  /* Имя шрифта */
+  src: url("../fonts/oswaldregular.woff");
+  /* Путь к файлу со шрифтом */
+}
+@font-face {
+  font-family: Arial-Regular;
+  /* Имя шрифта */
+  src: url("../fonts/arialregular.ttf");
+  /* Путь к файлу со шрифтом */
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.page-header__menu-logos-links {
+  background-color: #fff;
+}
+.menu-main__sub-menu-elem {
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  list-style-type: none;
+}
+.menu-main__sub-menu-elem-link {
+  text-decoration: none;
+  font-family: Oswald-Medium;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #111111;
+  text-transform: uppercase;
+}

@@ -1,0 +1,36 @@
+/* LESS Document */
+.header-background {
+  background-color: #65a93c;
+  background-image: url("../img/index-can-mobile.png");
+  background-repeat: no-repeat;
+  padding: 29px 0 303px 0;
+}
+.header-background__main-words {
+  font-family: Oswald-Regular;
+  font-size: 36px;
+  line-height: 36px;
+  color: #fff;
+}
+.header-background__work-for-your-cat {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: Oswald-Regular;
+  font-weight: normal;
+  color: #fff;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+.check-your-program {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Oswald-Regular;
+  text-align: center;
+  color: #fff;
+  background-color: #68b738;
+  text-decoration: none;
+  width: 100%;
+  padding: 14px 0 11px 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}

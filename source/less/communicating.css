@@ -1,0 +1,21 @@
+.communicating {
+  display: flex;
+  justify-content: center;
+  padding-top: 31px;
+  padding-bottom: 26px;
+}
+.communicating__offer-communicating {
+  max-width: 122px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  font-family: Oswald-Regular;
+  margin-right: 20px;
+}
+.communicating__address {
+  font-family: Arial-Regular;
+  max-width: 134px;
+  font-size: 14px;
+  line-height: 20px;
+}
