@@ -1,17 +1,16 @@
-/* LESS Document */
 @font-face {
-  font-family: Oswald-Medium;
+  font-family: "Oswald-Medium";
   /* Имя шрифта */
   src: url("../fonts/oswaldmedium.woff") /* Путь к файлу со шрифтом */;
 }
 @font-face {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular";
   /* Имя шрифта */
   src: url("../fonts/oswaldregular.woff");
   /* Путь к файлу со шрифтом */
 }
 @font-face {
-  font-family: Arial-Regular;
+  font-family: "Arial-Regular";
   /* Имя шрифта */
   src: url("../fonts/arialregular.ttf");
   /* Путь к файлу со шрифтом */
@@ -37,7 +36,7 @@
 }
 .menu-main__sub-menu-elem-link {
   text-decoration: none;
-  font-family: Oswald-Medium;
+  font-family: "Oswald-Medium", sans-serif;
   font-size: 20px;
   line-height: 20px;
   font-weight: bold;
@@ -47,7 +46,6 @@
 .menu-main {
   text-align: center;
 }
-/* LESS Document */
 .header-background {
   background-color: #65a93c;
   background-image: url("../img/index-can-mobile.png");
@@ -56,7 +54,7 @@
   text-align: center;
 }
 .header-background__main-words {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 36px;
   line-height: 36px;
   color: #fff;
@@ -64,16 +62,16 @@
 .header-background__work-for-your-cat {
   font-size: 14px;
   line-height: 14px;
-  font-family: Oswald-Regular;
-  font-weight: normal;
+  font-family: "Oswald-Regular", sans-serif;
   color: #fff;
+  font-weight: normal;
   margin-top: 20px;
   text-transform: uppercase;
 }
 .check-your-program {
   font-size: 14px;
   line-height: 18px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   text-align: center;
   color: #fff;
   background-color: #68b738;
@@ -103,7 +101,7 @@
 .programs__name {
   font-size: 24px;
   line-height: 37.02px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
 }
 .programs__program:first-child {
   padding: 22px 36px 23px 21px;
@@ -113,7 +111,7 @@
 .programs__program-content {
   font-size: 14px;
   line-height: 18px;
-  font-family: Arial-Regular;
+  font-family: "Arial-Regular", sans-serif;
   color: #444444;
   padding-bottom: 26px;
 }
@@ -121,22 +119,19 @@
   padding: 24px 53px 23px 20px;
 }
 .programs__program-link {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   color: #111111;
+  margin-right: 20px;
 }
 .programs__program-main-content-link {
   display: flex;
   border-top: 1px solid #d9d9d9;
   padding-top: 20px;
 }
-.programs__program-link {
-  margin-right: 20px;
-}
-/* LESS Document */
 .how-it-is-work {
   padding-top: 33px;
   padding-bottom: 42px;
@@ -146,7 +141,7 @@
 .how-it-is-work__header {
   font-size: 36px;
   line-height: 60px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   color: #111111;
   margin-bottom: 42px;
 }
@@ -164,7 +159,7 @@
 .how-it-is-work__sub-text {
   font-size: 14px;
   line-height: 18px;
-  font-family: Arial-Regular;
+  font-family: "Arial-Regular", sans-serif;
   color: #444444;
   max-width: 191px;
 }
@@ -175,7 +170,7 @@
   padding: 34px 0 39px 0;
 }
 .live-example__header {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 36px;
   line-height: 60px;
   color: #111111;
@@ -184,7 +179,7 @@
 .live-example__sub {
   font-size: 14px;
   line-height: 18px;
-  font-family: Arial-Regular;
+  font-family: "Arial-Regular", sans-serif;
   color: #444444;
   margin-bottom: 29px;
 }
@@ -208,9 +203,9 @@
   background-repeat: no-repeat;
 }
 .live-example__numbers-sub-header {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 24px;
-  font-family: 24px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 .live-example__numbers-sub-content {
@@ -220,7 +215,7 @@
 }
 .live-example__price {
   text-transform: uppercase;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
@@ -233,7 +228,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
 }
 .communicating {
   display: flex;
@@ -247,11 +242,11 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   margin-right: 20px;
 }
 .communicating__address {
-  font-family: Arial-Regular;
+  font-family: "Arial-Regular", sans-serif;
   max-width: 134px;
   font-size: 14px;
   line-height: 20px;
@@ -287,7 +282,7 @@
 .right-logo__link-organization {
   font-size: 16px;
   line-height: 16px;
-  font-family: Arial-Regular;
+  font-family: "Arial-Regular", sans-serif;
   color: #444444;
   text-decoration: none;
   margin-right: 141px;
@@ -308,10 +303,10 @@
   padding-bottom: 36px;
   font-size: 24px;
   line-height: 24px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
 }
 .main-form__full-anket {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 14px;
   line-height: 18px;
   margin-bottom: 40px;
@@ -320,7 +315,7 @@
   margin-bottom: 14px;
   font-size: 16px;
   line-height: 18px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -328,8 +323,7 @@
 .form__first-three-inputs input {
   font-size: 16px;
   line-height: 18px;
-  font-family: Oswald-Regular;
-  border: 0;
+  font-family: "Oswald-Regular", sans-serif;
   border: 1px solid #e6e6e6;
   padding: 15px;
   margin-left: 16px;
@@ -344,7 +338,7 @@
   border-bottom: 1px solid #ededed;
 }
 .form__sub-label-input-radio {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
@@ -364,7 +358,7 @@
   margin-bottom: 30px;
 }
 .form__contact-data-for-cat-owner {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 24px;
   line-height: 24px;
   margin-right: 22px;
@@ -376,7 +370,7 @@
   background-color: #68b738;
 }
 .form__sub-contact-cat-data {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
@@ -389,18 +383,16 @@
   margin-bottom: 32px;
 }
 .form__sub-input-text-email {
-  border: 0;
   border: 1px solid #e7e7e7;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 16px;
   line-height: 18px;
   padding: 14px 15px 13px 15px;
   position: relative;
 }
 .form__sub-input-text-telephone {
-  border: 0;
   border: 1px solid #e7e7e7;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 16px;
   line-height: 18px;
   padding: 14px 15px 13px 15px;
@@ -408,7 +400,7 @@
 .form__submit-input {
   background-color: #68b738;
   border: 0;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
@@ -420,14 +412,16 @@
   padding-left: 80px;
   padding-right: 80px;
   display: flex;
+  margin-bottom: 24px;
 }
 .form__required-fields-text {
-  font-family: Arial-Regular;
+  font-family: "Arial-Regular", sans-serif;
   font-size: 14px;
   line-height: 16px;
+  margin-bottom: 35px;
 }
 .form__sub-contact-additional-data {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: #222222;
@@ -438,7 +432,7 @@
   display: flex;
 }
 .form__commentary-comment {
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 31px;
@@ -447,7 +441,7 @@
   width: 280px;
   font-size: 16px;
   line-height: 18px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   color: #444444;
   text-transform: uppercase;
   border: 1px solid #e6e6e6;
@@ -460,7 +454,7 @@
 .form__sub-add {
   font-size: 24px;
   line-height: 24px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   margin-right: 25px;
 }
 .forsm__sub-additional-line {
@@ -474,17 +468,10 @@
 .form__sub-checkbox:last-child {
   margin-bottom: 34px;
 }
-.form__submit-input {
-  margin-bottom: 24px;
-}
 .form__submit {
   display: flex;
   flex-direction: column;
 }
-.form__required-fields-text {
-  margin-bottom: 35px;
-}
-/* LESS Document */
 .hidden {
   width: 1px;
   height: 1px;
@@ -498,7 +485,7 @@
   font-size: 36px;
   line-height: 60px;
   color: #111111;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
 }
 .main-catalog__good {
   display: flex;
@@ -512,13 +499,13 @@
 .main-catalog__main-text {
   font-size: 36px;
   line-height: 60px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   padding-bottom: 35px;
 }
 .main-catalog__good-header {
   font-size: 16px;
   line-height: 20px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   color: #111111;
   margin-bottom: 19px;
 }
@@ -535,7 +522,7 @@
   justify-content: space-between;
   font-size: 12px;
   line-height: 16px;
-  font-family: Arial-Regular;
+  font-family: "Arial-Regular", sans-serif;
   margin-bottom: 6px;
 }
 .main-catalog__good-data-sub:last-child {
@@ -546,7 +533,7 @@
   text-transform: uppercase;
   font-size: 16px;
   line-height: 20px;
-  font-family: Arial-Regular;
+  font-family: "Arial-Regular", sans-serif;
   border: 0;
   color: #ffffff;
   padding: 14px 108px 14px 108px;
@@ -558,7 +545,6 @@
   align-items: center;
   margin-left: auto;
 }
-/* LESS Document */
 .find-all-goods {
   display: flex;
   flex-direction: column;
@@ -572,7 +558,7 @@
 .find-all-goods__show-additional-goods {
   font-size: 16px;
   line-height: 20px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   text-transform: uppercase;
   margin-bottom: 16px;
 }
@@ -581,7 +567,7 @@
   background-color: #f2f2f2;
   font-size: 16px;
   line-height: 20px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   text-transform: uppercase;
   padding: 14px 94px 14px 94px;
   text-align: center;
@@ -590,7 +576,7 @@
 .additional-goods__header-sub-span {
   font-size: 24px;
   line-height: 24px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   margin-bottom: 30px;
 }
 .additional-goods__header-line {
@@ -604,7 +590,7 @@
 .additional-goods__article-header {
   font-size: 16px;
   line-height: 16px;
-  font-family: Oswald-Regular;
+  font-family: "Oswald-Regular", sans-serif;
   margin-bottom: 16px;
   text-transform: uppercase;
   margin-top: 14px;
@@ -612,28 +598,24 @@
 .additional-goods__article {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid #cdcdcd;
 }
 .additional-goods__article-content {
   display: flex;
   justify-content: space-between;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Arial-Regular", sans-serif;
 }
 .additional-goods__article-order {
   margin-bottom: 17px;
   margin-top: 14px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   border: 0;
   background-color: #68b738;
   padding: 14px 108px 14px 108px;
   max-width: 280px;
-}
-.additional-goods__article-content {
-  font-size: 14px;
-  line-height: 14px;
-  font-family: Arial-Regular;
-}
-.additional-goods__article {
-  border-top: 1px solid #cdcdcd;
 }
 .additional-goods__green-background {
   margin-top: 40px;
@@ -651,6 +633,6 @@
 .additional-goods__green-background-text {
   font-size: 16px;
   line-height: 20px;
-  font-family: Arial-Regular;
-  color: #fff;
+  font-family: "Arial-Regular", sans-serif;
+  color: #ffffff;
 }
