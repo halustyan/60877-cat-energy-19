@@ -23,7 +23,7 @@
 .page-header__menu-logos-links {
   background-color: @white;
   padding-top: 11px;
-  padding-bottom: 8px;
+  padding-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,22 +33,41 @@
 
 .menu-main__sub-menu-elem {
   border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
   list-style-type: none;
-  padding-top: 20px;
-  padding-bottom: 19px;
+  padding-top: 22px;
+  padding-bottom: 20px;
+}
+
+.menu-main__sub-menu-elem:last-child {
+  border-bottom: 1px solid #ededed;
 }
 
 .menu-main__sub-menu-elem-link {
   text-decoration: none;
   font-family: "Oswald-Medium", sans-serif;
-  font-size: 17px;
-  line-height: 17px;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: bold;
   color: #111111;
   text-transform: uppercase;
+  margin-left: 1px;
 }
 
 .menu-main {
   text-align: center;
+}
+
+.page-header {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.page-header__logo-page {
+  margin-top: 6px;
+  margin-left: -9px;
+}
+
+.header-background {
+  max-width: 320px;
+  margin: 0 auto;
 }
