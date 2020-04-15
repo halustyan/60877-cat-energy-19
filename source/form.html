@@ -19,7 +19,7 @@
           <img src="img/logo-mobile-header.png" class="page-header__logo-page-image" alt="" width="101" height="18">
         </a>
         <a class="page-header__logo-mobile_menu">
-          <img src="img/mobile-menu.png" class="page-header__logo-menu-image" alt="" width="24" height="18">
+          <img src="img/m-close.png" class="page-header__logo-menu-image" alt="" width="24" height="18">
         </a>
       </div>
 
@@ -35,96 +35,110 @@
     </div>
   </header>
   <main class="main-form">
-    <h1 class="main-form__how-u-can-choose-program">Подбор программы</h1>
-    <span class="main-form__full-anket">Заполните анкету и мы подберем программу питания для вашего кота</span>
-    <form action="https://echo.htmlacademy.ru" class="form">
-      <div class="form__sub form__first-three-inputs">
-        <label for="name" class="form__sub-label-input-text ">Имя:*</label>
-        <input type="text" placeholder="Барсик" id="name" name="name" class="form__sub-input-text">
-      </div>
-      <div class="form__sub form__first-three-inputs">
-        <label for="weight" class="form__sub-label-input-text">Вес (кг):*</label>
-        <input type="text" placeholder="7" id="weight" name="weight" class="form__sub-input-text">
-      </div>
-      <div class="form__sub form__first-three-inputs form__first-three-inputs-custom-border">
-        <label for="age" class="form__sub-label-input-text">Возраст (лет):</label>
-        <input type="text" placeholder="7" id="age" name="age" class="form__sub-input-text">
-      </div>
-      <div class="main-form__radio-part">
-        <div class="form__sub-radio">
-          <input type="radio" name="losing-weight" id="losing-weight" checked class="form__sub-input-radio">
-          <label for="losing-weight" class="form__sub-label-input-radio">Похудение</label>
+    <div class="main-form__content">
+      <h1 class="main-form__how-u-can-choose-program">Подбор программы</h1>
+      <span class="main-form__full-anket">Заполните анкету и мы подберем программу питания для вашего кота</span>
+      <form action="https://echo.htmlacademy.ru" class="form">
+        <div class="form__sub form__first-three-inputs">
+          <label for="name" class="form__sub-label-input-text form__sub-label-name">Имя:*</label>
+          <input type="text" placeholder="Барсик" id="name" name="name"
+            class="form__sub-input-text form__sub-label-input-name">
         </div>
-        <div class="form__sub-radio">
-          <input type="radio" name="losing-weight" id="mass-gain" class="form__sub-input-radio">
-          <label for="mass-gain" class="form__sub-label-input-radio">Набор массы</label>
+        <div class="form__sub form__first-three-inputs">
+          <label for="weight" class="form__sub-label-input-text form__sub-label-weight">Вес (кг):*</label>
+          <input type="text" placeholder="7" id="weight" name="weight"
+            class="form__sub-input-text form__sub-label-input-weight">
         </div>
-        <div class="form__sub-radio">
-          <input type="radio" name="losing-weight" id="do-not-know" class="form__sub-input-radio">
-          <label for="do-not-know" class="form__sub-label-input-radio">Не знаю (нужен ваш совет)</label>
+        <div class="form__sub form__first-three-inputs form__first-three-inputs-custom-border">
+          <label for="age" class="form__sub-label-input-text form__sub-label-age">Возраст (лет):</label>
+          <input type="text" placeholder="7" id="age" name="age" class="form__sub-input-text form__sub-input-age">
         </div>
+    </div>
+    <div class="main-form__radio-part">
+      <div class="form__sub-radio">
+        <input type="radio" name="losing-weight" id="losing-weight" checked class="form__sub-input-radio">
+        <label for="losing-weight" class="form__sub-label-input-radio">Похудение</label>
       </div>
-      <div class="form__contact">
-        <h2 class="form__contact-data-for-cat-owner">
-          Контактные данные (владельца кота)
-        </h2>
-        <div class="form__contact-data-for-cat-owner-line"></div>
+      <div class="form__sub-radio">
+        <input type="radio" name="losing-weight" id="mass-gain" class="form__sub-input-radio">
+        <label for="mass-gain" class="form__sub-label-input-radio">Набор массы</label>
       </div>
-      <div class="form__sub form__contact-data-cat-owner-email">
-        <label for="email" class="form__sub-label-email form__sub-contact-cat-data">E-mail:*</label>
-        <input type="text" placeholder="kuklachev@gmail.com" id="email" name="email" class="form__sub-input-text-email">
+      <div class="form__sub-radio">
+        <input type="radio" name="losing-weight" id="do-not-know" class="form__sub-input-radio">
+        <label for="do-not-know" class="form__sub-label-input-radio">Не знаю (нужен ваш совет)</label>
       </div>
-      <div class="form__sub form__contact-data-cat-owner-telephone">
-        <label for="telephone" class="form__sub-label-telephone form__sub-contact-cat-data">Телефон:*</label>
-        <input type="text" placeholder="8 (960) 900-60-90" id="telephone" name="telephone"
-          class="form__sub-input-text-telephone">
-      </div>
-      <div class="form__commentary">
-        <span class="form__commentary-comment">
-          Комментарий
-        </span>
-        <div class="form__commentary-line"></div>
-      </div>
+    </div>
+    <div class="form__contact">
+      <h2 class="form__contact-data-for-cat-owner">
+        Контактные данные (владельца кота)
+      </h2>
+      <div class="form__contact-data-for-cat-owner-line"></div>
+    </div>
+    <div class="form__sub form__contact-data-cat-owner-email">
+      <label for="email" class="form__sub-label-email form__sub-contact-cat-data">E-mail:*</label>
+      <input type="text" placeholder="kuklachev@gmail.com" id="email" name="email" class="form__sub-input-text-email">
+      <img src="img/mail.png" alt="email icon" class="form__email-input-img" width="17" height="13">
+    </div>
+    <div class="form__sub form__contact-data-cat-owner-telephone">
+      <label for="telephone" class="form__sub-label-telephone form__sub-contact-cat-data">Телефон:*</label>
+      <input type="text" placeholder="8 (960) 900-60-90" id="telephone" name="telephone"
+        class="form__sub-input-text-telephone">
+      <img src="img/phone.png" alt="phone icon" width="20" height="20" class="form__phone-image">
+    </div>
+    <div class="form__commentary">
+      <span class="form__commentary-comment">
+        Комментарий
+      </span>
+      <div class="form__commentary-line"></div>
+    </div>
+    <div class="form__textarea">
       <textarea name="commentary" class="form__commentary-textarea">
           Расскажите обо всех повадках кота
     </textarea>
-      <div class="form__sub-additional">
-        <span class="form__sub-add">Дополнительно</span>
-        <div class="forsm__sub-additional-line"></div>
-      </div>
+    </div>
+    <div class="form__sub-additional">
+      <span class="form__sub-add">Дополнительно</span>
+      <div class="forsm__sub-additional-line"></div>
+    </div>
+    <div class="form__checkboxes">
       <div class="form__sub-checkbox">
-        <input type="checkbox" name="sugarchange" id="sugarchange" class="form__sub-input-sugarchange">
+        <input type="checkbox" name="sugarchange" id="sugarchange"
+          class="form__sub-input-sugarchange form__checkboxes-sub-input">
         <label for="sugarchange"
           class="form__sub-label-sugarchange form__sub-contact-additional-data">Сахарозаменитель</label>
       </div>
       <div class="form__sub-checkbox">
-        <input type="checkbox" name="drink-water" class="form__sub-input-drink-water">
+        <input type="checkbox" name="drink-water" class="form__sub-input-drink-water form__checkboxes-sub-input">
         <label for="drink-water" class="form__sub-label-drink-water form__sub-contact-additional-data">Питьевая
           вода</label>
       </div>
       <div class="form__sub-checkbox">
-        <input type="checkbox" name="milk" class="form__sub-input-milk">
+        <input type="checkbox" name="milk" class="form__sub-input-milk form__checkboxes-sub-input">
         <label for="milk" class="form__sub-label-milk form__sub-contact-additional-data">Молоко</label>
       </div>
       <div class="form__sub-checkbox">
-        <input type="checkbox" name="vitamines" class="form__sub-input-vitamines">
+        <input type="checkbox" name="vitamines" class="form__sub-input-vitamines form__checkboxes-sub-input">
         <label class="form__sub-label-vitamines form__sub-contact-additional-data">Витамины</label>
       </div>
-      <div class="form__submit">
-        <input type="submit" class="form__submit-input" value="Отправить заявку">
-        <span class="form__required-fields-text">* — Обязательные поля</span>
-      </div>
+    </div>
+    <div class="form__submit">
+      <input type="submit" class="form__submit-input" value="Отправить заявку">
+      <span class="form__required-fields-text">* — Обязательные поля</span>
+    </div>
     </form>
     <div class="communicating communicating-form">
-      <span class="communicating__offer-communicating">приглашаем к сотрудничеству дилеров!</span>
-      <span class="communicating__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      <div class="communicating__main-text">
+        <span class="communicating__offer-communicating">приглашаем к сотрудничеству дилеров!</span>
+        <span class="communicating__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+      </div>
     </div>
     <div class="map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
-        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+        width="600" height="363" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
         class="map__iframe"></iframe>
     </div>
+
   </main>
   <footer class="footer">
     <img src="img/footer-logo.png" alt="footer_logo" class="footer__footer-logo" width="128" height="24">
