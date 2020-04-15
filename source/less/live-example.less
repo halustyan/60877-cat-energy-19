@@ -2,7 +2,14 @@
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
-  padding: 34px 0 39px 0;
+  padding: 15px 0 12px 0
+}
+
+.live-example__content {
+  max-width: 279px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .live-example__header {
@@ -10,7 +17,7 @@
   font-size: 36px;
   line-height: 60px;
   color: #111111;
-  margin-bottom: 34px;
+  margin-bottom: 24px;
 }
 
 .live-example__sub {
@@ -18,13 +25,12 @@
   line-height: 18px;
   font-family: "Arial-Regular", sans-serif;
   color: #444444;
-  margin-bottom: 29px;
+  margin-bottom: 26px;
 }
 
 .live-example__numbers {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 27px;
+  margin-bottom: 19px;
 }
 
 .live-example__numbers-sub {
@@ -37,11 +43,13 @@
 .live-example__numbers-sub:first-child {
   background-image: url("../img/weight-back-left.png");
   background-repeat: no-repeat;
+  background-size: 125px 55px;
 }
 
 .live-example__numbers-sub:last-child {
   background-image: url("../img/weight-back-right.png");
   background-repeat: no-repeat;
+  background-size: 125px 55px;
 }
 
 .live-example__numbers-sub-header {
@@ -51,10 +59,16 @@
   text-transform: uppercase;
 }
 
+.live-example__numbers-sub-header:first-child {
+  margin-bottom: 9px;
+}
+
 .live-example__numbers-sub-content {
   font-size: 12px;
-  font-family: 12px;
+  line-height: 12px;
   color: #444444;
+  font-family: "Arial-Regular", sans-serif;
+  max-width: 55px;
 }
 
 .live-example__price {
@@ -67,7 +81,7 @@
 
 .live-example__slider {
   padding-top: 37px;
-  padding-bottom: 39px;
+  padding-bottom: 25px;
 }
 
 .live-example__slider-button {
@@ -75,4 +89,62 @@
   line-height: 20px;
   text-transform: uppercase;
   font-family: "Oswald-Regular", sans-serif;
+}
+
+.live-example__numbers-sub:first-child {
+    padding-top: 13px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45.65%;
+    margin-right: 32px;
+}
+
+.live-example__numbers-sub:last-child {
+  width: 44.65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 13px;
+}
+
+.live-example__slider {
+  position: relative;
+}
+
+.slide-2 {
+  position: absolute;
+  top:0;
+  left: -10000px;
+}
+
+.live-example__slider-slide {
+  margin-left: -19px;
+  margin-top: 5px;
+}
+
+.live-example__slider-controls {
+  display: flex;
+  margin-top: 28px;
+  justify-content: space-between;
+  max-width: 197px;
+  margin-top: 28px;
+  margin-left: 44px;
+}
+
+.live-example__slider-on-off-content {
+  border: 1px solid #cdcdcd;
+  position: relative;
+  background-color: #ffffff;
+  width: 84px;
+  height: 13px;
+  border-radius: 15px;
+  margin-top: 2px;
+}
+
+.live-example__slider-on-off-content-image {
+  margin-left: 5px;
+  margin-bottom: 4px;
 }

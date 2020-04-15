@@ -2,21 +2,26 @@
 .main-form {
   display: flex;
   flex-direction: column;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .main-form__how-u-can-choose-program {
-  padding-top: 31px;
-  padding-bottom: 36px;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: "Oswald-Regular", sans-serif;
+  font-size: 36px;
+    line-height: 60px;
+    margin-top: 14px;
+    margin-bottom: 27px;
+    font-family: "Oswald-Regular", sans-serif;
 }
 
 .main-form__full-anket {
   font-family: "Oswald-Regular", sans-serif;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
+  max-width: 226px;
+  display: inline-flex;
+  text-transform: uppercase;
 }
 
 .form__first-three-inputs {
@@ -29,24 +34,12 @@
   text-transform: uppercase;
 }
 
-.form__first-three-inputs input {
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Oswald-Regular", sans-serif;
-  border: 1px solid #e6e6e6;
-  padding: 15px;
-  margin-left: 16px;
-}
-
-.form__first-three-inputs-custom-border {
-  padding-bottom: 23px;
-}
-
 .main-form__radio-part {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
+  padding-top: 22px;
+  padding-bottom: 27px;
+  margin-top: 9px;
+  border: 1px solid #ededed;
+  padding-left: 18px;
 }
 
 .form__sub-label-input-radio {
@@ -54,13 +47,37 @@
   font-size: 16px;
   line-height: 18px;
   color: #222222;
-  margin-left: 16px;
+  margin-left: 46px;
+  text-transform: uppercase;
+  margin-top: 4px;
 }
 
 .form__sub-radio {
-  margin-bottom: 13px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.form__sub-radio::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: -3px;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-image: url("../img/radiobutton.png");
+}
+
+.form__sub-input-radio:checked+.form__sub-radio::after {
+	background-image: url("../img/radiobutton-on.png");
+	background-image: no-repeat;
+}
+
+.form__sub-input-radio {
+  display: none;
 }
 
 .form__sub-radio:last-child {
@@ -69,21 +86,23 @@
 
 .form__contact {
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 29px;
+  margin-bottom: 33px;
+  padding-left: 18px;
 }
 
 .form__contact-data-for-cat-owner {
   font-family: "Oswald-Regular", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  margin-right: 22px;
-  max-width: 179px;
+  margin-right: 4px;
+  max-width: 202px;
 }
 
 .form__contact-data-for-cat-owner-line {
   height: 3px;
-  width: 100%;
+  width: 101px;
+  margin-top: 14px;
   background-color: #68b738;
 }
 
@@ -93,14 +112,28 @@
   line-height: 18px;
   color: #222222;
   margin-right: 13px;
+  text-transform: uppercase;
+  margin-top: 14px;
+  margin-left: 18px;
 }
 
 .form__contact-data-cat-owner-email {
   margin-bottom: 14px;
+  max-width: 320px;
+  display: flex;
+  margin-bottom: 13px;
+  position: relative;
 }
 
 .form__contact-data-cat-owner-telephone {
-  margin-bottom: 32px;
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.form__phone-image {
+  position: absolute;
+  right: 33px;
+  top: 14px;
 }
 
 .form__sub-input-text-email {
@@ -108,8 +141,10 @@
   font-family: "Oswald-Regular", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  padding: 14px 15px 13px 15px;
+  padding: 13px 0 12px 15px;
   position: relative;
+  text-transform: uppercase;
+  width: 63%;
 }
 
 .form__sub-input-text-telephone {
@@ -117,7 +152,7 @@
   font-family: "Oswald-Regular", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  padding: 14px 15px 13px 15px;
+  padding: 14px 50px 13px 15px;
 }
 
 .form__submit-input {
@@ -128,21 +163,25 @@
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-  max-width: 280px;
   text-align: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 12px;
+  padding-bottom: 9px;
   padding-left: 80px;
   padding-right: 80px;
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
+  width: 100%;
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
 }
 
 .form__required-fields-text {
   font-family: "Arial-Regular", sans-serif;
   font-size: 14px;
   line-height: 16px;
-  margin-bottom: 35px;
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .form__sub-contact-additional-data {
@@ -152,6 +191,8 @@
   color: #222222;
   text-transform: uppercase;
   margin-left: 16px;
+  padding-left: 30px;
+  margin-top: 6px;
 }
 
 .form__commentary {
@@ -162,40 +203,64 @@
   font-family: "Oswald-Regular", sans-serif;
   font-size: 24px;
   line-height: 24px;
-  margin-bottom: 31px;
+  margin-bottom: 36px;
+  margin-left: 19px;
+}
+
+.form__commentary-line {
+  height: 3px;
+  background-color: #68b738;
+  width: 52%;
+  margin-top: 15px;
+  margin-left: 23px;
 }
 
 .form__commentary-textarea {
-  width: 280px;
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald-Regular", sans-serif;
   color: #444444;
   text-transform: uppercase;
   border: 1px solid #e6e6e6;
-  margin-bottom: 32px;
+  margin-bottom: 23px;
+  padding: 13px 0px 99px 15px;
+  width: 100%;
 }
 
 .form__sub-additional {
   margin-bottom: 32px;
   display: flex;
+  align-items: center;
 }
 
 .form__sub-add {
   font-size: 24px;
   line-height: 24px;
   font-family: "Oswald-Regular", sans-serif;
-  margin-right: 25px;
+  margin-right: 24px;
+  padding-left: 20px;
 }
 
 .forsm__sub-additional-line {
   height: 3px;
   background-color: #68b738;
   width: 100%;
+  margin-top: 9px;
 }
 
 .form__sub-checkbox {
-  margin-bottom: 13px;
+  position: relative;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.form__checkboxes {
+  padding-left: 20px;
+  padding-top: 3px;
+}
+
+.form__checkboxes-sub-input {
+  display: none;
 }
 
 .form__sub-checkbox:last-child {
@@ -205,4 +270,93 @@
 .form__submit {
   display: flex;
   flex-direction: column;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.main-form__content {
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+.form__sub-label-name {
+  margin-top: -1px;
+  margin-right: -3px;
+}
+
+.form__sub-label-input-name {
+  font-size: 16px;
+  max-width: 229px;
+  line-height: 18px;
+  font-family: "Oswald-Regular", sans-serif;
+  border: 1px solid #e6e6e6;
+  padding: 13px 75px 12px 15px;
+  margin-left: 16px;
+  text-transform: uppercase;
+}
+
+.form__sub-label-input-weight {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald-Regular", sans-serif;
+}
+
+.form__sub-label-weight {
+  margin-right: 17px;
+}
+
+.form__sub-label-input-weight {
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald-Regular", sans-serif;
+  padding-top: 12px;
+  padding-left: 15px;
+  padding-bottom: 13px;
+  padding-right: 49px;
+  border: 1px solid #e6e6e6;
+}
+
+.form__sub-label-age {
+  margin-right: 14px;
+}
+
+.form__sub-input-age {
+  padding-top: 14px;
+  padding-left: 14px;
+  padding-right: 19px;
+  padding-bottom: 12px;
+  border: 1px solid #e6e6e6;
+}
+
+.form__email-input-img{
+  position: absolute;
+  right: 36px;
+  top: 17px;
+}
+
+.form__sub-label-telephone {
+  margin-right: 7px;
+}
+
+.form__textarea {
+  max-width: 280px;
+  padding-left: 20px;
+  padding-right: 37px;
+}
+
+.form__sub-checkbox::after {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 2px;
+	width: 30px;
+	height: 30px;
+	background-repeat: no-repeat;
+	background-image: url("../img/checkbox.png");
+}
+
+.form__checkboxes-sub-input:checked+.form__sub-checkbox::after {
+	background-image: url("../img/radiobutton-on.png");
+	background-image: no-repeat;
 }
