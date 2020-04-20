@@ -1,3 +1,6 @@
+@mobile: 320px;
+@tablet: 768px;
+
 .communicating {
   padding-top: 28px;
   padding-bottom: 26px;
@@ -33,4 +36,37 @@
 
 .communicating__address-index {
   margin-top: -1px;
+}
+
+@media (min-width:@tablet) {
+  .communicating-form {
+    max-width: 698px;
+    margin-top: 69px;
+    background-color: #f2f2f2;
+}
+.communicating__main-text {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.communicating__offer-communicating {
+  margin-top: 32px;
+    font-size: 18px;
+    line-height: 23px;
+    margin-left: 64px;
+    max-width: 190px;
+}
+.communicating__address {
+  text-align: right;
+  margin-right: 66px;
+  margin-top: 29px;
+  line-height: 19px;
+}
+.communicating__address-city {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  letter-spacing: 0.2px;
+}
 }

@@ -12,21 +12,27 @@
   <header class="page-header">
     <div class="page-header__menu">
       <div class="page-header__menu-logos-links">
-        <a href="" class="page-header__logo-site">
-          <img src="img/logo-mobile.png" alt="logo site" class="page-header__logo-site-image" width="33" height="38">
+        <a href="index.html" class="page-header__logo-site">
+          <img src="img/logo-mobile.png" alt="logo header-mobile site" class="page-header__logo-site-image-mobile"
+            width="33" height="38">
+          <img src="img/logo-tablet.svg" alt="logo header-tablet site" class="page-header__logo-site-image-tablet"
+            width="187" height="58">
+          <img src="img/logo-desktop.svg" alt="logo header-desktop site" class="page-header__logo-site-image-desktop"
+            width="173" height="58">
         </a>
-        <a href="" class="page-header__logo-page">
+        <a href="index.html" class="page-header__logo-mobile-page">
           <img src="img/logo-mobile-header.png" class="page-header__logo-page-image" alt="" width="101" height="18">
         </a>
         <a class="page-header__logo-mobile_menu">
-          <img src="img/m-close.png" class="page-header__logo-menu-image" alt="" width="24" height="18">
+          <img src="img/icon-close.svg" class="page-header__logo-menu-image" alt="" width="24" height="18">
         </a>
       </div>
-
       <nav class="menu-main">
         <ul class="menu-main__sub">
-          <li class="menu-main__sub-menu-elem"><a href="#" class="menu-main__sub-menu-elem-link">Главная</a></li>
-          <li class="menu-main__sub-menu-elem"><a href="catalog.html" class="menu-main__sub-menu-elem-link">Каталог
+          <li class="menu-main__sub-menu-elem"><a href="index.html" class="menu-main__sub-menu-elem-link">Главная</a>
+          </li>
+          <li class="menu-main__sub-menu-elem "><a href="catalog.html"
+              class="menu-main__sub-menu-elem-link menu-main__sub-menu-elem-link-active">Каталог
               продукции</a></li>
           <li class="menu-main__sub-menu-elem"><a href="form.html" class="menu-main__sub-menu-elem-link">Подбор
               программы</a></li>
@@ -50,7 +56,7 @@
             class="form__sub-input-text form__sub-label-input-weight">
         </div>
         <div class="form__sub form__first-three-inputs form__first-three-inputs-custom-border">
-          <label for="age" class="form__sub-label-input-text form__sub-label-age">Возраст (лет):</label>
+          <label for="age" class="form__sub-label-input-text form__sub-label-age form__first-three-inputs-last-child">Возраст (лет):</label>
           <input type="text" placeholder="7" id="age" name="age" class="form__sub-input-text form__sub-input-age">
         </div>
     </div>
@@ -69,6 +75,7 @@
       </div>
     </div>
     <div class="form__contact">
+      <div class="form__contact-data-for-cat-owner-left-line"></div>
       <h2 class="form__contact-data-for-cat-owner">
         Контактные данные (владельца кота)
       </h2>
@@ -86,14 +93,14 @@
       <img src="img/phone.png" alt="phone icon" width="20" height="20" class="form__phone-image">
     </div>
     <div class="form__commentary">
+      <div class="form__commentary-left-line"></div>
       <span class="form__commentary-comment">
         Комментарий
       </span>
       <div class="form__commentary-line"></div>
     </div>
     <div class="form__textarea">
-      <textarea name="commentary" class="form__commentary-textarea">
-          Расскажите обо всех повадках кота
+      <textarea name="commentary" class="form__commentary-textarea">Расскажите обо всех повадках кота
     </textarea>
     </div>
     <div class="form__sub-additional">
@@ -103,22 +110,27 @@
     <div class="form__checkboxes">
       <div class="form__sub-checkbox">
         <input type="checkbox" name="sugarchange" id="sugarchange"
-          class="form__sub-input-sugarchange form__checkboxes-sub-input">
+          class="form__sub-input-sugarchange form__checkboxes-sub-input" checked>
         <label for="sugarchange"
-          class="form__sub-label-sugarchange form__sub-contact-additional-data">Сахарозаменитель</label>
+          class="form__sub-label-sugarchange form__sub-contact-additional-data form__checkbox-label">Сахарозаменитель</label>
       </div>
       <div class="form__sub-checkbox">
-        <input type="checkbox" name="drink-water" class="form__sub-input-drink-water form__checkboxes-sub-input">
-        <label for="drink-water" class="form__sub-label-drink-water form__sub-contact-additional-data">Питьевая
+        <input type="checkbox" id="drink-water" name="drink-water"
+          class="form__sub-input-drink-water form__checkboxes-sub-input">
+        <label for="drink-water"
+          class="form__sub-label-drink-water form__sub-contact-additional-data form__checkbox-label">Питьевая
           вода</label>
       </div>
       <div class="form__sub-checkbox">
-        <input type="checkbox" name="milk" class="form__sub-input-milk form__checkboxes-sub-input">
-        <label for="milk" class="form__sub-label-milk form__sub-contact-additional-data">Молоко</label>
+        <input type="checkbox" name="milk" id="milk" class="form__sub-input-milk form__checkboxes-sub-input">
+        <label for="milk"
+          class="form__sub-label-milk form__sub-contact-additional-data form__checkbox-label">Молоко</label>
       </div>
       <div class="form__sub-checkbox">
-        <input type="checkbox" name="vitamines" class="form__sub-input-vitamines form__checkboxes-sub-input">
-        <label class="form__sub-label-vitamines form__sub-contact-additional-data">Витамины</label>
+        <input type="checkbox" id="vitamines" name="vitamines"
+          class="form__sub-input-vitamines form__checkboxes-sub-input">
+        <label for="vitamines"
+          class="form__sub-label-vitamines form__sub-contact-additional-data form__checkbox-label">Витамины</label>
       </div>
     </div>
     <div class="form__submit">
