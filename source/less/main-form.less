@@ -386,6 +386,9 @@
   .form__commentary-left-line {
     display: none;
   }
+  .forsm__sub-additional-left-line {
+  display: none;
+  }
 }
 
 @media (min-width:@tablet) {
@@ -629,14 +632,139 @@ padding-top: 22px;
   top: 22px;
   left: -32px;
 }
+
 .form__commentary-line {
   height: 3px;
   background-color: #68b738;
-  width: 67%;
+  width: 65.9%;
   margin-top: 15px;
   margin-left: 23px;
   margin-top: 22px;
+  position: absolute;
+  right: -10px;
 }
+
+.form__textarea {
+  max-width: 611px;
+  padding-left: 20px;
+  padding-right: 37px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+.form__commentary-textarea {
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 9px;
+  padding-left: 18px;
+  padding-bottom: 103px;
+}
+.form__sub-add {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.form__sub-additional {
+  margin-top: 37px;
+  margin-left: 19px;
+  position: relative;
+}
+.forsm__sub-additional-left-line {
+  display: block;
+  }
+  .forsm__sub-additional-left-line {
+    display: block;
+    width: 30px;
+    position: absolute;
+    height: 3px;
+    background-color: #68b738;
+    left: -50px;
+    top: 23px;
+}
+.forsm__sub-additional-line {
+  height: 3px;
+  background-color: #68b738;
+  width: 446px;
+  right: -10px;
+  margin-top: 5px;
+  position: absolute;
+}
+.form__checkbox-label {
+  font-size: 20px;
+  line-height: 20px;
+}
+.form__sub-two-checkbox {
+  display: flex;
+}
+.form__checkbox-label::after {
+  width: 40px;
+  height: 40px;
+}
+.form__checkboxes-sub-input:checked+.form__checkbox-label::before {
+  content: "";
+width: 21px;
+height: 17px;
+top: 15px;
+    left: 12px;
+}
+.form__checkboxes {
+  margin-top: 52px;
+}
+.form__sub-two-checkbox {
+  margin-left: 18px;
+}
+.form__sub-checkbox {
+  margin-bottom: 39px;
+}
+.form__sub-label-sugarchange {
+  margin-top: 13px;
+  margin-left: 30px;
+  margin-right: 123px;
+}
+.form__sub-label-drink-water {
+  margin-top: 12px;
+  margin-left: 29px;
+}
+.form__sub-label-milk {
+  margin-top: 11px;
+  margin-left: 30px;
+  margin-right: 217px;
+}
+.form__sub-label-vitamines {
+  margin-top: 12px;
+  margin-left: 29px;
+}
+
+.form__submit {
+  max-width: 523px;
+  display: flex;
+  margin-left: 39px;
+  flex-direction: row;
+  margin-top: 21px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form__submit-input {
+  max-width: 283px;
+  font-size: 20px;
+  line-height: 20px;
+  padding-top: 14px;
+  padding-bottom: 16px;
+}
+.form__required-fields-text {
+  max-width: 180px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 12px;
+}
+.communicating-form-transformed {
+  margin: 0 auto;
+    margin-top: 52px;
+    max-width: 766px;
+    margin-left: -30px;
+}
+
 }
 
 

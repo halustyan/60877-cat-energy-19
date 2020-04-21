@@ -1,14 +1,33 @@
 @mobile: 320px;
 @tablet: 768px;
+@media (min-width:@mobile) {
+  .map__iframe {
+    border: 0;
+    height: 363px;
+    width: 100%;
+  }
+  .map {
+    margin: 0 auto;
+    max-width: 320px;
+  }
 
-.map__iframe {
-  width: 100%;
 }
 
 @media (min-width:@tablet) {
   .map {
-    width: 698px;
-    height: 389px;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+  .map__iframe {
+    border: 0;
+    height: 426px;
+    width: 768px;
+    margin-left: -3px;
+  }
+.map__iframe-form {
+  height: 426px;
+  width: 768px;
+  margin-left: -31px;
 }
 }
 
