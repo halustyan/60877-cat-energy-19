@@ -1,5 +1,19 @@
-.main {
-	max-width: 320px;
-	margin: 0 auto;
+@mobile: 320px;
+@tablet: 768px;
+
+
+
+@media (min-width:@mobile) {
+  .main {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:@tablet) {
+  .main {
+    max-width: 768px;
+    margin: 0 auto;
+  }
 }
 

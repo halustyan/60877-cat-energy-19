@@ -1,5 +1,6 @@
 @mobile: 320px;
 @tablet: 768px;
+@desktop: 1220px;
 .hidden {
   width: 1px;
   height: 1px;
@@ -117,7 +118,7 @@
 }
 @media (min-width:@tablet){
   .main-catalog {
-    max-width: 783px;
+    max-width: 761px;
   }
   .main-catalog__main-text {
     font-size: 60px;
@@ -141,9 +142,8 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
-  max-width: 746px;
   padding-left: 26px;
-  padding-right: 37px;
+  padding-right: 15px;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
@@ -282,4 +282,119 @@ margin: 0 auto;
   margin-bottom: 38px;
 }
 
+}
+
+@media (min-width:@desktop) {
+  .main-catalog {
+    max-width: 1220px;
+    margin-bottom: 86px;
+  }
+  .main-catalog__main-text {
+    margin-top: 62px;
+    margin-left: 0px;
+  }
+  .main-catalog__good {
+    background-color: #f2f2f2;
+    margin-bottom: 141px;
+    padding-bottom: 39px;
+    max-width: 245px;
+    padding-left: 0px;
+    padding-right: 0;
+    margin-right: 78px;
+}
+.main-catalog__good-fourth-item {
+margin-right: 0;
+}
+.main-catalog__good-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 169px;
+  margin: 0 auto;
+}
+.main__catalog-tablet-image {
+  display: block;
+  position: absolute;
+  top: -46px;
+  left: 6px;
+}
+.main-catalog__good-data {
+  margin-top: 163px;
+  max-width: 142px;
+}
+.main-catalog__good-header {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Oswald-Regular", sans-serif;
+  color: #111111;
+  max-width: 135px;
+  text-transform: uppercase;
+  margin-bottom: 17px;
+  margin-left: 0px;
+  letter-spacing: 0.1px;
+}
+.main-catalog__good-data-sub {
+  font-size: 16px;
+  line-height: 16px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #cdcdcd;
+  width: 178px;
+  margin-left: 3px;
+}
+.main-catalog__less-than-thousand {
+  margin-right: 0;
+  margin-top: 1px;
+  margin-left: 2px;
+}
+.main-catalog__good-volume-numbers {
+  margin-top: 2px;
+  margin-right: 9px;
+}
+.main-catalog__good-taste-sub {
+  margin-left: 2px;
+}
+.main-catalog__good-taste-animal {
+  margin-right: 8px;
+}
+.main-catalog__good-price-sub {
+  margin-left: 2px;
+}
+.main-catalog__good-price-rubles {
+  margin-right: 7px;
+}
+.main-catalog__goods {
+  padding-left: 0;
+}
+.main-catalog__good-order {
+  padding: 10px 76px 11px 53px;
+  margin-left: 0;
+}
+.main-catalog__goods {
+  justify-content: inherit;
+}
+.main__catalog-tablet-big-image {
+  top: -79px;
+  left: -8px;
+}
+.main-catalog__goods {
+  padding-right: 0;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+.main-catalog__good-third-item {
+  margin-right: 76px;
+}
+.main-catalog__good-last-child {
+  margin-right: 78px;
+  margin-bottom: 0;
+}
+.main-catalog__good:nth-child(5n) {
+  margin-bottom: 0;
+}
+.main-catalog__good:nth-child(6n) {
+  margin-bottom: 0;
+}
+.main-catalog__good:nth-child(7n) {
+  margin-bottom: 0;
+}
 }

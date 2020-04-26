@@ -1,7 +1,7 @@
-.programs {
-	max-width: 280px;
-	margin: 0 auto;
-}
+@mobile: 320px;
+@tablet: 768px;
+
+
 
 .programs__program {
   background-color: #f2f2f2;
@@ -82,4 +82,18 @@
 .programs__img-running-puma {
   margin-top: 12px;
   margin-left: -8px;
+}
+
+@media (min-width:@mobile) {
+  .programs {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width:@tablet) {
+  .programs {
+    max-width: 708px;
+    margin: 0 auto;
+  }
 }

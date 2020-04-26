@@ -1,4 +1,6 @@
 @white: #fff;
+@mobile: 320px;
+@tablet: 768px;
 @font-face {
   font-family: 'fontello';
   src: url('../font/fontello.eot?11710255');
@@ -126,8 +128,69 @@ background-repeat: no-repeat;
   margin: 0 auto;
 }
 
-.header-background__img {
-	position: absolute;
-	top: 165px;
-    left: 20px;
+
+@media (min-width:@mobile) {
+  .header-background__mobile-img {
+    position: absolute;
+    top: 165px;
+      left: 20px;
+      display: block;
+  }
+  .header-background__tablet-img {
+    display: none;
+  }
+}
+
+@media (min-width:@tablet) {
+  .header-background__tablet-img {
+    display: block;
+    position: absolute;
+    z-index: -1000;
+    top: 29.7%;
+    left: 26px;
+}
+  .header-background__mobile-img {
+    display: none;
+  }
+  .header-background__main-words {
+    font-size: 60px;
+    line-height: 60px;
+    color: black;
+    max-width: 448px;
+    margin-top: 18px;
+    margin-left: 115px;
+    text-align: left;
+    margin-bottom: 36px;
+    letter-spacing: 0px;
+  }
+  .header-background__work-for-your-cat {
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+    margin-left: 152px;
+    max-width: 284px;
+    /* margin: 0 auto; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 115px;
+  }
+  .header-background {
+    max-width: 761px;
+  }
+  .header-background::after {
+display: none;
+    }
+    .header-background__work-for-your-cat {
+      margin-bottom: 0;
+    }
+    .check-your-program {
+      margin-bottom: 507px;
+    margin-top: 47px;
+    max-width: 246px;
+    margin-left: 116px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 16px 28px 18px 26px;
+    }
 }

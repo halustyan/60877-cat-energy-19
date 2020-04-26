@@ -1,6 +1,7 @@
 /* LESS Document */
 @mobile: 320px;
 @tablet: 768px;
+@desktop: 1220px;
 
 
 .main-form__how-u-can-choose-program {
@@ -370,7 +371,7 @@
 
 
 @media (min-width:@mobile) {
-  /*.form__contact-data-for-cat-owner-left-line {
+  .form__contact-data-for-cat-owner-left-line {
   display: none;
   }
   .main-form__content {
@@ -382,7 +383,7 @@
     flex-direction: column;
     max-width: 320px;
     margin: 0 auto;
-  }*/
+  }
   .form__commentary-left-line {
     display: none;
   }
@@ -398,13 +399,15 @@
 }
 
 .main-form__content {
-  max-width: 727px;
-  margin: 0 auto;
+  max-width: 761px;
+  margin-left: 0px;
+  margin-right: 0;
 }
 
 .main-form__how-u-can-choose-program {
   font-size: 60px;
   margin-top: 47px;
+  margin-left: 10px;
 }
 
 .main-form__full-anket {
@@ -412,7 +415,7 @@
   font-size: 20px;
   line-height: 30px;
   margin-top: 27px;
-  margin-left: 40px;
+  margin-left: 50px;
   margin-bottom: 38px;
   max-width: 371px;
   display: inline-flex;
@@ -425,7 +428,7 @@
 }
 .form__first-three-inputs:nth-child(1n) {
   margin-top: 27px;
-  margin-left: 40px;
+  margin-left: 51px;;
 }
 .form__sub-label-input-name {
   font-size: 20px;
@@ -465,15 +468,14 @@
   margin-top: -8px;
 }
 .main-form__radio-part {
-padding-top: 22px;
-    padding-bottom: 36px;
-    margin-top: 72px;
-    border: 1px solid #ededed;
-    padding-left: 18px;
-    max-width: 592px;
-    /* margin: 0 auto; */
-    margin-left: 40px;
-    padding-right: 17px;
+  padding-top: 22px;
+  padding-bottom: 36px;
+  margin-top: 59px;
+  border: 1px solid #ededed;
+  padding-left: 18px;
+  max-width: 592px;
+  margin-left: 52px;
+  padding-right: 17px;
 }
 
 .form__sub-label-input-radio::after {
@@ -537,15 +539,15 @@ padding-top: 22px;
   margin-top: 14px;
   background-color: #68b738;
   position: absolute;
-  right: -10px;
-  top: 10px;
+  right: -22px;
+  top: 8px;
 }
 
 .form__contact {
   margin-top: 74px;
-    margin-left: -10px;
-    position: relative;
-    margin-bottom: 77px;
+  /* margin-left: 1px; */
+  position: relative;
+  margin-bottom: 77px;
 }
 .form__sub-contact-cat-data {
   font-size: 20px;
@@ -554,6 +556,7 @@ padding-top: 22px;
 .form__contact-data-cat-owner-email {
   max-width: 672px;
   margin-bottom: 21px;
+  margin-left: 11px;
 }
 .form__sub-label-email {
   margin-left: 40px;
@@ -578,7 +581,7 @@ padding-top: 22px;
 .form__commentary-comment {
   font-size: 36px;
   line-height: 36px;
-  margin-left: 38px;
+  margin-left: 50px;
   margin-right: 18px;
 }
 
@@ -586,10 +589,11 @@ padding-top: 22px;
   margin-bottom: 26px;
   position: relative;
   display: flex;
+  margin-left: 11px;
 }
 
 .form__sub-label-telephone {
-  margin-right: 18px;
+  margin-right: 17px;
   margin-left: 37px;
   margin-top: 15px;
 }
@@ -599,18 +603,18 @@ padding-top: 22px;
   font-family: "Oswald-Regular", sans-serif;
   font-size: 20px;
   line-height: 20px;
-  padding: 10px 50px 9px 17px;
+  padding: 9px 56px 9px 17px;
   width: 64%;
 }
 
 .form__phone-image {
   position: absolute;
-  right: 73px;
+  right: 62px;
   top: 17px;
 }
 
 .form__commentary {
-  margin-top: 66px;
+  margin-top: 39px;
   position: relative;
 }
 
@@ -629,8 +633,8 @@ padding-top: 22px;
   width: 30px;
   height: 3px;
   background-color: #68b738;
-  top: 22px;
-  left: -32px;
+  top: 23px;
+  left: -21px;
 }
 
 .form__commentary-line {
@@ -638,10 +642,10 @@ padding-top: 22px;
   background-color: #68b738;
   width: 65.9%;
   margin-top: 15px;
-  margin-left: 23px;
   margin-top: 22px;
   position: absolute;
-  right: -10px;
+  right: -21px;
+  top: 1px;
 }
 
 .form__textarea {
@@ -649,7 +653,7 @@ padding-top: 22px;
   padding-left: 20px;
   padding-right: 37px;
   margin-top: 40px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .form__commentary-textarea {
@@ -659,33 +663,36 @@ padding-top: 22px;
   padding-left: 18px;
   padding-bottom: 103px;
 }
+
 .form__sub-add {
   font-size: 36px;
   line-height: 36px;
 }
 
 .form__sub-additional {
-  margin-top: 37px;
-  margin-left: 19px;
+  margin-top: 39px;
+  margin-left: 29px;
   position: relative;
 }
+
 .forsm__sub-additional-left-line {
   display: block;
-  }
-  .forsm__sub-additional-left-line {
-    display: block;
-    width: 30px;
-    position: absolute;
-    height: 3px;
-    background-color: #68b738;
-    left: -50px;
-    top: 23px;
+}
+
+.forsm__sub-additional-left-line {
+  display: block;
+  width: 30px;
+  position: absolute;
+  height: 3px;
+  background-color: #68b738;
+  left: -50px;
+  top: 23px;
 }
 .forsm__sub-additional-line {
   height: 3px;
   background-color: #68b738;
   width: 446px;
-  right: -10px;
+  right: -21px;
   margin-top: 5px;
   position: absolute;
 }
@@ -708,7 +715,8 @@ top: 15px;
     left: 12px;
 }
 .form__checkboxes {
-  margin-top: 52px;
+  margin-top: 19px;
+  margin-left: 11px;
 }
 .form__sub-two-checkbox {
   margin-left: 18px;
@@ -743,6 +751,7 @@ top: 15px;
   margin-top: 21px;
   align-items: center;
   justify-content: space-between;
+  margin-left: 50px;
 }
 
 .form__submit-input {
@@ -751,6 +760,7 @@ top: 15px;
   line-height: 20px;
   padding-top: 14px;
   padding-bottom: 16px;
+  margin-right: 61px;
 }
 .form__required-fields-text {
   max-width: 180px;
@@ -760,12 +770,313 @@ top: 15px;
 }
 .communicating-form-transformed {
   margin: 0 auto;
-    margin-top: 52px;
-    max-width: 766px;
-    margin-left: -30px;
+  margin-top: 52px;
+  max-width: 766px;
+  margin-left: -18px;
+}
 }
 
+@media (min-width:@desktop) {
+
+  .main-form {
+    min-width: 1220px;
+  }
+
+  .main-form__content {
+    min-width: 1220px;
+  }
+
+  .main-form__how-u-can-choose-program {
+    margin-top: 62px;
+    margin-left: 0px;
+  }
+
+.main-form__full-anket {
+  margin-left: 0;
 }
+
+.main-form__contact-inputs-radio-main {
+  display: flex;
+  justify-content: space-between;
+}
+.main-form__radio-part {
+margin-top: 0;
+}
+.form__first-three-inputs {
+  margin-left: 0;
+}
+.form__first-three-inputs:nth-child(1n) {
+  margin-left: 0;
+}
+.form__sub-label-input-name {
+  padding: 10px 307px 10px 19px;
+}
+.form__first-three-inputs:nth-child(1n) {
+  margin-top: 27.5px;
+}
+.form__sub-label-input-weight {
+  padding-right: 275px;
+}
+.form__sub-label-weight {
+  margin-top: -6px;
+  margin-left: 1px;
+}
+.form__sub-input-age {
+  padding-right: 237px;
+}
+.main-form__radio-part {
+  width: 43.8%;
+  margin-top: 27px;
+  padding-bottom: 1px;
+}
+.form__sub-label-input-radio {
+  margin-top: 13px;
+}
+.form__contact {
+  margin-top: 55px;
+    position: relative;
+    margin-bottom: 77px;
+    padding-left: 0;
+    display: flex;
+    max-width: 1220px;
+}
+.form__contact-data-for-cat-owner {
+  margin-left: 0;
+}
+.form__contact-data-for-cat-owner-left-line {
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #68b738;
+  left: -110px;
+  top: 22px;
+  position: absolute;
+}
+.form__contact-data-for-cat-owner-line {
+  height: 3px;
+  width: 778px;
+  margin-top: 14px;
+  background-color: #68b738;
+  position: absolute;
+  right: -111px;
+  top: 8px;
+}
+.form__contact-data-cat-owner-email {
+  margin-left: 0;
+  width: 46.72%;
+}
+.form__sub-label-email {
+  margin-left: 1px;
+  margin-top: 15px;
+}
+.form__sub-input-text-email {
+  padding: 7px 159px 11px 20px;
+}
+.form__email-input-img {
+  position: absolute;
+  right: 20px;
+  top: 19px;
+}
+.form__contact__email-plus-phone {
+  display: flex;
+  justify-content: space-between;
+}
+.form__contact-data-cat-owner-telephone {
+  width: 46.72%;
+  margin-left: 0;
+}
+.form__sub-input-text-telephone {
+  padding-right: 87px;
+}
+.form__sub-label-telephone {
+  margin-right: 17px;
+  margin-left: -1px;
+  margin-top: 15px;
+}
+.form__phone-image {
+  position: absolute;
+  right: 19px;
+  top: 17px;
+}
+.form__commentary-left-line {
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background-color: #68b738;
+  top: 25px;
+  left: -110px;
+}
+.form__commentary-comment {
+  font-size: 36px;
+  line-height: 36px;
+  margin-left: 0;
+  margin-right: 18px;
+  margin-top: 2px;
+}
+.form__commentary-left-line {
+  position: absolute;
+  width: 70px;
+  height: 3px;
+  background-color: #68b738;
+  top: 25px;
+  left: -110px;
+}
+.form__commentary-comment {
+  font-size: 36px;
+  line-height: 36px;
+  margin-left: 0;
+  margin-right: 18px;
+  margin-top: 2px;
+}
+.form__commentary-line {
+  height: 3px;
+  background-color: #68b738;
+  width: 91.1%;
+  margin-top: 15px;
+  margin-top: 22px;
+  position: absolute;
+  right: -110px;
+  top: 2px;
+}
+.form__textarea {
+  max-width: 1220px;
+  padding-right: 20px;
+  margin-top: 40px;
+  padding-left: 0;
+  margin-left: 0;
+}
+.form__commentary-textarea {
+  font-size: 20px;
+  line-height: 30px;
+  padding-top: 9px;
+  padding-left: 18px;
+  padding-bottom: 103px;
+  width: 100%;
+}
+
+.form__sub-additional {
+  margin-left: 0;
+}
+
+.form__sub-add {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.forsm__sub-additional-left-line {
+  display: block;
+  width: 70px;
+  position: absolute;
+  height: 3px;
+  background-color: #68b738;
+  left: -111px;
+  top: 24px;
+}
+
+.forsm__sub-additional-line {
+  height: 3px;
+  background-color: #68b738;
+  width: 1077px;
+  right: -109px;
+  margin-top: 8px;
+  position: absolute;
+}
+
+.form__checkboxes {
+  display: flex;
+  margin-left: 0;
+  padding-left: 0;
+  margin-top: 22px;
+}
+
+.form__checkbox-label::after {
+  width: 38px;
+  height: 38px;
+}
+
+
+.form__sub-two-checkbox {
+  margin-left: 0;
+}
+
+.form__checkboxes-sub-input:checked + .form__checkbox-label::before {
+  left: 10px;
+}
+
+.form__sub-label-sugarchange {
+  margin-top: 12px;
+  margin-left: 29px;
+  margin-right: 106px;
+}
+
+.form__sub-label-drink-water {
+  margin-top: 12px;
+  margin-right: 138px;
+  margin-left: 29px;
+}
+
+.form__sub-label-milk {
+  margin-left: 28px;
+  margin-right: 199px;
+}
+
+.form__submit {
+  margin-left: 1px;
+  margin-top: 19px;
+  max-width: 870px;
+  margin-bottom: 61px;
+}
+
+.form__submit-input {
+  max-width: 569px;
+  padding-left: 210px;
+  padding-right: 209px;
+  margin-top: 13px;
+  padding-top: 15px;
+}
+
+.form__required-fields-text {
+  max-width: 180px;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 21px;
+  margin-left: 21px;
+}
+.communicating-form-transformed {
+  margin: 0 auto;
+  margin-top: 52px;
+  max-width: 570px;
+  margin-left: 0px;
+  position: absolute;
+  top: 1605px;
+}
+
+.communicating__we-offer-form {
+  margin-left: 77px;
+}
+
+.communicating__address-form {
+  margin-right: 59px;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

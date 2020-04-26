@@ -1,3 +1,7 @@
+@mobile: 320px;
+@tablet: 768px;
+@desktop: 1220px;
+
 .additional-goods__header-sub-span {
   font-size: 24px;
   line-height: 24px;
@@ -29,14 +33,6 @@
   text-transform: uppercase;
   margin-top: 14px;
   margin-left: 1px;
-}
-
-.additional-goods__article {
-  display: flex;
-  flex-direction: column;
-  border-top: 1px solid #cdcdcd;
-  margin: 0 auto;
-  max-width: 280px;
 }
 
 .additional-goods__article-content {
@@ -92,10 +88,21 @@
   max-width: 160px;
   text-align: center;
 }
-@media (min-width:@mobile){
+
+@media (min-width:@mobile) {
+
   .additional-goods__tablet-show {
     display: none;
   }
+
+  .additional-goods__article {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #cdcdcd;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+
 }
 
 @media(min-width:@tablet) {
@@ -124,7 +131,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-top: 2px;
-}
+  }
 
   .additional-goods__header {
     padding-left: 0;
@@ -134,7 +141,7 @@
   .additional-goods_header-right-line {
     height: 3px;
     background-color: #68b738;
-    width: 326px;
+    width: 324px;
     margin-top: 14px;
     margin-left: 37px;
 }
@@ -143,9 +150,7 @@
     align-items: center;
     padding-top: 10px;
     justify-content: space-between;
-
 }
-
 
 .additional-goods__article-header {
   font-size: 20px;
@@ -154,7 +159,7 @@
 }
 
 .additional-goods__article-content {
-  margin-top: 11px;
+    margin-top: 11px;
     font-size: 16px;
     line-height: 20px;
 }
@@ -230,7 +235,177 @@
 .additional-goods__article-five-litres {
   margin-right: 60px;
 }
+
+.additional-goods__header {
+  margin-top: 46px;
+    text-align: left;
+    position: relative;
 }
+
+.additional-goods_header-line-tablet-show {
+  display: block;
+  width: 70px;
+  position: absolute;
+  top: 37px;
+  left: -107px;
+}
+
+.additional-goods__header-sub-span {
+  margin-left: 0;
+  position: relative;
+  font-size: 36px;
+  line-height: 36px;
+  margin-top: 2px;
+}
+.additional-goods_header-right-line {
+  position: absolute;
+  top: 36px;
+  left: 336px;
+  width: 955px;
+}
+.additional-goods__content-desktop {
+  display: flex;
+  margin-top: 0 auto;
+  max-width: 1220px;
+}
+.additional-goods__article {
+  flex-direction: row;
+}
+.additional-goods__content-desktop-articles {
+  width: 895px;
+}
+
+
+}
+@media (min-width:@desktop) {
+  .additional-goods__article {
+    max-width: 895px;
+    margin-right: 0;
+    margin-left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+  .additional-goods__green-background {
+    width: 245px;
+    max-width: 245px;
+    margin-top: 0;
+  }
+  .additional-goods__header {
+    margin-bottom: 44px;
+  }
+  .additional-goods__article-main-text {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .additional-goods__article-header {
+    margin-right: 162px;
+    margin-top: 12px;
+    /* margin-bottom: 0px;*/
+  }
+  .additional-goods__article-content {
+    margin-top: 0;
+  }
+  .additional-goods__article-how-many-weight {
+    margin-right: 0;
+  }
+
+  .additional-goods__article-main-text {
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.additional-goods__article-how-many-weight {
+  margin-top: 9px;
+  margin-right: 0;
+}
+
+.additional-goods__article-how-many-price {
+  margin-right: 0;
+    margin-left: 113px;
+    margin-top: 10px;
+    margin-left: 114px;
+    margin-top: 9px;
+}
+.additional-goods__article-order {
+  max-width: 243px;
+  margin-left: 13px;
+  padding-right: 119px;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 13px;
+  margin-top: 15px;
+  padding-left: 93px;
+}
+.additional-goods__green-background {
+  width: 245px;
+  max-width: 245px;
+  margin-top: 0;
+  margin-left: 80px;
+}
+.additional-goods__green-background svg {
+  margin-left: 3px;
+  margin-top: -1px;
+  margin-bottom: 53px;
+}
+.additional-goods__green-background-text {
+  margin-left: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}
+.additional-goods__article-five-litres {
+  margin-left: 34px;
+  margin-right: 0;
+}
+.additional-goods__article-fifty-rubles {
+  margin-left: 180px;
+}
+.additional-goods__article-how-many-weigh-one-litres {
+  margin-left: 95px;
+}
+.additional-goods__article-how-many-weight-milk {
+  margin-left: 196px;
+}
+.additional-goods__article-thirty-grammes {
+  margin-left: 73px;
+}
+.additional-goods__article-three-hundred-rubles {
+  margin-left: 121px;
+}
+.additional-goods__green-background {
+  flex-direction: column;
+  padding-bottom: 0;
+}
+.additional-goods {
+max-width: 1220px;
+margin: 0 auto;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

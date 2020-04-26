@@ -18,7 +18,7 @@
           <img src="img/logo-tablet.svg" alt="logo header-tablet site" class="page-header__logo-site-image-tablet"
             width="187" height="58">
           <img src="img/logo-desktop.svg" alt="logo header-desktop site" class="page-header__logo-site-image-desktop"
-            width="173" height="58">
+            width="202" height="61">
         </a>
         <a href="index.html" class="page-header__logo-mobile-page">
           <img src="img/logo-mobile-header.png" class="page-header__logo-page-image" alt="" width="101" height="18">
@@ -31,10 +31,10 @@
         <ul class="menu-main__sub">
           <li class="menu-main__sub-menu-elem"><a href="index.html" class="menu-main__sub-menu-elem-link">Главная</a>
           </li>
-          <li class="menu-main__sub-menu-elem "><a href="catalog.html"
-              class="menu-main__sub-menu-elem-link menu-main__sub-menu-elem-link-active">Каталог
+          <li class="menu-main__sub-menu-elem "><a href="catalog.html" class="menu-main__sub-menu-elem-link ">Каталог
               продукции</a></li>
-          <li class="menu-main__sub-menu-elem"><a href="form.html" class="menu-main__sub-menu-elem-link">Подбор
+          <li class="menu-main__sub-menu-elem"><a href="form.html"
+              class="menu-main__sub-menu-elem-link menu-main__sub-menu-elem-link-active">Подбор
               программы</a></li>
         </ul>
       </nav>
@@ -42,38 +42,53 @@
   </header>
   <main class="main-form">
     <div class="main-form__content">
-      <h1 class="main-form__how-u-can-choose-program">Подбор программы</h1>
-      <span class="main-form__full-anket">Заполните анкету и мы подберем программу питания для вашего кота</span>
       <form action="https://echo.htmlacademy.ru" class="form">
-        <div class="form__sub form__first-three-inputs">
-          <label for="name" class="form__sub-label-input-text form__sub-label-name">Имя:*</label>
-          <input type="text" placeholder="Барсик" id="name" name="name"
-            class="form__sub-input-text form__sub-label-input-name">
+        <h1 class="main-form__how-u-can-choose-program">Подбор программы</h1>
+        <span class="main-form__full-anket">Заполните анкету и мы подберем программу питания для вашего кота</span>
+
+        <div class="main-form__contact-inputs-radio-main">
+          <div class="main-form__contact-inputs">
+            <div class="form__sub form__first-three-inputs">
+              <label for="name" class="form__sub-label-input-text form__sub-label-name">Имя:*</label>
+              <input type="text" placeholder="Барсик" id="name" name="name"
+                class="form__sub-input-text form__sub-label-input-name">
+            </div>
+
+            <div class="form__sub form__first-three-inputs">
+              <label for="weight" class="form__sub-label-input-text form__sub-label-weight">Вес (кг):*</label>
+              <input type="text" placeholder="7" id="weight" name="weight"
+                class="form__sub-input-text form__sub-label-input-weight">
+            </div>
+
+            <div class="form__sub form__first-three-inputs form__first-three-inputs-custom-border">
+              <label for="age"
+                class="form__sub-label-input-text form__sub-label-age form__first-three-inputs-last-child">Возраст
+                (лет):</label>
+              <input type="text" placeholder="7" id="age" name="age" class="form__sub-input-text form__sub-input-age">
+            </div>
+          </div>
+          <div class="main-form__radio-part">
+            <div class="form__sub-radio">
+              <input type="radio" name="losing-weight" id="losing-weight" checked class="form__sub-input-radio">
+              <label for="losing-weight" class="form__sub-label-input-radio">Похудение</label>
+            </div>
+            <div class="form__sub-radio">
+              <input type="radio" name="losing-weight" id="mass-gain" class="form__sub-input-radio">
+              <label for="mass-gain" class="form__sub-label-input-radio">Набор массы</label>
+            </div>
+            <div class="form__sub-radio">
+              <input type="radio" name="losing-weight" id="do-not-know" class="form__sub-input-radio">
+              <label for="do-not-know" class="form__sub-label-input-radio">Не знаю (нужен ваш совет)</label>
+            </div>
+          </div>
         </div>
-        <div class="form__sub form__first-three-inputs">
-          <label for="weight" class="form__sub-label-input-text form__sub-label-weight">Вес (кг):*</label>
-          <input type="text" placeholder="7" id="weight" name="weight"
-            class="form__sub-input-text form__sub-label-input-weight">
-        </div>
-        <div class="form__sub form__first-three-inputs form__first-three-inputs-custom-border">
-          <label for="age" class="form__sub-label-input-text form__sub-label-age form__first-three-inputs-last-child">Возраст (лет):</label>
-          <input type="text" placeholder="7" id="age" name="age" class="form__sub-input-text form__sub-input-age">
-        </div>
+
+
+
+
+
     </div>
-    <div class="main-form__radio-part">
-      <div class="form__sub-radio">
-        <input type="radio" name="losing-weight" id="losing-weight" checked class="form__sub-input-radio">
-        <label for="losing-weight" class="form__sub-label-input-radio">Похудение</label>
-      </div>
-      <div class="form__sub-radio">
-        <input type="radio" name="losing-weight" id="mass-gain" class="form__sub-input-radio">
-        <label for="mass-gain" class="form__sub-label-input-radio">Набор массы</label>
-      </div>
-      <div class="form__sub-radio">
-        <input type="radio" name="losing-weight" id="do-not-know" class="form__sub-input-radio">
-        <label for="do-not-know" class="form__sub-label-input-radio">Не знаю (нужен ваш совет)</label>
-      </div>
-    </div>
+
     <div class="form__contact">
       <div class="form__contact-data-for-cat-owner-left-line"></div>
       <h2 class="form__contact-data-for-cat-owner">
@@ -81,17 +96,22 @@
       </h2>
       <div class="form__contact-data-for-cat-owner-line"></div>
     </div>
+
+    <div class="form__contact__email-plus-phone">
     <div class="form__sub form__contact-data-cat-owner-email">
       <label for="email" class="form__sub-label-email form__sub-contact-cat-data">E-mail:*</label>
       <input type="text" placeholder="kuklachev@gmail.com" id="email" name="email" class="form__sub-input-text-email">
       <img src="img/mail.png" alt="email icon" class="form__email-input-img" width="17" height="13">
     </div>
+
     <div class="form__sub form__contact-data-cat-owner-telephone">
       <label for="telephone" class="form__sub-label-telephone form__sub-contact-cat-data">Телефон:*</label>
       <input type="text" placeholder="8 (960) 900-60-90" id="telephone" name="telephone"
         class="form__sub-input-text-telephone">
       <img src="img/phone.png" alt="phone icon" width="20" height="20" class="form__phone-image">
     </div>
+</div>
+
     <div class="form__commentary">
       <div class="form__commentary-left-line"></div>
       <span class="form__commentary-comment">
@@ -109,80 +129,84 @@
       <div class="forsm__sub-additional-line"></div>
     </div>
     <div class="form__checkboxes">
-<div class="form__sub-two-checkbox">
-      <div class="form__sub-checkbox">
-        <input type="checkbox" name="sugarchange" id="sugarchange"
-          class="form__sub-input-sugarchange form__checkboxes-sub-input" checked>
-        <label for="sugarchange"
-          class="form__sub-label-sugarchange form__sub-contact-additional-data form__checkbox-label">Сахарозаменитель</label>
-      </div>
-
-      <div class="form__sub-checkbox">
-        <input type="checkbox" id="drink-water" name="drink-water"
-          class="form__sub-input-drink-water form__checkboxes-sub-input">
-        <label for="drink-water"
-          class="form__sub-label-drink-water form__sub-contact-additional-data form__checkbox-label">Питьевая
-          вода</label>
-      </div>
-    </div>
       <div class="form__sub-two-checkbox">
-      <div class="form__sub-checkbox">
-        <input type="checkbox" name="milk" id="milk" class="form__sub-input-milk form__checkboxes-sub-input">
-        <label for="milk"
-          class="form__sub-label-milk form__sub-contact-additional-data form__checkbox-label">Молоко</label>
-      </div>
+        <div class="form__sub-checkbox">
+          <input type="checkbox" name="sugarchange" id="sugarchange"
+            class="form__sub-input-sugarchange form__checkboxes-sub-input" checked>
+          <label for="sugarchange"
+            class="form__sub-label-sugarchange form__sub-contact-additional-data form__checkbox-label">Сахарозаменитель</label>
+        </div>
 
-      <div class="form__sub-checkbox">
-        <input type="checkbox" id="vitamines" name="vitamines"
-          class="form__sub-input-vitamines form__checkboxes-sub-input">
-        <label for="vitamines"
-          class="form__sub-label-vitamines form__sub-contact-additional-data form__checkbox-label">Витамины</label>
+        <div class="form__sub-checkbox">
+          <input type="checkbox" id="drink-water" name="drink-water"
+            class="form__sub-input-drink-water form__checkboxes-sub-input">
+          <label for="drink-water"
+            class="form__sub-label-drink-water form__sub-contact-additional-data form__checkbox-label">Питьевая
+            вода</label>
+        </div>
       </div>
-    </div>
+      <div class="form__sub-two-checkbox">
+        <div class="form__sub-checkbox">
+          <input type="checkbox" name="milk" id="milk" class="form__sub-input-milk form__checkboxes-sub-input">
+          <label for="milk"
+            class="form__sub-label-milk form__sub-contact-additional-data form__checkbox-label">Молоко</label>
+        </div>
+
+        <div class="form__sub-checkbox">
+          <input type="checkbox" id="vitamines" name="vitamines"
+            class="form__sub-input-vitamines form__checkboxes-sub-input">
+          <label for="vitamines"
+            class="form__sub-label-vitamines form__sub-contact-additional-data form__checkbox-label">Витамины</label>
+        </div>
+      </div>
     </div>
     <div class="form__submit">
       <input type="submit" class="form__submit-input" value="Отправить заявку">
       <span class="form__required-fields-text">* — Обязательные поля</span>
     </div>
     </form>
-    <div class="communicating communicating-form communicating-form-transformed">
-      <div class="communicating__main-text">
-        <span class="communicating__offer-communicating">приглашаем к сотрудничеству дилеров!</span>
-        <span class="communicating__address">ул. Большая Конюшенная, д. 19/8 <span class="communicating__address-city">Санкт-Петербург</span></span>
-      </div>
-    </div>
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
-        width="600" height="363" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
-        class="map__iframe map__iframe-form"></iframe>
-    </div>
-
   </main>
+  <div class="communicating communicating-form communicating-form-transformed">
+    <div class="communicating__main-text">
+      <span class="communicating__offer-communicating communicating__we-offer-form">приглашаем к сотрудничеству дилеров!</span>
+      <span class="communicating__address communicating__address-form">ул. Большая Конюшенная, д. 19/8 <span
+          class="communicating__address-city">Санкт-Петербург</span></span>
+    </div>
+  </div>
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
+      width="600" height="363" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+      class="map__iframe map__iframe-form"></iframe>
+  </div>
   <footer class="footer">
-    <img src="img/footer-logo.png" alt="footer_logo" class="footer__footer-logo" width="128" height="24">
-    <ul class="footer__social-links">
-      <li class="footer__social-links-li">
-        <a href="https://vk.com" class="footer__vk-link">
-          <img src="img/m-vk.png" alt="vk social icon" class="footer__social-image">
+    <div class="footer__footer-content">
+      <div class="footer__logo">
+        <img src="img/logo-footer.svg" alt="footer_logo" class="footer__footer-logo" width="128" height="24">
+      </div>
+      <ul class="footer__social-links footer__social-links-catalog">
+        <li class="footer__social-links-li ">
+          <a href="https://vk.com" class="footer__vk-link">
+            <img src="img/m-vk.png" alt="vk social icon" class="footer__social-image" width="22" height="12">
+          </a>
+        </li>
+        <li class="footer__social-links-li">
+          <a href="https://instagramm.com" class="footer__instagramm-link">
+            <img src="img/m-insta.png" alt="instagram social icon" class="footer__social-image" width="16" height="16">
+          </a>
+        </li>
+        <li class="footer__social-links-li">
+          <a href="https://facebook.com" class="footer__facebook-link">
+            <img src="img/m-fb.png" alt="facebook social icon" class="footer__social-image" width="10" height="19">
+          </a>
+        </li>
+      </ul>
+      <div class="footer__right-logo">
+        <a href="https://htmlacademy.ru" class="right-logo__link-organization">
+          HTML Academy
         </a>
-      </li>
-      <li class="footer__social-links-li">
-        <a href="https://instagramm.com" class="footer__instagramm-link">
-          <img src="img/m-insta.png" alt="instagram social icon" class="footer__social-image">
-        </a>
-      </li>
-      <li class="footer__social-links-li">
-        <a href="https://facebook.com" class="footer__facebook-link">
-          <img src="img/m-fb.png" alt="facebook social icon" class="footer__social-image">
-        </a>
-      </li>
-    </ul>
-    <div class="footer__right-logo">
-      <a href="https://htmlacademy.ru" class="right-logo__link-organization">
-        HTML Academy
-      </a>
-      <img src="img/htmlacademy-footer-logo.png" alt="" class="right-logo__logo-organization">
+        <img src="img/htmlacademy-footer-logo.png" alt="" class="right-logo__logo-organization">
+      </div>
     </div>
   </footer>
 </body>
