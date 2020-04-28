@@ -1,14 +1,15 @@
 @white: #fff;
 @mobile: 320px;
 @tablet: 768px;
+@desktop:1220px;
 @font-face {
   font-family: 'fontello';
   src: url('../font/fontello.eot?11710255');
   src: url('../font/fontello.eot?11710255#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff2?11710255') format('woff2'),
-       url('../font/fontello.woff?11710255') format('woff'),
-       url('../font/fontello.ttf?11710255') format('truetype'),
-       url('../font/fontello.svg?11710255#fontello') format('svg');
+  url('../font/fontello.woff2?11710255') format('woff2'),
+  url('../font/fontello.woff?11710255') format('woff'),
+  url('../font/fontello.ttf?11710255') format('truetype'),
+  url('../font/fontello.svg?11710255#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -23,7 +24,7 @@
 }
 */
 
- [class^="icon-"]:before, [class*=" icon-"]:before {
+  [class^="icon-"]:before, [class*=" icon-"]:before {
   font-family: "fontello";
   font-style: normal;
   font-weight: normal;
@@ -191,6 +192,71 @@ display: none;
     margin-left: 116px;
     font-size: 20px;
     line-height: 20px;
-    padding: 16px 28px 18px 26px;
+    padding: 16px 28px 16px 26px;
     }
+}
+
+@media (min-width:@desktop){
+  .header-background__tablet-img {
+    display: none;
+  }
+  .header-background__mobile-img {
+    display: none;
+  }
+  .header-background__desktop-img {
+    display: block;
+    width: 552px;
+    height: 503px;
+    position: absolute;
+    right: 218px;
+    top: 15px;
+}
+  .header-background::after {
+    content: "";
+    display: block;
+    width: 723px;
+    height: 651px;
+    position: absolute;
+    top: -13%;
+    left: 49.9%;
+    background-color: #65a93c;
+    background-image: url(../img/index-background-mobile.png);
+    z-index: -10000;
+    background-position: 210px -17px;
+    background-repeat: no-repeat;
+    background-size: 593px 700px;
+    }
+.header-background__headers {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.header-background {
+  max-width: 1220px;
+  display: flex;
+  margin: 0 auto;
+  position: relative;
+}
+.header-background__main-words{
+  margin-left: 79px;
+  margin-bottom: 35px;
+}
+.header-background__work-for-your-cat {
+  margin-bottom: 6px;
+  margin-left: 79px;
+}
+.check-your-program {
+  margin-bottom: 507px;
+  margin-top: 47px;
+  max-width: 246px;
+  margin-left: 78px;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 14px 28px 16px 26px;
+}
+.check-your-program {
+  margin-bottom: 248px;
+}
+
+
 }

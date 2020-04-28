@@ -1,7 +1,6 @@
 @mobile: 320px;
 @tablet: 768px;
-
-
+@desktop: 1220px;
 
 .programs__program {
   background-color: #f2f2f2;
@@ -11,7 +10,7 @@
 
 .programs__header-program {
   display: flex;
-      margin-bottom: 23px;
+  margin-bottom: 23px;
 }
 
 .programs__img_program {
@@ -21,7 +20,6 @@
   height: 50px;
   margin-right: 20px;
   margin-top: 2px;
-
 }
 
 .programs__name {
@@ -33,30 +31,22 @@
 }
 
 .programs__program:first-child {
-    padding: 22px 34px 23px 21px;
-    margin-bottom: 20px;
-    margin-top: 22px;
+  padding: 22px 34px 23px 21px;
+  margin-bottom: 20px;
+  margin-top: 22px;
 }
 
 .programs__header-program-puma {
   margin-bottom: 22px;
 }
 
-.programs__program-content {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Arial-Regular", sans-serif;
-  color: #444444;
-  padding-bottom: 22px;
-}
-
-.programs__program:last-child {
+.programs__program-puma {
   padding:22px 47px 23px 21px;
 }
 
 .programs__img_program-img:nth-child(2n) {
-	margin-top: 10px;
-    margin-left: -10px;
+  margin-top: 10px;
+  margin-left: -10px;
 }
 
 .programs__program-link {
@@ -84,16 +74,187 @@
   margin-left: -8px;
 }
 
-@media (min-width:@mobile) {
+@media (min-width: @mobile) {
   .programs {
     max-width: 280px;
     margin: 0 auto;
   }
+  .programs__program-content {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial-Regular", sans-serif;
+    color: #444444;
+    padding-bottom: 22px;
+  }
 }
 
-@media (min-width:@tablet) {
+@media (min-width: @tablet) {
   .programs {
     max-width: 708px;
     margin: 0 auto;
   }
+
+  .programs__img_program {
+    position: absolute;
+    top: 89px;
+    right: 43px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .programs__program {
+    position: relative;
+  }
+  .programs__name {
+    font-size: 36px;
+    line-height: 37.02px;
+    font-weight: normal;
+  }
+  .programs__program:first-child {
+    padding: 68px 280px 63px 52px;
+    margin-bottom: 30px;
+  }
+
+  .programs__program-puma {
+    padding: 68px 280px 63px 52px;
+  }
+
+  .programs__program-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .programs__program-main-content-link {
+    display: flex;
+    align-items: center;
+  }
+  .programs__program-content {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 0;
+  }
+  .programs__header-program {
+    margin-bottom: 25px;
+    margin-left: 2px;
+  }
+  .programs__program-main-content-link {
+    padding-top: 34px;
+  }
+  .icon-cat-slim {
+    height: 193px;
+    width: 139px;
+    margin-top: -12px;
+    margin-left: 31px;
+  }
+  .icon-right-arrow-verylong {
+    height: 11px;
+    width: 24px;
+    margin-left: 15px;
+  }
+  .programs__program-content-last-child {
+    max-width: 341px;
+  }
+  .programs__img-running-puma {
+    width: 268px;
+    height: 36px;
+  }
 }
+
+@media (min-width:@desktop) {
+  .programs {
+    max-width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+    align-items: start;
+  }
+  .programs__header-program {
+    margin-bottom: 24px;
+    margin-left: 2px;
+  }
+  .programs__program {
+max-width: 570px;
+  }
+  .programs__program:first-child {
+    padding: 41px 0px 62px 0;
+    max-width: 570px;
+    margin-top: 0;
+    margin-bottom: 0;
+      }
+      .programs__img_program {
+        position: inherit;
+        width: 100px;
+        height: 100px;
+      }
+      .programs__img_program-standing-cat {
+       margin-top: 7px;
+       margin-left: 50px;
+      }
+      .icon-cat-slim {
+        height: 95px;
+        width: 86px;
+        margin-top: -6px;
+        margin-left: 6px;
+    }
+    .programs__name-low-weight {
+      margin-top: 36px;
+      margin-left: 41px;
+    }
+    .programs__program-content-your-cat-weights{
+      margin-left: 51px;
+      margin-top: 15px;
+      max-width: 476px;
+      padding-right: 42px;
+    }
+    .programs__program-main-content-link {
+      border-top: 0;
+    }
+    .programs__program-link-catalog-slim {
+      margin-left: 51px;
+      padding-top: 8px;
+    }
+    .programs {
+      margin-top: 23px;
+    }
+    .programs__program-puma {
+      max-width: 570px;
+      padding: 46px 73px 62px 52px;
+    }
+    .programs__program-content-last-child {
+      max-width: 445px;
+    }
+    .programs__header-program-puma {
+      margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 39px;
+    }
+    .programs__program-link-catalog-pro {
+      padding-top: 9px;
+    }
+    .programs__img-running-puma {
+      width: 135px;
+      height: 55px;
+      margin-top: 22px;
+      margin-left: -19px;
+  }
+  .programs__name-more-weight {
+    font-size: 36px;
+    line-height: 37.02px;
+    font-weight: normal;
+    margin-left: 43px;
+    margin-top: 31px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

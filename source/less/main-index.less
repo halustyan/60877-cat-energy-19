@@ -1,7 +1,6 @@
 @mobile: 320px;
 @tablet: 768px;
-
-
+@desktop:1220px;
 
 @media (min-width:@mobile) {
   .main {
@@ -17,3 +16,9 @@
   }
 }
 
+@media (min-width:@desktop) {
+  .main {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
