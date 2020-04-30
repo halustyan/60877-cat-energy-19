@@ -1104,7 +1104,7 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 7px;
-    margin-bottom: 65px;
+    margin-bottom: 74px;
     margin-left: 0;
     display: flex;
     margin-left: 78px;
@@ -1132,13 +1132,13 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 53px;
-    margin-left: 78px;
+    margin-left: 111px;
     max-width: 432px;
-    margin-top: 82px;
+    margin-top: 73px;
   }
   .live-example__numbers-plus-price {
     margin-top: 15px;
-    margin-left: 78px;
+    margin-left: 111px;
   }
   .live-example__numbers-sub:first-child {
     padding-top: 5px;
@@ -1155,14 +1155,14 @@
   }
   .live-example__numbers-sub-content-low-weight {
     padding-left: 10px;
-    background-color: #fff;
+    background-color: inherit;
     max-width: 198px;
     margin-left: -17px;
     padding-right: 0;
     margin-top: 1px;
   }
   .live-example__numbers-sub-content-total-time {
-    background-color: #fff;
+    background-color: inherit;
     max-width: 127px;
     margin-left: -6px;
     margin-top: 2px;
@@ -1184,11 +1184,44 @@
     width: 90px;
   }
   .live-example__slider {
-    margin-top: 120px;
+    margin-top: 0px;
     margin-left: 90px;
     margin-right: -28px;
     position: relative;
     background-color: #f2f2f2;
+  }
+  .live-example__slider-slide-show-tablet {
+    display: block;
+    position: absolute;
+    top: -187px;
+    left: 53px;
+    width: 624px;
+    height: 517px;
+  }
+  .live-example__content-slider {
+    display: flex;
+    width: 1440px;
+    background-color: #f2f2f2;
+    margin-right: 0;
+    margin-left: -33px;
+    margin-top: 0px;
+  }
+  .live-example__slider-on-off-content {
+    border: 1px solid #cdcdcd;
+    background-color: #dcdcdc;
+    width: 426px;
+    border-radius: 15px;
+    margin-top: 7px;
+    height: 3px;
+    margin-left: 23px;
+    position: relative;
+    margin-right: 23px;
+  }
+  .live-example__slider-controls {
+    max-width: 569px;
+    margin-top: 332px;
+    margin-left: 126px;
+    margin-bottom: 48px;
   }
 }
 .communicating {
