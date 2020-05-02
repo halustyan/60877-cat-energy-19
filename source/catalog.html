@@ -217,8 +217,18 @@
         </div>
       </div>
       <div class="main-catalog__good find-all-goods">
-        <img src="img/icon-plus-mobile.svg" alt="plus mobile" class="find-all-goods__plus-mobile-img" width="30"
-          height="30">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="find-all-goods__plus-mobile-img"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
+          style="enable-background:new 0 0 60 60;" xml:space="preserve" width="30" height="30">
+          <style type="text/css">
+            .st0 {
+              fill: #231F20;
+            }
+          </style>
+          <polygon class="st0" points="60,29.5 30.5,29.5 30.5,0 29.5,0 29.5,29.5 0,29.5 0,30.5 29.5,30.5 29.5,60 30.5,60 30.5,30.5
+  60,30.5 " />
+        </svg>
+
         <span class="find-all-goods__show-additional-goods">Показать еще 100500 товаров</span>
         <span class="find-all-goods__more-tastes">На самом деле вкусов гораздо больше!</span>
         <button class="find-all-goods__show-all-goods">Показать все</button>
@@ -234,7 +244,7 @@
         <div class="additional-goods__header-line additional-goods_header-right-line">
         </div>
       </div>
-      <div class="additional-goods__content-desktop">
+      <div class="additional-goods__content">
         <div class="additional-goods__content-desktop-articles">
           <article class="additional-goods__article">
 
@@ -323,7 +333,6 @@
           </article>
         </div>
         <div class="additional-goods__green-background">
-          <!--<img src="img/gift.svg" alt="gift" class="additional-goods__background-img" width="55" height="60">-->
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="60"
             viewBox="0 0 55 60">
             <image id="gift.svg" width="55" height="60"
@@ -339,39 +348,52 @@
       </div>
     </section>
   </main>
-  <div class="communicating communicating-form">
-    <div class="communicating__main-text">
-      <span class="communicating__offer-communicating">приглашаем к сотрудничеству дилеров!</span>
-      <span class="communicating__address">ул. Большая Конюшенная, д. 19/8 <span
-          class="communicating__address-city">Санкт-Петербург</span></span>
-    </div>
-  </div>
+
   <div class="map">
+    <div class="communicating communicating-form">
+      <div class="communicating__main-text">
+        <span class="communicating__offer-communicating">приглашаем к сотрудничеству дилеров!</span>
+        <span class="communicating__address">ул. Большая Конюшенная, д. 19/8 <span
+            class="communicating__address-city">Санкт-Петербург</span></span>
+      </div>
+    </div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
-      width="" height="363" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
-      class="map__iframe"></iframe>
+     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+      class="map__iframe map__iframe-catalog"></iframe>
   </div>
 
-  <footer class="footer">
+  <footer class="footer footer-index footer-catalog">
     <div class="footer__footer-content">
-      <div class="footer__logo">
-        <img src="img/logo-footer.svg" alt="footer_logo" class="footer__footer-logo" width="128" height="24">
+      <div class="footer__logo footer__logo-index">
+        <img src="img/logo-footer.svg" alt="logo-footer" class="footer__logo-image">
       </div>
-      <ul class="footer__social-links footer__social-links-catalog">
-        <li class="footer__social-links-li ">
+      <ul class="footer__social-links">
+        <li class="footer__social-links-li">
           <a href="https://vk.com" class="footer__vk-link">
-            <img src="img/m-vk.png" alt="vk social icon" class="footer__social-image" width="22" height="12">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="12"
+              viewBox="0 0 22 12" class="footer__social-image footer__social-image-vk">
+              <image id="m-vk.svg" width="22" height="12"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAYAAABm+U3GAAABd0lEQVQ4jX3TPUiWYRQG4KsCEYmm1KUGCaUhwgYpGwqbpKnBIY3+pKGiQbA5XCIkiGYXbTGKhiBFwr1sKW0IjXLsF2ooEvuhOHQ+evj83g488D73fc79nL93EwbQiy3+2gfcxDfcwElsT+4nHuMYPiUW8Xv8sxY8CuEfeIY3WEMP5jGKFbShH5+xFdO4jLvYi6eYKYRbU8N93CmIw/iOXWjCOxwt+EWcye/6WPngnCwjsj5QkA8w20Codh/IKiKBzoI7h6/YXQMmsIDNee9Ih4t4gaEieAkX8B5XCjzmtI4TZfrRl48YKbDjOaxf2cuazSf2sBh4O95iXAMbzE0oSzuC03Wu0fvzaC6wMTwvHtpg93LKLVUOFdaXbRitctiG5RxeU4VP9P82huvw/qz4WpX4DryOJUdXA34ST1Lkah0XA/yCS1Xi8adF1jG82MuzOIhuvMSp7H+IT2F/cnGuJ/5fO4RbeJW7/hur2JlR+zL7wGtnHZN/AOfzWAynJTtgAAAAAElFTkSuQmCC" />
+            </svg>
           </a>
         </li>
         <li class="footer__social-links-li">
           <a href="https://instagramm.com" class="footer__instagramm-link">
-            <img src="img/m-insta.png" alt="instagram social icon" class="footer__social-image" width="16" height="16">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
+              viewBox="0 0 16 16" class="footer__social-image footer__social-image-insta">
+              <image id="m-insta.svg" width="16" height="16"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABV0lEQVQ4jYWTsUoDQRCGv4RTUFGwVWHxtLKPRR5B0AeIAYtYi2ghvoJBC9tgpYhgY5S8goXPEPYyIraK4rXKyBzcXe5yA8vuzf3/zD+7MzWA0LlV4AzYAmaZbDEwAE68SFQ38gvwBTSBxYqlmG/lKLcWOnevZC/SqcisSmeAZS8yDJ27AhYCk90sISzp7kXezXUJ7IfObdj5ObCaJUfcBs6BdfseAsfAAzANvAJTyq0XZFXyHdAF5mx1zVf3Inte5CfBBwXKL4BDL9JL+Xqhc5iqpzQ4oyB0bkU34LogsPrWknspDJCy3xL/mGUCeJE3YAS0C7C7QJR6kX8ruoMj4NZqvjFf256tNVGBqegb8NTaNrZzy/5lTBUoQNN95oL07VKT0vKmnFgD6GAcAGOtXEJMTDkDnYVkmB6tzkxXlmRW8g7Q0M6KgE1gXnsb+KhYilFsw4uM/gC7CHTDv9efJwAAAABJRU5ErkJggg==" />
+            </svg>
           </a>
         </li>
-        <li class="footer__social-links-li">
+        <li class="footer__social-links-li footer__social-links-li-facebook">
           <a href="https://facebook.com" class="footer__facebook-link">
-            <img src="img/m-fb.png" alt="facebook social icon" class="footer__social-image" width="10" height="19">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="19"
+              viewBox="0 0 10 19" fill="red" class="footer__social-image footer__social-image-fb">
+              <image id="m-fb.svg" width="10" height="20"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAYAAACp65zuAAAAwUlEQVQokdXSPWrCQRAF8J8i2BktVIJBBQ+gXkD0Ct4h50nvBVLlJoFcwUISS0Gt/7IywrogSZsHU8zMmzcfuwoMscEPqtzqGW+ETzxhjS46mJZq7/gogxiH8hU1nLHKCG/YYpeItQgOIvCMPZo44TXIGliiFQW3Fr3IHfIZqlBLlZOI9cNP9n0TqGLgR5iV5/kVeeuXILfK1mngeSS/YoGEejzAAseyUz5rO/y2rPJP+I/EdL+0afqTD3H3o+/OgwsyhC43O8jNOgAAAABJRU5ErkJggg==" />
+            </svg>
           </a>
         </li>
       </ul>
@@ -379,7 +401,7 @@
         <a href="https://htmlacademy.ru" class="right-logo__link-organization">
           HTML Academy
         </a>
-        <img src="img/htmlacademy-footer-logo.png" alt="" class="right-logo__logo-organization">
+        <img src="img/htmlaademy-footer-logo.png" alt="" class="right-logo__logo-organization" width="27" height="34">
       </div>
     </div>
   </footer>
