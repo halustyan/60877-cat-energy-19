@@ -1,3 +1,7 @@
+@mobile: 320px;
+@tablet: 768px;
+@desktop: 1220px;
+
 .communicating {
   padding-top: 28px;
   padding-bottom: 26px;
@@ -5,18 +9,22 @@
 }
 
 .communicating__main-text {
- max-width: 280px;
- margin: 0 auto;
- display: flex;
+  max-width: 280px;
+  margin: 0 auto;
+  display: flex;
 }
-.communicating__offer-communicating {
-  max-width: 122px;
-  font-size: 16px;
-  line-height: 20px;
-  color: #111111;
-  text-transform: uppercase;
-  font-family: "Oswald-Regular", sans-serif;
-  margin-right: 21px;
+
+
+
+.communicating__address-index {
+  margin-top: -1px;
+}
+
+@media (min-width:@mobile) {
+  .communicating__main-text {
+    max-width: 280px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .communicating__address {
@@ -24,13 +32,127 @@
   max-width: 135px;
   font-size: 14px;
   line-height: 20px;
-  margin-top: 2px;
+}
+
+.communicating__offer-communicating {
+  max-width: 122px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+  font-family: "Oswald-Regular", sans-serif;
+  margin-right: 19px;
 }
 
 .communicating-form {
   background-color: #f2f2f2;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
-.communicating__address-index {
-  margin-top: -1px;
 }
+
+@media (min-width:@tablet) {
+  .communicating-form {
+    max-width: 768px;
+    margin-top: 77px;
+    background-color: #f2f2f2;
+}
+
+.communicating__main-text {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.communicating__offer-communicating {
+  margin-top: 38px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-left: 37px;
+  max-width: 190px;
+}
+
+.communicating__address {
+  text-align: right;
+  margin-right: 38px;
+  margin-top: 36px;
+  line-height: 19px;
+  font-size: 16px;
+  line-height: 20px;
+  max-width: 185px;
+}
+
+.communicating__address-city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.communicating__index {
+  padding-top: 17px;
+  padding-bottom: 57px;
+}
+
+
+}
+
+@media (min-width:@desktop) {
+  .communicating-form {
+    position: absolute;
+    z-index: 1000;
+    max-width: 570px;
+    left: 110px;
+    top: 23px;
+}
+
+.communicating-catalog-block {
+  padding-bottom: 54px;
+}
+
+  .communicating__index {
+    padding-top: 26px;
+    padding-bottom: 59px;
+    position: absolute;
+    max-width: 570px;
+    background-color: #fff;
+    top: 96px;
+    left: 110px;
+    padding-right: 3px;
+    margin-top: 0px;
+}
+
+
+.communicating__offer-communicating {
+  margin-top: 35px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-left: 75px;
+  max-width: 190px;
+  margin-right: 61px;
+}
+
+.communicating__address {
+  text-align: left;
+  margin-right: 56px;
+}
+
+.communicating__address-city {
+  justify-content: left;
+  text-align: right;
+  margin-left: 0px;
+  display: flex;
+}
+.communicating__address-catalog {
+  text-align: left;
+    margin-right: 56px;
+    margin-top: 34px;
+}
+
+}
+

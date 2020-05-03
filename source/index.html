@@ -12,176 +12,281 @@
   <header class="page-header">
     <div class="page-header__menu">
       <div class="page-header__menu-logos-links">
-        <a href="" class="page-header__logo-site">
-          <img src="img/logo-mobile.png" alt="logo site" class="page-header__logo-site-image" width="33" height="38">
+        <a href="index.html" class="page-header__logo-site">
+          <img src="img/logo-mobile.png" alt="logo header-mobile site" class="page-header__logo-site-image-mobile"
+            width="33" height="38">
+          <img src="img/logo-tablet.svg" alt="logo header-tablet site" class="page-header__logo-site-image-tablet"
+            width="187" height="58">
+          <img src="img/logo-desktop.svg" alt="logo header-desktop site" class="page-header__logo-site-image-desktop"
+            width="202" height="61">
         </a>
-        <a href="" class="page-header__logo-page">
-          <img src="img/logo-mobile-header.png" class="page-header__logo-page-image" alt="" width="101" height="18">
+        <a href="index.html" class="page-header__logo-mobile-page">
+          <!--<img src="img/logo-mobile-header.svg" class="page-header__logo-page-image" alt="" width="101" height="18">-->
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="18"
+            viewBox="0 0 101 18">
+            <image id="logo-mobile-header.svg" width="101" height="18"
+              xlink:href="data:img/png;base64,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" />
+          </svg>
         </a>
         <a class="page-header__logo-mobile_menu">
-          <img src="img/m-close.png" class="page-header__logo-menu-image" alt="" width="24" height="18">
+          <img src="img/icon-close.svg" class="page-header__logo-menu-image" alt="" width="24" height="18">
         </a>
       </div>
       <nav class="menu-main">
         <ul class="menu-main__sub">
-          <li class="menu-main__sub-menu-elem"><a href="#" class="menu-main__sub-menu-elem-link">Главная</a></li>
-          <li class="menu-main__sub-menu-elem"><a href="catalog.html" class="menu-main__sub-menu-elem-link">Каталог
+          <li class="menu-main__sub-menu-elem"><a href="index.html"
+              class="menu-main__sub-menu-elem-link menu-main__sub-menu-elem-link-index menu-main__sub-menu-elem-link-active">Главная</a>
+          </li>
+          <li class="menu-main__sub-menu-elem "><a href="catalog.html"
+              class="menu-main__sub-menu-elem-link menu-main__sub-menu-elem-link-index">Каталог
               продукции</a></li>
-          <li class="menu-main__sub-menu-elem"><a href="form.html" class="menu-main__sub-menu-elem-link">Подбор
+          <li class="menu-main__sub-menu-elem"><a href="form.html"
+              class="menu-main__sub-menu-elem-link menu-main__sub-menu-elem-link-index">Подбор
               программы</a></li>
         </ul>
       </nav>
     </div>
-    <div class="header-background">
+  </header>
+  <div class="header-background">
+
+    <div class="header-background__headers">
       <h1 class="header-background__main-words">Функциональное питание для котов</h1>
       <h2 class="header-background__work-for-your-cat">Занялся собой? Займись котом!</h2>
-      <img src="img/index-can-mobile.png" alt="index-can-mobile" class="header-background__img">
     </div>
-  </header>
-  <main class="main">
+    <img src="img/index-can-mobile.png" alt="index-can-mobile" class="header-background__mobile-img" width="280"
+      height="270">
+    <img src="img/index-can-tablet.png" alt="index-can-tablet" class="header-background__tablet-img">
+    <img src="img/index-can-desktop.png" alt="index-can-desktop" class="header-background__desktop-img">
     <a href="" class="check-your-program"> Подобрать программу</a>
+  </div>
+
+  <main class="main">
+
     <section class="programs">
       <div class="programs__program">
         <div class="programs__header-program">
-          <span class="programs__img_program"><img src="img/stand_cat.png" alt=""
-              class="programs__img_program-img"></span>
-          <h3 class="programs__name">Похудение</h3>
+          <span class="programs__img_program programs__img_program-standing-cat"><img src="img/icon-cat-slim.svg"
+              alt="icon-cat-slim" class="programs__img_program-img icon-cat-slim"></span>
+          <h3 class="programs__name programs__name-low-weight">Похудение</h3>
         </div>
-        <span class="programs__program-content">
+        <span class="programs__program-content programs__program-content-your-cat-weights">
           Ваш кот весит больше собаки и
           почти утратил способность лазить по деревьям? Пора на диету!
           Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
         </span>
-        <div class="programs__program-main-content-link">
-          <a href="catalog_slim.html" class="programs__program-link">Каталог Slim</a>
-          <img src="img/right-arrow-long.png" alt="right arrow">
+        <div class="programs__program-main-content-link programs__program-link-catalog-slim">
+          <a href="catalog_slim.html" class="programs__program-link ">Каталог Slim</a>
+          <img src="img/icon-right-arrow-long.svg" alt="right arrow" class="programs__icon-right-arrow-long">
+          <img src="img/icon-right-arrow-verylong.svg" alt="right arrow" class="programs__icon-right-arrow-very-long">
         </div>
       </div>
       <div class="programs__program programs__program-puma">
         <div class="programs__header-program programs__header-program-puma">
-          <span class="programs__img_program "><img src="img/walking-cat.png" alt=""
-              class="programs__img_program-img programs__img-running-puma"></span>
-          <h3 class="programs__name">Набор массы</h3>
+          <span class="programs__img_program programs__header-program-puma-sub">
+
+
+
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 134 56"
+              style="enable-background:new 0 0 134 56;" xml:space="preserve"
+              class="programs__img_program-img programs__img-running-puma">
+              <g>
+                <path
+                  d="M123.1,5.8c1.2-1.9,2.7-3.4,4.5-4.6c1-0.7,1.6-0.7,2.2,0.6c0.8,1.9,1.5,3.9,0.9,6c-0.2,0.8-0.1,1.4,0.4,2.1
+                c0.6,0.8,1.1,1.6,1.6,2.3c1.3,1.9,1.8,3.9,0.9,6.2c-0.4,1-0.4,2-0.2,3.1c0.2,1,0.2,2,0,3c-0.3,1.6-1.1,2.7-2.7,3.2
+                c-1.3,0.3-2.4,0.9-3.2,2c-0.2,0.3-0.5,0.5-0.9,0.5c-1.2,0.2-4.2-2.5-4.2-3.7c0-0.2,0-0.4,0-0.6c0.1-3.6-0.1-3.9-3.4-5.4
+                c-0.7-0.3-1.3-0.6-1.8-1.2c-0.6-0.8-1.4-0.7-2.3-0.4c-0.8,0.4-1.4,0.9-1.3,1.9c0.3,2.4,0.4,4.8,0.3,7.3c0,0.3,0.1,0.6,0.2,0.8
+                c3.1,4.5,4.3,9.8,5.8,14.9c1.2,3.9,3.4,6,7.4,6.3c0.6,0,1.3,0.2,1.9,0.3c1.8,0.3,2.9,1.5,3.4,3.2c0.7,2.1,0.3,2.6-1.8,2.6
+                c-2.2,0-4.3,0-6.5,0c-0.9,0-1.6-0.2-2.3-0.8c-1-1-2.2-1.4-3.4-2c-1.3-0.6-2.6-1.3-3.4-2.6c-1.1-1.7-2.6-3.1-4-4.5
+                c-2.8-2.9-5.8-5.7-8.4-8.7c-1.9-2.2-3.2-4.6-3.2-7.6c0-0.9-0.2-1.3-1.2-0.9c-0.3,0.2-0.7,0.3-1,0.3c-2.8,0-4.2,1.7-5.2,4.2
+                c-0.9,2.1-2.1,4.1-3.2,6.2C88.5,40.9,88,42.4,88,44c0,2.4,0.6,3.2,2.8,4c1.4,0.5,2.7,1,3.4,2.4c0.8,1.6,0.6,2-1.1,2.1
+                c-2.3,0-4.5,0-6.8,0c-0.9,0-1.5-0.3-1.9-1.1c-0.6-1-1.2-2-1.8-3c-1-1.7-1.4-3.4-0.7-5.4c0.6-1.7,0.3-3.6,0.1-5.3
+                c-0.4-2.6,0-4.9,1.7-7c0.6-0.7,0.6-1-0.4-1.2c-4.1-0.8-8-2.3-11.8-4.1c0,0-0.1,0-0.1-0.1c-3.2-1.2-3.8-1-4.7,2.3
+                c-0.8,2.8-1.6,5.6-2.2,8.5c-0.7,3.2,0.1,6.2,1.1,9.2c0.4,1.2,1.6,1.1,2.5,1.4c2,0.6,3.7,1.4,4.5,3.5c0.7,1.6,0.6,1.8-1.1,1.8
+                c-1.7,0-3.4-0.1-5.2,0c-1.6,0.1-2.8-0.5-4.2-1.4c-4.8-3.2-6.2-8.1-6.6-13.4c-0.2-3.3-2-5.9-4.1-8.4c-0.4-0.5-0.8-0.7-1.4-0.3
+                c-2.1,1.3-4.5,2.1-6.7,3c-4.8,1.8-9,4.6-12.2,8.8c-1.2,1.5-1.9,3.2-2.2,5.1c-0.3,1.8,0.2,2.6,2,3.1c1.9,0.6,2.7,1.5,2.9,3.4
+                c0.1,0.8-0.2,1.2-1,1.2c-2.7,0-5.4,0-8.1,0c-0.6,0-1-0.4-1.3-0.8c-1.3-1.6-1.9-3.5-1.9-5.5c-0.1-3.5,0.3-6.9,0.9-10.3
+                c0.4-2.1,1.4-3.8,3.4-4.8c5.9-2.8,9-8.1,11.8-13.6c0.6-1.1,0.1-1.3-0.9-1.2c-2.9,0.3-5.4,1.6-7.7,3.2c-3,2.1-5.7,4.6-8.3,7.1
+                c-2.9,2.7-6.2,4.6-10.3,4.9C3.1,32.5-0.3,28.4,0,21.8c0.1-2.3,0.9-4.4,2.4-6.1c1.2-1.3,2.6-2,4.5-1.5c1.5,0.4,1.9,1.2,1.3,2.7
+                c-0.3,0.6-0.7,1.1-1,1.7c-0.4,0.6-0.8,1.3-1,2c-1.1,3,0.4,5.1,3.5,5.4c3.3,0.3,6-1.1,8.5-3.1c3-2.4,5.7-5.2,8-8.3
+                c3.7-4.8,8.5-7.3,14.4-8.1c2.3-0.3,4.3-1.3,6.5-1.9c4.1-1.2,8.3-1.9,12.7-1.8c2,0.1,3.9-0.3,5.8-1.1c4.9-2,10-2,15.1-1
+                c4,0.8,8,1.8,11.9,2.8c2.2,0.5,4.7,0.3,7-0.2c4.4-1,8.9-1.9,13.4-2c3-0.1,5.9,0.4,8.6,1.7C123.6,3.9,123.6,3.9,123.1,5.8z" />
+              </g>
+            </svg>
+
+          </span>
+          <h3 class="programs__name programs__name-more-weight">Набор массы</h3>
         </div>
-        <span class="programs__program-content ">
+        <span class="programs__program-content programs__program-content-last-child">
           Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
         </span>
-        <div class="programs__program-main-content-link">
-          <a href="catalog_pro.html" class="programs__program-link">Каталог Pro</a>
-          <img src="img/right-arrow-long.png" alt="right arrow">
+        <div class="programs__program-main-content-link programs__program-link-catalog-pro">
+          <a href="catalog_pro.html" class="programs__program-link programs__program-link-catalog-pro-link">Каталог
+            Pro</a>
+          <img src="img/icon-right-arrow-long.svg" alt="right arrow" class="programs__icon-right-arrow-long">
+          <img src="img/icon-right-arrow-verylong.svg" alt="right arrow"
+            class="programs__icon-right-arrow-very-long programs__arrow-right-second">
         </div>
       </div>
     </section>
     <section class="how-it-is-work">
       <h2 class="how-it-is-work__header">Как это работает</h2>
-      <div class="how-it-is-work__sub">
-        <span class="how-it-is-work__green advantage-1">
-          <img src="img/advantage-1.png" alt="advantage1" class="how-it-is-work__sub-img-advantage" width="26"
-            height="29">
-        </span>
-        <span class="how-it-is-work__sub-text">Функциональное питание содержит только полезные питательные
-          вещества.</span>
-      </div>
-      <div class="how-it-is-work__sub how-it-is-work__sub-powder">
-        <span class="how-it-is-work__green advantage-1">
-          <img src="img/advantage-2.png" alt="advantage2" class="how-it-is-work__sub-img-advantage" width="29"
-            height="31">
-        </span>
-        <span class="how-it-is-work__sub-text how-it-is-work__sub-text-powder">Выпускается в виде порошка, который нужно
-          лишь залить кипятком и
-          готово.</span>
-      </div>
-      <div class="how-it-is-work__sub">
-        <span class="how-it-is-work__green advantage-1">
-          <img src="img/advantage-3.png" alt="advantage3" class="how-it-is-work__sub-img-advantage" width="23"
-            height="30">
-        </span>
-        <span class="how-it-is-work__sub-text">Замените один-два приема обычной еды на наше функциональное
-          питание.</span>
-      </div>
-      <div class="how-it-is-work__sub how-it-is-work__sub-clock">
-        <span class="how-it-is-work__green advantage-1">
-          <img src="img/advantage-4.png" alt="advantage4" class="how-it-is-work__sub-img-advantage" width="26"
-            height="31">
-        </span>
-        <span class="how-it-is-work__sub-text how-it-is-work__sub-text-in-a-month">Уже через месяц наслаждайтесь
-          изменениями к лучшему вашего
-          питомца!</span>
+      <div class="how-it-is-work__sub-two-items-main">
+        <div class="how-it-is-work__sub-two-items">
+          <div class="how-it-is-work__sub how-it-is-work__sub-first-child">
+            <span class="how-it-is-work__green advantage-1">
+              <img src="img/advantage-1.png" alt="advantage1" class="how-it-is-work__sub-img-advantage" width="26"
+                height="29">
+            </span>
+            <span class="how-it-is-work__sub-text how-it-is-work__sub-text-first-child">Функциональное питание содержит
+              только полезные питательные
+              вещества.</span>
+          </div>
+
+          <div
+            class="how-it-is-work__sub how-it-is-work__sub-powder how-it-is-work__powder how-it-is-work__sub-second-child">
+            <span class="how-it-is-work__green advantage-1">
+              <img src="img/advantage-2.png" alt="advantage2" class="how-it-is-work__sub-img-advantage" width="29"
+                height="31">
+            </span>
+            <span
+              class="how-it-is-work__sub-text how-it-is-work__sub-text-powder how-it-is-work__sub-text-second-child">Выпускается
+              в виде порошка, который нужно
+              лишь залить кипятком и
+              готово.</span>
+          </div>
+        </div>
+        <div class="how-it-is-work__sub-two-items">
+          <div class="how-it-is-work__sub how-it-is-work__sub-third-child">
+            <span class="how-it-is-work__green advantage-1">
+              <img src="img/advantage-3.png" alt="advantage3" class="how-it-is-work__sub-img-advantage" width="23"
+                height="30">
+            </span>
+            <span class="how-it-is-work__sub-text how-it-is-work__sub-text-third-child">Замените один-два приема обычной
+              еды на наше функциональное
+              питание.</span>
+          </div>
+
+          <div class="how-it-is-work__sub how-it-is-work__sub-clock how-it-is-work__sub-fourth-child">
+            <span class="how-it-is-work__green advantage-1">
+              <img src="img/advantage-4.png" alt="advantage4" class="how-it-is-work__sub-img-advantage" width="26"
+                height="31">
+            </span>
+            <span
+              class="how-it-is-work__sub-text how-it-is-work__sub-text-in-a-month how-it-is-work__sub-text-fourth-child">Уже
+              через месяц наслаждайтесь
+              изменениями к лучшему вашего питомца!</span>
+          </div>
+        </div>
       </div>
     </section>
-    <div class="live-example">
-      <div class="live-example__content">
+  </main>
+  <div class="live-example">
+    <div class="live-example__content">
+
+      <div class="live-example__header-plus-how-many-spent">
         <span class="live-example__header">
           Живой пример
         </span>
-        <span class="live-example__sub">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без изнуряющих тренировок!
-          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </span>
-        <div class="live-example__numbers">
-          <div class="live-example__numbers-sub">
-            <span class="live-example__numbers-sub-header">5 кг</span>
-            <span class="live-example__numbers-sub-content">снижение веса</span>
-          </div>
-          <div class="live-example__numbers-sub">
-            <span class="live-example__numbers-sub-header">60 дней</span>
-            <span class="live-example__numbers-sub-content">затрачено времени</span>
-          </div>
-        </div>
-        <span class="live-example__price">Затраты на питание: 15 000 руб.</span>
-        <div class="live-example__slider">
-          <img src="img/cat1-slider.png" alt="cat 1 slider" class="live-example__slider-slide slide-1">
-          <img src="img/cat2-slider.png" alt="cat 1 slider" class="live-example__slider-slide slide-2">
+        <div class="live-example__content-slider">
+          <div class="live-example__main-content">
+            <div class="live-example__main-content-left-column">
+              <span class="live-example__sub">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+                Отличный результат без изнуряющих тренировок!
+                При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+              </span>
 
-          <div class="live-example__slider-controls">
-            <span class="live-example__slider-button">Было</span>
-            <div class="live-example__slider-on-off">
-              <div class="live-example__slider-on-off-content">
-                <img src="img/in-slider-green.png" alt="in slider green"
-                  class="live-example__slider-on-off-content-image">
+              <div class="live-example__numbers-plus-price">
+                <div class="live-example__numbers">
+                  <div class="live-example__numbers-sub live-example__numbers-sub-first-child">
+                    <span class="live-example__numbers-sub-header live-example__numbers-sub-header-five-kg">5 кг</span>
+                    <span
+                      class="live-example__numbers-sub-content live-example__numbers-sub-content-low-weight">снижение
+                      веса</span>
+                  </div>
+                  <div class="live-example__numbers-sub live-example__numbers-sub-last-child">
+                    <span class="live-example__numbers-sub-header live-example__numbers-sub-header-sixty-days">60
+                      дней</span>
+                    <span
+                      class="live-example__numbers-sub-content live-example__numbers-sub-content-total-time">затрачено
+                      времени</span>
+                  </div>
+                </div>
+
+                <span class="live-example__price"><span class="live-example__how-many-u-spent">Затраты на питание:
+                  </span><span class="live-example__price-fifteen-thousand"> 15 000 руб.</span></span>
               </div>
             </div>
-            <span class="live-example__slider-button">Стало</span>
+          </div>
+
+          <div class="live-example__slider">
+            <img src="img/cat1-slider.png" alt="cat 1 slider" class="live-example__slider-slide slide-1">
+            <img src="img/cat2-slider.png" alt="cat 1 slider" class="live-example__slider-slide slide-2">
+            <img src="img/big-index-slider-cat.png" alt="big-index-slider-cat"
+              class="live-example__slider-slide-show-tablet">
+            <div class="live-example__slider-controls">
+              <span class="live-example__slider-button">Было</span>
+              <div class="live-example__slider-on-off">
+                <div class="live-example__slider-on-off-content">
+                  <img src="img/slider-control.png" alt="slider control" class="live-example__slider-glide-button">
+                  <img src="img/in-slider-green.png" alt="in slider green"
+                    class="live-example__slider-on-off-content-image">
+                </div>
+              </div>
+              <span class="live-example__slider-button live-example__slider-button-became">Стало</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="communicating">
+  </div>
+
+  <div class="map">
+    <div class="communicating communicating__index">
       <div class="communicating__main-text">
         <span class="communicating__offer-communicating">приглашаем к сотрудничеству дилеров!</span>
         <span class="communicating__address communicating__address-index">ул. Большая Конюшенная, д. 19/8
-          Санкт-Петербург</span>
+          <span class="communicating__address-city">Санкт-Петербург</span></span>
       </div>
     </div>
-    <div class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
-        height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
-        class="map__iframe"></iframe>
-    </div>
-  </main>
-  <footer class="footer">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
+      height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+      class="map__iframe map__iframe-index"></iframe>
+  </div>
+  <footer class="footer footer-index">
     <div class="footer__footer-content">
-      <div class="footer__logo">
-        <img src="img/footer-logo.png" alt="footer_logo" class="footer__footer-logo footer__footer-logo-index"
-          width="128" height="24">
+      <div class="footer__logo footer__logo-index">
+        <img src="img/logo-footer.svg" alt="logo-footer" class="footer__logo-image">
       </div>
       <ul class="footer__social-links">
         <li class="footer__social-links-li">
           <a href="https://vk.com" class="footer__vk-link">
-            <img src="img/m-vk.png" alt="vk social icon" class="footer__social-image">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="12"
+              viewBox="0 0 22 12" class="footer__social-image footer__social-image-vk">
+              <image id="m-vk.svg" width="22" height="12"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAYAAABm+U3GAAABd0lEQVQ4jX3TPUiWYRQG4KsCEYmm1KUGCaUhwgYpGwqbpKnBIY3+pKGiQbA5XCIkiGYXbTGKhiBFwr1sKW0IjXLsF2ooEvuhOHQ+evj83g488D73fc79nL93EwbQiy3+2gfcxDfcwElsT+4nHuMYPiUW8Xv8sxY8CuEfeIY3WEMP5jGKFbShH5+xFdO4jLvYi6eYKYRbU8N93CmIw/iOXWjCOxwt+EWcye/6WPngnCwjsj5QkA8w20Codh/IKiKBzoI7h6/YXQMmsIDNee9Ih4t4gaEieAkX8B5XCjzmtI4TZfrRl48YKbDjOaxf2cuazSf2sBh4O95iXAMbzE0oSzuC03Wu0fvzaC6wMTwvHtpg93LKLVUOFdaXbRitctiG5RxeU4VP9P82huvw/qz4WpX4DryOJUdXA34ST1Lkah0XA/yCS1Xi8adF1jG82MuzOIhuvMSp7H+IT2F/cnGuJ/5fO4RbeJW7/hur2JlR+zL7wGtnHZN/AOfzWAynJTtgAAAAAElFTkSuQmCC" />
+            </svg>
           </a>
         </li>
         <li class="footer__social-links-li">
           <a href="https://instagramm.com" class="footer__instagramm-link">
-            <img src="img/m-insta.png" alt="instagram social icon" class="footer__social-image">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
+              viewBox="0 0 16 16" class="footer__social-image footer__social-image-insta">
+              <image id="m-insta.svg" width="16" height="16"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABV0lEQVQ4jYWTsUoDQRCGv4RTUFGwVWHxtLKPRR5B0AeIAYtYi2ghvoJBC9tgpYhgY5S8goXPEPYyIraK4rXKyBzcXe5yA8vuzf3/zD+7MzWA0LlV4AzYAmaZbDEwAE68SFQ38gvwBTSBxYqlmG/lKLcWOnevZC/SqcisSmeAZS8yDJ27AhYCk90sISzp7kXezXUJ7IfObdj5ObCaJUfcBs6BdfseAsfAAzANvAJTyq0XZFXyHdAF5mx1zVf3Inte5CfBBwXKL4BDL9JL+Xqhc5iqpzQ4oyB0bkU34LogsPrWknspDJCy3xL/mGUCeJE3YAS0C7C7QJR6kX8ruoMj4NZqvjFf256tNVGBqegb8NTaNrZzy/5lTBUoQNN95oL07VKT0vKmnFgD6GAcAGOtXEJMTDkDnYVkmB6tzkxXlmRW8g7Q0M6KgE1gXnsb+KhYilFsw4uM/gC7CHTDv9efJwAAAABJRU5ErkJggg==" />
+            </svg>
           </a>
         </li>
-        <li class="footer__social-links-li">
+        <li class="footer__social-links-li footer__social-links-li-facebook">
           <a href="https://facebook.com" class="footer__facebook-link">
-            <img src="img/m-fb.png" alt="facebook social icon" class="footer__social-image">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="19"
+              viewBox="0 0 10 19" fill="red" class="footer__social-image footer__social-image-fb">
+              <image id="m-fb.svg" width="10" height="20"
+                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAYAAACp65zuAAAAwUlEQVQokdXSPWrCQRAF8J8i2BktVIJBBQ+gXkD0Ct4h50nvBVLlJoFcwUISS0Gt/7IywrogSZsHU8zMmzcfuwoMscEPqtzqGW+ETzxhjS46mJZq7/gogxiH8hU1nLHKCG/YYpeItQgOIvCMPZo44TXIGliiFQW3Fr3IHfIZqlBLlZOI9cNP9n0TqGLgR5iV5/kVeeuXILfK1mngeSS/YoGEejzAAseyUz5rO/y2rPJP+I/EdL+0afqTD3H3o+/OgwsyhC43O8jNOgAAAABJRU5ErkJggg==" />
+            </svg>
           </a>
         </li>
       </ul>
@@ -189,9 +294,8 @@
         <a href="https://htmlacademy.ru" class="right-logo__link-organization">
           HTML Academy
         </a>
-        <img src="img/htmlacademy-footer-logo.png" alt="" class="right-logo__logo-organization">
+        <img src="img/htmlaademy-footer-logo.png" alt="" class="right-logo__logo-organization" width="27" height="34">
       </div>
-    </div>
     </div>
   </footer>
 </body>
