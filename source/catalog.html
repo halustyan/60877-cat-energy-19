@@ -6,6 +6,7 @@
   <title>Каталог продукции</title>
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/picturefill.js"></script>
 </head>
 
 <body class="body">
@@ -13,6 +14,7 @@
     <div class="page-header__menu">
       <div class="page-header__menu-logos-links">
         <a href="index.html" class="page-header__logo-site">
+
           <img src="img/logo-mobile.png" alt="logo header-mobile site" class="page-header__logo-site-image-mobile"
             width="33" height="38">
           <img src="img/logo-tablet.svg" alt="logo header-tablet site" class="page-header__logo-site-image-tablet"
@@ -47,8 +49,18 @@
       <div class="main-catalog__good">
         <div class="main-catalog__good-content">
           <div class="main-catalog__good-content-sub-text">
+            <!--
             <img src="img/catalog-1-mobile.jpg" alt="" class="main__catalog-mobile-image">
-            <img src="img/catalog-1-tablet.png" alt="" class="main__catalog-tablet-image" width="156" height="172">
+            <img src="img/catalog-1-tablet.png" alt="" class="main__catalog-tablet-image" width="156" height="172">-->
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+              <img class="main__catalog-mobile-image" src="img/chicken-small-mobile@1x.jpg"
+                srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Первый товар с каталог галереи">
+            </picture>
+
             <div class="main-catalog__good-data">
               <span class="main-catalog__good-header">Cat Energy PRO 500 г</span>
               <div class="main-catalog__good-volume main-catalog__good-data-sub">
@@ -71,9 +83,17 @@
       <div class="main-catalog__good">
         <div class="main-catalog__good-content">
           <div class="main-catalog__good-content-sub-text">
-            <img src="img/catalog-2-mobile.png" alt="" class="main__catalog-mobile-image">
+            <!--<img src="img/catalog-2-mobile.png" alt="" class="main__catalog-mobile-image">
             <img src="img/catalog-2-tablet.png" alt="" class="main__catalog-tablet-image main__catalog-tablet-big-image"
-              width="190" height="206">
+              width="190" height="206">-->
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+              <img class="main__catalog-mobile-image" src="img/chicken-big-mobile@1x.jpg"
+                srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Второй товар с каталог галереи">
+            </picture>
             <div class="main-catalog__good-data">
               <span class="main-catalog__good-header">Cat Energy PRO 1000 г</span>
               <div class="main-catalog__good-volume main-catalog__good-data-sub">
@@ -96,9 +116,17 @@
       <div class="main-catalog__good main-catalog__good-third-item">
         <div class="main-catalog__good-content">
           <div class="main-catalog__good-content-sub-text">
-            <img src="img/catalog-3-mobile.png" alt="" class="main__catalog-mobile-image">
+            <!--<img src="img/catalog-3-mobile.png" alt="" class="main__catalog-mobile-image">
             <img src="img/catalog-3-tablet.png" alt=""
-              class="main__catalog-tablet-image main__catalog-tablet-third-image" width="158" height="172">
+              class="main__catalog-tablet-image main__catalog-tablet-third-image" width="158" height="172">-->
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+              <img class="main__catalog-mobile-image" src="img/fish-small-mobile@1x.jpg"
+                srcset="img/fish-small-mobile@2x.jpg 2x" alt="Третий товар с каталог галереи">
+            </picture>
             <div class="main-catalog__good-data">
               <span class="main-catalog__good-header">Cat Energy PRO 500 г</span>
               <div class="main-catalog__good-volume main-catalog__good-data-sub">
@@ -121,9 +149,17 @@
       <div class="main-catalog__good main-catalog__good-fourth-item">
         <div class="main-catalog__good-content">
           <div class="main-catalog__good-content-sub-text">
-            <img src="img/catalog-4-mobile.png" alt="" class="main__catalog-mobile-image">
+            <!--<img src="img/catalog-4-mobile.png" alt="" class="main__catalog-mobile-image">
             <img src="img/catalog-4-tablet.png" alt=""
-              class="main__catalog-tablet-image  main__catalog-tablet-big-image" width="191" height="206">
+              class="main__catalog-tablet-image  main__catalog-tablet-big-image" width="191" height="206">-->
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/fish-big-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/fish-big-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+              <img class="main__catalog-mobile-image" src="img/fish-big-mobile@1x.jpg"
+                srcset="img/fish-big-mobile@2x.jpg 2x" alt="Четвертый товар с каталог галереи">
+            </picture>
             <div class="main-catalog__good-data">
               <span class="main-catalog__good-header">Cat Energy PRO 1000 г</span>
               <div class="main-catalog__good-volume main-catalog__good-data-sub">
@@ -146,8 +182,16 @@
       <div class="main-catalog__good main-catalog__good-margin-zero">
         <div class="main-catalog__good-content">
           <div class="main-catalog__good-content-sub-text">
-            <img src="img/catalog-5-mobile.png" alt="" class="main__catalog-mobile-image">
-            <img src="img/catalog-5-tablet.png" alt="" class="main__catalog-tablet-image" width="160" height="172">
+            <!--<img src="img/catalog-5-mobile.png" alt="" class="main__catalog-mobile-image">
+            <img src="img/catalog-5-tablet.png" alt="" class="main__catalog-tablet-image" width="160" height="172">-->
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@1x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@1x.png 2x">
+              <img class="main__catalog-mobile-image" src="img/buckwheat-small-mobile@1x.jpg"
+                srcset="img/buckwheat-small-mobile@1x.jpg 2x" alt="Пятый товар с каталог галереи">
+            </picture>
             <div class="main-catalog__good-data">
               <span class="main-catalog__good-header">Cat Energy SLIM 500 г</span>
               <div class="main-catalog__good-volume main-catalog__good-data-sub">
@@ -170,9 +214,17 @@
       <div class="main-catalog__good main-catalog__good-margin-zero">
         <div class="main-catalog__good-content">
           <div class="main-catalog__good-content-sub-text">
-            <img src="img/catalog-6-mobile.png" alt="" class="main__catalog-mobile-image">
+            <!--<img src="img/catalog-6-mobile.png" alt="" class="main__catalog-mobile-image">
             <img src="img/catalog-6-tablet.png" alt=""
-              class="main__catalog-tablet-image  main__catalog-tablet-big-image" width="191" height="205">
+              class="main__catalog-tablet-image  main__catalog-tablet-big-image" width="191" height="205">-->
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="main__catalog-mobile-image" src="img/buckwheat-big-mobile@1x.jpg"
+                srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Шестой товар с каталог галереи">
+            </picture>
             <div class="main-catalog__good-data">
               <span class="main-catalog__good-header">Cat Energy SLIM 1000 г</span>
               <div class="main-catalog__good-volume main-catalog__good-data-sub">
@@ -195,8 +247,16 @@
       <div class="main-catalog__good main-catalog__good-last-child main-catalog__good-margin-zero">
         <div class="main-catalog__good-content">
           <div class="main-catalog__good-content-sub-text">
-            <img src="img/catalog-7-mobile.png" alt="" class="main__catalog-mobile-image">
-            <img src="img/catalog-7-tablet.png" alt="" class="main__catalog-tablet-image" width="160" height="171">
+            <!--<img src="img/catalog-7-mobile.png" alt="" class="main__catalog-mobile-image">
+            <img src="img/catalog-7-tablet.png" alt="" class="main__catalog-tablet-image" width="160" height="171">-->
+            <picture>
+              <source media="(min-width: 1220px)"
+                srcset="img/brice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/rice-small-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img class="main__catalog-mobile-image" src="img/rice-small-mobile@1x.jpg"
+                srcset="img/rice-small-mobile@2x.jpg 2x" alt="Седьмой товар с каталог галереи">
+            </picture>
             <div class="main-catalog__good-data">
               <span class="main-catalog__good-header">Cat Energy SLIM 500 г</span>
               <div class="main-catalog__good-volume main-catalog__good-data-sub">
@@ -247,93 +307,93 @@
       <div class="additional-goods__content">
         <div class="additional-goods__content-desktop-articles">
           <article class="additional-goods__article">
-           <div class="additional-goods__article-main-div">
-            <div class="additional-goods__article-main-text">
+            <div class="additional-goods__article-main-div">
+              <div class="additional-goods__article-main-text">
 
-              <span class="additional-goods__article-header">
-                Сахарозаменитель
-              </span>
-              <div class="additional-goods__article-content">
-                <span class="additional-goods__article-how-many-weight">
-                  1 упаковка (100 г)
+                <span class="additional-goods__article-header">
+                  Сахарозаменитель
                 </span>
-                <span class="additional-goods__article-how-many-price">
-                  200 Р.
-                </span>
+                <div class="additional-goods__article-content">
+                  <span class="additional-goods__article-how-many-weight">
+                    1 упаковка (100 г)
+                  </span>
+                  <span class="additional-goods__article-how-many-price">
+                    200 Р.
+                  </span>
+                </div>
+
               </div>
-
-            </div>
-            <button class="additional-goods__article-order">
-              Заказать
-            </button>
+              <button class="additional-goods__article-order">
+                Заказать
+              </button>
             </div>
           </article>
           <article class="additional-goods__article">
             <div class="additional-goods__article-main-div">
-            <div class="additional-goods__article-main-text">
+              <div class="additional-goods__article-main-text">
 
-              <span class="additional-goods__article-header">
-                Питьевая вода
-              </span>
-              <div class="additional-goods__article-content">
-                <span class="additional-goods__article-how-many-weight additional-goods__article-five-litres">
-                  5 литров
+                <span class="additional-goods__article-header">
+                  Питьевая вода
                 </span>
-                <span class="additional-goods__article-how-many-price additional-goods__article-fifty-rubles">
-                  50 Р.
-                </span>
+                <div class="additional-goods__article-content">
+                  <span class="additional-goods__article-how-many-weight additional-goods__article-five-litres">
+                    5 литров
+                  </span>
+                  <span class="additional-goods__article-how-many-price additional-goods__article-fifty-rubles">
+                    50 Р.
+                  </span>
+                </div>
+
               </div>
-
+              <button class="additional-goods__article-order">
+                Заказать
+              </button>
             </div>
-            <button class="additional-goods__article-order">
-              Заказать
-            </button>
-          </div>
           </article>
           <article class="additional-goods__article">
 
             <div class="additional-goods__article-main-div">
-            <div class="additional-goods__article-main-text">
+              <div class="additional-goods__article-main-text">
 
-              <div class="additional-goods__article-header">
-                Молоко
+                <div class="additional-goods__article-header">
+                  Молоко
+                </div>
+                <div class="additional-goods__article-content">
+                  <span
+                    class="additional-goods__article-how-many-weight additional-goods__article-how-many-weigh-one-litres">
+                    1 литр
+                  </span>
+                  <span class="additional-goods__article-how-many-price additional-goods__article-how-many-weight-milk">
+                    100 Р.
+                  </span>
+                </div>
               </div>
-              <div class="additional-goods__article-content">
-                <span
-                  class="additional-goods__article-how-many-weight additional-goods__article-how-many-weigh-one-litres">
-                  1 литр
-                </span>
-                <span class="additional-goods__article-how-many-price additional-goods__article-how-many-weight-milk">
-                  100 Р.
-                </span>
-              </div>
+
+
+              <button class="additional-goods__article-order">
+                Заказать
+              </button>
             </div>
-
-
-            <button class="additional-goods__article-order">
-              Заказать
-            </button>
-          </div>
           </article>
           <article class="additional-goods__article additional-goods__article-last-child">
             <div class="additional-goods__article-main-div">
-            <div class="additional-goods__article-main-text">
+              <div class="additional-goods__article-main-text">
 
-              <span class="additional-goods__article-header">
-                Витамины
-              </span>
-              <div class="additional-goods__article-content">
-                <span class="additional-goods__article-how-many-weight additional-goods__article-thirty-grammes">
-                  1 упаковка (30 г)
+                <span class="additional-goods__article-header">
+                  Витамины
                 </span>
-                <span class="additional-goods__article-how-many-price additional-goods__article-three-hundred-rubles">
-                  300 Р.
-                </span>
+                <div class="additional-goods__article-content">
+                  <span class="additional-goods__article-how-many-weight additional-goods__article-thirty-grammes">
+                    1 упаковка (30 г)
+                  </span>
+                  <span class="additional-goods__article-how-many-price additional-goods__article-three-hundred-rubles">
+                    300 Р.
+                  </span>
+                </div>
+
               </div>
-
+              <button class="additional-goods__article-order">Заказать</button>
             </div>
-            <button class="additional-goods__article-order">Заказать</button>
-          </div>
           </article>
         </div>
         <div class="additional-goods__green-background">
@@ -363,7 +423,7 @@
     </div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
-     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
       class="map__iframe map__iframe-catalog"></iframe>
   </div>
 
