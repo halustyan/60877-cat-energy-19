@@ -6,6 +6,7 @@
   <title>Функциональное питание для котов</title>
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <script src="js/picturefill.js"></script>
 </head>
 
 <body class="body">
@@ -21,7 +22,6 @@
             width="202" height="61">
         </a>
         <a href="index.html" class="page-header__logo-mobile-page">
-          <!--<img src="img/logo-mobile-header.svg" class="page-header__logo-page-image" alt="" width="101" height="18">-->
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="18"
             viewBox="0 0 101 18">
             <image id="logo-mobile-header.svg" width="101" height="18"
@@ -53,10 +53,16 @@
       <h1 class="header-background__main-words">Функциональное питание для котов</h1>
       <h2 class="header-background__work-for-your-cat">Занялся собой? Займись котом!</h2>
     </div>
-    <img src="img/index-can-mobile.png" alt="index-can-mobile" class="header-background__mobile-img" width="280"
+    <!--<img src="img/index-can-mobile.png" alt="index-can-mobile" class="header-background__mobile-img" width="280"
       height="270">
     <img src="img/index-can-tablet.png" alt="index-can-tablet" class="header-background__tablet-img">
-    <img src="img/index-can-desktop.png" alt="index-can-desktop" class="header-background__desktop-img">
+    <img src="img/index-can-desktop.png" alt="index-can-desktop" class="header-background__desktop-img">-->
+    <picture>
+      <source media="(min-width: 1220px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+      <img class="header-background__mobile-img" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x"
+        alt="Индекс большой стакан">
+    </picture>
     <a href="" class="check-your-program"> Подобрать программу</a>
   </div>
 
@@ -136,8 +142,14 @@
         <div class="how-it-is-work__sub-two-items">
           <div class="how-it-is-work__sub how-it-is-work__sub-first-child">
             <span class="how-it-is-work__green advantage-1">
-              <img src="img/advantage-1.png" alt="advantage1" class="how-it-is-work__sub-img-advantage" width="26"
-                height="29">
+              <!--<img src="img/advantage-1.png" alt="advantage1" class="how-it-is-work__sub-img-advantage" width="26"
+                height="29">-->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/advantage-1.png 1x, img/advantage-leaf@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/advantage-1.png 1x, img/advantage-leaf@2x.jpg 2x">
+                <img class="works-item__image" src="img/advantage-1.png" srcset="img/advantage-leaf@2x.jpg 2x"
+                  alt="Пример нашей работы">
+              </picture>
             </span>
             <span class="how-it-is-work__sub-text how-it-is-work__sub-text-first-child">Функциональное питание содержит
               только полезные питательные
@@ -147,8 +159,14 @@
           <div
             class="how-it-is-work__sub how-it-is-work__sub-powder how-it-is-work__powder how-it-is-work__sub-second-child">
             <span class="how-it-is-work__green advantage-1">
-              <img src="img/advantage-2.png" alt="advantage2" class="how-it-is-work__sub-img-advantage" width="29"
-                height="31">
+              <!--<img src="img/advantage-2.png" alt="advantage2" class="how-it-is-work__sub-img-advantage" width="29"
+                height="31">-->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/advantage-2.png 1x, img/advantage-powder@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/advantage-2.png 1x, img/advantage-powder@2x.jpg 2x">
+                <img class="works-item__image" src="img/advantage-2.png" srcset="img/photo-1-mobile@2x.jpg 2x"
+                  alt="Пример нашей работы">
+              </picture>
             </span>
             <span
               class="how-it-is-work__sub-text how-it-is-work__sub-text-powder how-it-is-work__sub-text-second-child">Выпускается
@@ -160,8 +178,14 @@
         <div class="how-it-is-work__sub-two-items">
           <div class="how-it-is-work__sub how-it-is-work__sub-third-child">
             <span class="how-it-is-work__green advantage-1">
-              <img src="img/advantage-3.png" alt="advantage3" class="how-it-is-work__sub-img-advantage" width="23"
-                height="30">
+              <!--<img src="img/advantage-3.png" alt="advantage3" class="how-it-is-work__sub-img-advantage" width="23"
+                height="30">-->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/advantage-3.png 1x, img/advantage-dining@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/advantage-3.png 1x, img/advantage-dining@2x.jpg 2x">
+                <img class="how-it-is-work__sub-img-advantage" src="img/advantage-3.png"
+                  srcset="advantage-dining@2x.jpg 2x" alt="advantage3">
+              </picture>
             </span>
             <span class="how-it-is-work__sub-text how-it-is-work__sub-text-third-child">Замените один-два приема обычной
               еды на наше функциональное
@@ -170,8 +194,14 @@
 
           <div class="how-it-is-work__sub how-it-is-work__sub-clock how-it-is-work__sub-fourth-child">
             <span class="how-it-is-work__green advantage-1">
-              <img src="img/advantage-4.png" alt="advantage4" class="how-it-is-work__sub-img-advantage" width="26"
-                height="31">
+              <!--<img src="img/advantage-4.png" alt="advantage4" class="how-it-is-work__sub-img-advantage" width="26"
+                height="31">-->
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/advantage-4.png 1x, img/advantage-clock@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/advantage-4.png 1x, img/advantage-clock@2x.jpg 2x">
+                <img class="how-it-is-work__sub-img-advantage" src="img/advantage-4.png"
+                  srcset="img/photo-1-mobile@2x.jpg 2x" alt="advantage4">
+              </picture>
             </span>
             <span
               class="how-it-is-work__sub-text how-it-is-work__sub-text-in-a-month how-it-is-work__sub-text-fourth-child">Уже
