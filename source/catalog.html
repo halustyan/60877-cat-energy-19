@@ -6,6 +6,7 @@
   <title>Каталог продукции</title>
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/picturefill.js"></script>
 </head>
 
 <body class="body">
@@ -13,12 +14,19 @@
     <div class="page-header__menu">
       <div class="page-header__menu-logos-links">
         <a href="index.html" class="page-header__logo-site">
+			<!--
           <img src="img/logo-mobile.png" alt="logo header-mobile site" class="page-header__logo-site-image-mobile"
             width="33" height="38">
           <img src="img/logo-tablet.svg" alt="logo header-tablet site" class="page-header__logo-site-image-tablet"
             width="187" height="58">
           <img src="img/logo-desktop.svg" alt="logo header-desktop site" class="page-header__logo-site-image-desktop"
-            width="202" height="61">
+            width="202" height="61">-->
+			 <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg 1x, img/photo-1-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+          <img class="works-item__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Пример нашей работы">
+        </picture>
+			
         </a>
         <a href="index.html" class="page-header__logo-mobile-page">
           <img src="img/logo-mobile-header.png" class="page-header__logo-page-image" alt="" width="101" height="18">
@@ -247,93 +255,93 @@
       <div class="additional-goods__content">
         <div class="additional-goods__content-desktop-articles">
           <article class="additional-goods__article">
-           <div class="additional-goods__article-main-div">
-            <div class="additional-goods__article-main-text">
+            <div class="additional-goods__article-main-div">
+              <div class="additional-goods__article-main-text">
 
-              <span class="additional-goods__article-header">
-                Сахарозаменитель
-              </span>
-              <div class="additional-goods__article-content">
-                <span class="additional-goods__article-how-many-weight">
-                  1 упаковка (100 г)
+                <span class="additional-goods__article-header">
+                  Сахарозаменитель
                 </span>
-                <span class="additional-goods__article-how-many-price">
-                  200 Р.
-                </span>
+                <div class="additional-goods__article-content">
+                  <span class="additional-goods__article-how-many-weight">
+                    1 упаковка (100 г)
+                  </span>
+                  <span class="additional-goods__article-how-many-price">
+                    200 Р.
+                  </span>
+                </div>
+
               </div>
-
-            </div>
-            <button class="additional-goods__article-order">
-              Заказать
-            </button>
+              <button class="additional-goods__article-order">
+                Заказать
+              </button>
             </div>
           </article>
           <article class="additional-goods__article">
             <div class="additional-goods__article-main-div">
-            <div class="additional-goods__article-main-text">
+              <div class="additional-goods__article-main-text">
 
-              <span class="additional-goods__article-header">
-                Питьевая вода
-              </span>
-              <div class="additional-goods__article-content">
-                <span class="additional-goods__article-how-many-weight additional-goods__article-five-litres">
-                  5 литров
+                <span class="additional-goods__article-header">
+                  Питьевая вода
                 </span>
-                <span class="additional-goods__article-how-many-price additional-goods__article-fifty-rubles">
-                  50 Р.
-                </span>
+                <div class="additional-goods__article-content">
+                  <span class="additional-goods__article-how-many-weight additional-goods__article-five-litres">
+                    5 литров
+                  </span>
+                  <span class="additional-goods__article-how-many-price additional-goods__article-fifty-rubles">
+                    50 Р.
+                  </span>
+                </div>
+
               </div>
-
+              <button class="additional-goods__article-order">
+                Заказать
+              </button>
             </div>
-            <button class="additional-goods__article-order">
-              Заказать
-            </button>
-          </div>
           </article>
           <article class="additional-goods__article">
 
             <div class="additional-goods__article-main-div">
-            <div class="additional-goods__article-main-text">
+              <div class="additional-goods__article-main-text">
 
-              <div class="additional-goods__article-header">
-                Молоко
+                <div class="additional-goods__article-header">
+                  Молоко
+                </div>
+                <div class="additional-goods__article-content">
+                  <span
+                    class="additional-goods__article-how-many-weight additional-goods__article-how-many-weigh-one-litres">
+                    1 литр
+                  </span>
+                  <span class="additional-goods__article-how-many-price additional-goods__article-how-many-weight-milk">
+                    100 Р.
+                  </span>
+                </div>
               </div>
-              <div class="additional-goods__article-content">
-                <span
-                  class="additional-goods__article-how-many-weight additional-goods__article-how-many-weigh-one-litres">
-                  1 литр
-                </span>
-                <span class="additional-goods__article-how-many-price additional-goods__article-how-many-weight-milk">
-                  100 Р.
-                </span>
-              </div>
+
+
+              <button class="additional-goods__article-order">
+                Заказать
+              </button>
             </div>
-
-
-            <button class="additional-goods__article-order">
-              Заказать
-            </button>
-          </div>
           </article>
           <article class="additional-goods__article additional-goods__article-last-child">
             <div class="additional-goods__article-main-div">
-            <div class="additional-goods__article-main-text">
+              <div class="additional-goods__article-main-text">
 
-              <span class="additional-goods__article-header">
-                Витамины
-              </span>
-              <div class="additional-goods__article-content">
-                <span class="additional-goods__article-how-many-weight additional-goods__article-thirty-grammes">
-                  1 упаковка (30 г)
+                <span class="additional-goods__article-header">
+                  Витамины
                 </span>
-                <span class="additional-goods__article-how-many-price additional-goods__article-three-hundred-rubles">
-                  300 Р.
-                </span>
+                <div class="additional-goods__article-content">
+                  <span class="additional-goods__article-how-many-weight additional-goods__article-thirty-grammes">
+                    1 упаковка (30 г)
+                  </span>
+                  <span class="additional-goods__article-how-many-price additional-goods__article-three-hundred-rubles">
+                    300 Р.
+                  </span>
+                </div>
+
               </div>
-
+              <button class="additional-goods__article-order">Заказать</button>
             </div>
-            <button class="additional-goods__article-order">Заказать</button>
-          </div>
           </article>
         </div>
         <div class="additional-goods__green-background">
@@ -363,7 +371,7 @@
     </div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
-     frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
       class="map__iframe map__iframe-catalog"></iframe>
   </div>
 
