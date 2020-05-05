@@ -3173,6 +3173,12 @@
     margin-bottom: 48px;
   }
 }
+.additional-goods__hidden-header {
+  display: none;
+}
+.additional-goods__hidden-article-header {
+  display: none;
+}
 .additional-goods__header-sub-span {
   font-size: 24px;
   line-height: 24px;

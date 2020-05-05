@@ -42,8 +42,9 @@
     </div>
   </header>
   <main class="main-form">
-    <div class="main-form__content">
-      <form action="https://echo.htmlacademy.ru" class="form">
+    <form action="https://echo.htmlacademy.ru" class="form">
+      <div class="main-form__content">
+
         <h1 class="main-form__how-u-can-choose-program">Подбор программы</h1>
         <span class="main-form__full-anket">Заполните анкету и мы подберем программу питания для вашего кота</span>
 
@@ -83,88 +84,84 @@
             </div>
           </div>
         </div>
-
-
-
-
-
-    </div>
-
-    <div class="form__contact">
-      <div class="form__contact-data-for-cat-owner-left-line"></div>
-      <h2 class="form__contact-data-for-cat-owner">
-        Контактные данные (владельца кота)
-      </h2>
-      <div class="form__contact-data-for-cat-owner-line"></div>
-    </div>
-
-    <div class="form__contact__email-plus-phone">
-      <div class="form__sub form__contact-data-cat-owner-email">
-        <label for="email" class="form__sub-label-email form__sub-contact-cat-data">E-mail:*</label>
-        <input type="text" placeholder="kuklachev@gmail.com" id="email" name="email" class="form__sub-input-text-email">
-        <img src="img/mail.png" alt="email icon" class="form__email-input-img" width="17" height="13">
       </div>
 
-      <div class="form__sub form__contact-data-cat-owner-telephone">
-        <label for="telephone" class="form__sub-label-telephone form__sub-contact-cat-data">Телефон:*</label>
-        <input type="text" placeholder="8 (960) 900-60-90" id="telephone" name="telephone"
-          class="form__sub-input-text-telephone">
-        <img src="img/phone.png" alt="phone icon" width="20" height="20" class="form__phone-image">
+      <div class="form__contact">
+        <div class="form__contact-data-for-cat-owner-left-line"></div>
+        <h2 class="form__contact-data-for-cat-owner">
+          Контактные данные (владельца кота)
+        </h2>
+        <div class="form__contact-data-for-cat-owner-line"></div>
       </div>
-    </div>
 
-    <div class="form__commentary">
-      <div class="form__commentary-left-line"></div>
-      <span class="form__commentary-comment">
-        Комментарий
-      </span>
-      <div class="form__commentary-line"></div>
-    </div>
-    <div class="form__textarea">
-      <textarea name="commentary" class="form__commentary-textarea">Расскажите обо всех повадках кота
+      <div class="form__contact__email-plus-phone">
+        <div class="form__sub form__contact-data-cat-owner-email">
+          <label for="email" class="form__sub-label-email form__sub-contact-cat-data">E-mail:*</label>
+          <input type="text" placeholder="kuklachev@gmail.com" id="email" name="email"
+            class="form__sub-input-text-email">
+          <img src="img/mail.png" alt="email icon" class="form__email-input-img" width="17" height="13">
+        </div>
+
+        <div class="form__sub form__contact-data-cat-owner-telephone">
+          <label for="telephone" class="form__sub-label-telephone form__sub-contact-cat-data">Телефон:*</label>
+          <input type="text" placeholder="8 (960) 900-60-90" id="telephone" name="telephone"
+            class="form__sub-input-text-telephone">
+          <img src="img/icon-phone.svg" alt="phone icon" width="20" height="20" class="form__phone-image">
+        </div>
+      </div>
+
+      <div class="form__commentary">
+        <div class="form__commentary-left-line"></div>
+        <span class="form__commentary-comment">
+          Комментарий
+        </span>
+        <div class="form__commentary-line"></div>
+      </div>
+      <div class="form__textarea">
+        <textarea name="commentary" class="form__commentary-textarea">Расскажите обо всех повадках кота
     </textarea>
-    </div>
-    <div class="form__sub-additional">
-      <div class="forsm__sub-additional-left-line"></div>
-      <span class="form__sub-add">Дополнительно</span>
-      <div class="forsm__sub-additional-line"></div>
-    </div>
-    <div class="form__checkboxes">
-      <div class="form__sub-two-checkbox">
-        <div class="form__sub-checkbox">
-          <input type="checkbox" name="sugarchange" id="sugarchange"
-            class="form__sub-input-sugarchange form__checkboxes-sub-input" checked>
-          <label for="sugarchange"
-            class="form__sub-label-sugarchange form__sub-contact-additional-data form__checkbox-label">Сахарозаменитель</label>
-        </div>
+      </div>
+      <div class="form__sub-additional">
+        <div class="forsm__sub-additional-left-line"></div>
+        <span class="form__sub-add">Дополнительно</span>
+        <div class="forsm__sub-additional-line"></div>
+      </div>
+      <div class="form__checkboxes">
+        <div class="form__sub-two-checkbox">
+          <div class="form__sub-checkbox">
+            <input type="checkbox" name="sugarchange" id="sugarchange"
+              class="form__sub-input-sugarchange form__checkboxes-sub-input" checked>
+            <label for="sugarchange"
+              class="form__sub-label-sugarchange form__sub-contact-additional-data form__checkbox-label">Сахарозаменитель</label>
+          </div>
 
-        <div class="form__sub-checkbox">
-          <input type="checkbox" id="drink-water" name="drink-water"
-            class="form__sub-input-drink-water form__checkboxes-sub-input">
-          <label for="drink-water"
-            class="form__sub-label-drink-water form__sub-contact-additional-data form__checkbox-label">Питьевая
-            вода</label>
+          <div class="form__sub-checkbox">
+            <input type="checkbox" id="drink-water" name="drink-water"
+              class="form__sub-input-drink-water form__checkboxes-sub-input">
+            <label for="drink-water"
+              class="form__sub-label-drink-water form__sub-contact-additional-data form__checkbox-label">Питьевая
+              вода</label>
+          </div>
+        </div>
+        <div class="form__sub-two-checkbox">
+          <div class="form__sub-checkbox">
+            <input type="checkbox" name="milk" id="milk" class="form__sub-input-milk form__checkboxes-sub-input">
+            <label for="milk"
+              class="form__sub-label-milk form__sub-contact-additional-data form__checkbox-label">Молоко</label>
+          </div>
+
+          <div class="form__sub-checkbox">
+            <input type="checkbox" id="vitamines" name="vitamines"
+              class="form__sub-input-vitamines form__checkboxes-sub-input">
+            <label for="vitamines"
+              class="form__sub-label-vitamines form__sub-contact-additional-data form__checkbox-label">Витамины</label>
+          </div>
         </div>
       </div>
-      <div class="form__sub-two-checkbox">
-        <div class="form__sub-checkbox">
-          <input type="checkbox" name="milk" id="milk" class="form__sub-input-milk form__checkboxes-sub-input">
-          <label for="milk"
-            class="form__sub-label-milk form__sub-contact-additional-data form__checkbox-label">Молоко</label>
-        </div>
-
-        <div class="form__sub-checkbox">
-          <input type="checkbox" id="vitamines" name="vitamines"
-            class="form__sub-input-vitamines form__checkboxes-sub-input">
-          <label for="vitamines"
-            class="form__sub-label-vitamines form__sub-contact-additional-data form__checkbox-label">Витамины</label>
-        </div>
+      <div class="form__submit">
+        <input type="submit" class="form__submit-input" value="Отправить заявку">
+        <span class="form__required-fields-text">* — Обязательные поля</span>
       </div>
-    </div>
-    <div class="form__submit">
-      <input type="submit" class="form__submit-input" value="Отправить заявку">
-      <span class="form__required-fields-text">* — Обязательные поля</span>
-    </div>
     </form>
   </main>
   <div class="map">
@@ -178,7 +175,7 @@
     </div>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
-      frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+      style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
       class="map__iframe map__iframe-form"></iframe>
   </div>
   <footer class="footer footer-index ">
@@ -219,7 +216,9 @@
         <a href="https://htmlacademy.ru" class="right-logo__link-organization">
           HTML Academy
         </a>
-        <img src="img/htmlaademy-footer-logo.png" alt="" class="right-logo__logo-organization" width="27" height="34">
+        <img src="img/htmlacademy.svg" alt="" class="right-logo__logo-organization" width="27" height="34">
+
+
       </div>
     </div>
   </footer>
