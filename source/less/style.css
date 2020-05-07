@@ -136,6 +136,10 @@
     border-bottom: 1px solid #68b738;
     padding-bottom: 6px;
   }
+  .page-header__menu-main-sub-menu-elem-link--active {
+    border-bottom: 1px solid #68b738;
+    padding-bottom: 7px;
+  }
 }
 @media (min-width: 1220px) {
   .page-header__menu-logos-links {
@@ -181,9 +185,9 @@
   .page-header__menu-main-sub-menu-elem-link--index {
     color: #ffffff;
   }
-  .page-header__menu-main-sub-menu-elem-li--active {
+  .page-header__menu-main-sub-menu-elem-link--active {
     border-bottom: 1px solid #ffffff;
-    padding-bottom: 6px;
+    padding-bottom: 7px;
   }
   .page-header__menu-main-sub-menu-elem-link--catalog {
     font-size: 20px;
@@ -277,6 +281,11 @@
   .header-background__desktop-img {
     display: none;
   }
+  .header-background__img {
+    position: absolute;
+    top: 167px;
+    left: 20px;
+  }
   .header-background {
     padding: 27px 0 0 0;
     text-align: center;
@@ -368,7 +377,7 @@
   }
   .check-your-program {
     margin-bottom: 507px;
-    margin-top: 47px;
+    margin-top: 49px;
     max-width: 246px;
     margin-left: 115px;
     font-size: 20px;
@@ -761,6 +770,9 @@
     margin-top: 5px;
     margin-bottom: 20px;
   }
+  .works-item__image {
+    margin-top: 5px;
+  }
   .how-it-is-work__header {
     font-size: 36px;
     line-height: 60px;
@@ -1017,6 +1029,13 @@
     max-width: 320px;
     margin: 0 auto;
   }
+  .live-example__sub {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Arial", "Tahoma", sans-serif;
+    color: #444444;
+    margin-bottom: 26px;
+  }
   .live-example__numbers-sub:last-child {
     width: 44.65%;
     display: flex;
@@ -1045,7 +1064,7 @@
     margin-top: 23px;
   }
   .live-example__numbers-plus-price {
-    margin-top: 25px;
+    margin-top: 23px;
   }
   .live-example__price {
     text-transform: uppercase;
@@ -1068,9 +1087,26 @@
     max-width: 197px;
     margin-left: 44px;
     margin-top: 32px;
+    margin-top: -206px;
+  }
+  /*Стилизация большого кота в слайдере индекс*/
+  .live-example__slider-two-cats {
+    height: 277px;
+    position: relative;
+    width: 100%;
+    top: -201px;
+    left: -46px;
+  }
+  .mobile-show {
+    display: block;
+    margin-top: 198px;
+    margin-left: 27px;
   }
 }
 @media (min-width: 768px) {
+  .mobile-show {
+    display: none;
+  }
   .live-example {
     max-width: 768px;
     margin: 0 auto;
@@ -1206,7 +1242,7 @@
   }
   .live-example__slider-controls {
     max-width: 569px;
-    margin-top: 329px;
+    margin-top: 53px;
     margin-left: 100px;
     margin-bottom: 48px;
   }
@@ -1235,8 +1271,53 @@
   .live-example__numbers-plus-price {
     margin-top: 52px;
   }
+  /*Стилизация большого кота в слайдере индекс*/
+  .live-example__slider-two-cats {
+    height: 277px;
+    position: relative;
+    width: 100%;
+    top: -201px;
+    left: -46px;
+  }
+  .live-example__slider-before-cat {
+    height: 226px;
+    width: 280px;
+    background-image: url(../imgs/index/before-desktop.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: -15px;
+    left: 49%;
+    margin-left: -140px;
+    z-index: 1;
+    height: 589px;
+    width: 348px;
+    margin-left: -294px;
+    background-size: 672px 518px;
+    background-position: 15px 10px;
+    background-color: transparent;
+    background-image: url(../img/before-desktop@1x.png);
+  }
+  .live-example__slider-after-cat {
+    position: absolute;
+    top: -4px;
+    left: 55%;
+    height: 583px;
+    width: 600px;
+    margin-left: -342px;
+    background-size: 559px 514px;
+    background-position: 85px 0px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/after-desktop@1x.png);
+  }
 }
 @media (min-width: 1220px) {
+  .mobile-show {
+    display: none;
+  }
   .live-example {
     max-width: 1440px;
     border-top: 0;
@@ -1248,7 +1329,7 @@
   .live-example__header {
     font-size: 60px;
     line-height: 60px;
-    margin-top: 7px;
+    margin-top: -15px;
     margin-bottom: 74px;
     margin-left: 0;
     display: flex;
@@ -1283,8 +1364,8 @@
     margin-top: 71px;
   }
   .live-example__numbers-plus-price {
-    margin-top: 15px;
-    margin-left: 80px;
+    margin-top: 18px;
+    margin-left: 81px;
   }
   .live-example__numbers-sub:first-child {
     padding-top: 5px;
@@ -1363,7 +1444,7 @@
   }
   .live-example__slider-controls {
     max-width: 569px;
-    margin-top: 332px;
+    margin-top: -219px;
     margin-left: 103px;
     margin-bottom: 48px;
   }
@@ -1378,11 +1459,46 @@
     padding-bottom: 18px;
   }
   /*Стилизация большого кота в слайдере индекс*/
-  .live-example__slider {
+  .live-example__slider-two-cats {
+    height: 550px;
     position: relative;
+    width: 100%;
+    top: -222px;
+    left: -20px;
   }
-  .live-example__slider--slide {
+  .live-example__slider-before-cat {
+    height: 226px;
+    width: 280px;
+    background-image: url(../imgs/index/before-desktop.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
     position: absolute;
+    top: -15px;
+    left: 49%;
+    margin-left: -140px;
+    z-index: 1;
+    height: 589px;
+    width: 374px;
+    margin-left: -294px;
+    background-size: 672px 518px;
+    background-position: 15px 10px;
+    background-color: transparent;
+    background-image: url(../img/before-desktop@1x.png);
+  }
+  .live-example__slider-after-cat {
+    position: absolute;
+    top: -4px;
+    left: 55%;
+    height: 583px;
+    width: 600px;
+    margin-left: -337px;
+    background-size: 559px 514px;
+    background-position: 85px 0px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/after-desktop@1x.png);
   }
 }
 .communicating {
@@ -1485,7 +1601,7 @@
     margin-top: 0px;
   }
   .communicating__offer-communicating {
-    margin-top: 32px;
+    margin-top: 40px;
     font-size: 20px;
     line-height: 25px;
     margin-left: 75px;
@@ -1495,6 +1611,7 @@
   .communicating__address {
     text-align: left;
     margin-right: 56px;
+    margin-top: 37px;
   }
   .communicating__address-city {
     justify-content: left;
@@ -1649,9 +1766,13 @@
   }
   .footer__logo {
     margin-top: 18px;
-    margin-left: -13px;
+    margin-left: -11px;
     border: 0;
     width: 145px;
+  }
+  .footer__social-links-li:first-child {
+    margin-right: 1px;
+    margin-left: 4px;
   }
   .footer__footer-content {
     width: 761px;
@@ -1662,6 +1783,14 @@
   .footer__footer-logo {
     padding-bottom: 0;
     width: 132px;
+  }
+  .footer__social-links-li-facebook {
+    margin-left: -1px;
+    margin-top: -4px;
+  }
+  .right-logo__link-organization {
+    margin-right: 0;
+    margin-top: -4px;
   }
   .footer__right-logo {
     padding-top: 0;
@@ -1716,6 +1845,28 @@
     max-width: 1440px;
     margin: 0 auto;
     padding-top: 45px;
+  }
+  .right-logo__link-organization {
+    margin-right: 0;
+    margin-top: 3px;
+  }
+  .footer__social-links-li:first-child {
+    margin-right: -7px;
+    padding-left: 6px;
+  }
+  .footer__social-links-li-facebook {
+    margin-left: -10px;
+  }
+  .footer__social-links {
+    margin-top: -12px;
+    padding-left: 0;
+    max-width: 125px;
+  }
+  .footer__logo {
+    margin-top: 19px;
+    margin-left: -12px;
+    border: 0;
+    width: 145px;
   }
   .footer-catalog {
     padding-top: 41px;
