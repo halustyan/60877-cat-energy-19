@@ -131,6 +131,14 @@
     margin:0 auto;
   }
 
+  .live-example__sub {
+    font-size: 14px;
+    line-height: 17px;
+    font-family: "Arial", "Tahoma", sans-serif;
+    color: #444444;
+    margin-bottom: 26px;
+}
+
   .live-example__numbers-sub:last-child {
     width: 44.65%;
     display: flex;
@@ -159,8 +167,8 @@
     margin-top: 23px;
   }
   .live-example__numbers-plus-price {
-    margin-top: 25px;
-  }
+    margin-top: 23px;
+}
   .live-example__price {
     text-transform: uppercase;
     font-family: "Oswald-Regular", "Arial", sans-serif;
@@ -182,10 +190,27 @@
     max-width: 197px;
     margin-left: 44px;
     margin-top: 32px;
+    margin-top: -206px;
   }
+  /*Стилизация большого кота в слайдере индекс*/
+.live-example__slider-two-cats {
+  height: 277px;
+  position: relative;
+  width: 100%;
+  top: -201px;
+  left: -46px;
+}
+.mobile-show {
+  display: block;
+  margin-top: 198px;
+  margin-left: 27px;
+}
 }
 
 @media (min-width:@tablet) {
+  .mobile-show {
+    display: none;
+  }
 .live-example {
   max-width: 768px;
   margin: 0 auto;
@@ -336,7 +361,7 @@
 
 .live-example__slider-controls {
   max-width: 569px;
-  margin-top: 329px;
+  margin-top: 53px;
   margin-left: 100px;
   margin-bottom: 48px;
 }
@@ -370,10 +395,56 @@
   margin-top: 52px;
 }
 
+/*Стилизация большого кота в слайдере индекс*/
+.live-example__slider-two-cats {
+  height: 277px;
+  position: relative;
+  width: 100%;
+  top: -201px;
+  left: -46px;
+}
+.live-example__slider-before-cat {
+  height: 226px;
+  width: 280px;
+  background-image: url(../imgs/index/before-desktop.png);
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: #f2f2f2;
+  position: absolute;
+  top: -15px;
+  left: 49%;
+  margin-left: -140px;
+  z-index: 1;
+  height: 589px;
+  width: 348px;
+  margin-left: -294px;
+  background-size: 672px 518px;
+  background-position: 15px 10px;
+  background-color: transparent;
+  background-image: url(../img/before-desktop@1x.png);
+}
+.live-example__slider-after-cat {
+  position: absolute;
+  top: -4px;
+  left: 55%;
+  height: 583px;
+  width: 600px;
+  margin-left: -342px;
+  background-size: 559px 514px;
+  background-position: 85px 0px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-image: url(../img/after-desktop@1x.png);
+}
+
 }
 
 
 @media (min-width:@desktop) {
+  .mobile-show {
+    display: none;
+  }
   .live-example {
     max-width: 1440px;
     border-top: 0;
@@ -414,14 +485,14 @@
 .live-example__sub {
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 53px;
+  margin-bottom: 50px;
   margin-left: 80px;
   max-width: 432px;
   margin-top: 71px;
 }
 .live-example__numbers-plus-price {
-    margin-top: 15px;
-    margin-left: 80px;
+  margin-top: 18px;
+  margin-left: 81px;
 }
 .live-example__numbers-sub:first-child {
   padding-top: 5px;
@@ -490,7 +561,7 @@
 .live-example__slider-on-off-content {
   border: 1px solid #cdcdcd;
   background-color: #dcdcdc;
-  width: 426px;
+  width: 424px;
   border-radius: 15px;
   margin-top: 7px;
   height: 3px;
@@ -499,28 +570,63 @@
   margin-right: 23px;
 }
 .live-example__slider-controls {
-  max-width: 569px;
-  margin-top: 332px;
-  margin-left: 103px;
-  margin-bottom: 48px;
+    max-width: 569px;
+    margin-top: -219px;
+    margin-left: 103px;
+    margin-bottom: 48px;
 }
 .live-example__slider-button {
   padding-bottom: 7px;
   border-bottom: 1px dotted #bebebe;
 }
 .live-example__how-many-u-spent {
-  margin-left: 0px;
+  margin-left: -2px;
 }
 .live-example__slider {
   padding-bottom: 18px;
 }
 
 /*Стилизация большого кота в слайдере индекс*/
-.live-example__slider {
-  position: relative;
+.live-example__slider-two-cats {
+      height: 550px;
+    position: relative;
+    width: 100%;
+    top: -222px;
+    left: -20px;
 }
-.live-example__slider--slide {
-  position: absolute;
+.live-example__slider-before-cat {
+    height: 226px;
+    width: 280px;
+    background-image: url(../imgs/index/before-desktop.png);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: -15px;
+    left: 49%;
+    margin-left: -140px;
+    z-index: 1;
+    height: 589px;
+    width: 374px;
+    margin-left: -294px;
+    background-size: 672px 518px;
+    background-position: 15px 10px;
+    background-color: transparent;
+    background-image: url(../img/before-desktop@1x.png);
+}
+.live-example__slider-after-cat {
+    position: absolute;
+    top: -4px;
+    left: 55%;
+    height: 583px;
+    width: 600px;
+    margin-left: -337px;
+    background-size: 559px 514px;
+    background-position: 85px 0px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/after-desktop@1x.png);
 }
 
 }

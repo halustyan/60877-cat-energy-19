@@ -1,461 +1,569 @@
 <!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог продукции</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/picturefill.js"></script>
+  </head>
+  <body class="body">
 
-<head>
-  <meta charset="utf-8">
-  <title>Каталог продукции</title>
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <script src="js/picturefill.js"></script>
-</head>
+    <svg style="display:none">
 
-<body class="body">
-  <header class="page-header">
-    <div class="page-header__menu">
-      <div class="page-header__menu-logos-links">
-        <a href="index.html" class="page-header__logo-site">
+      <symbol version="1.1" id="find-all-goods__plus-mobile-img" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
+      style="enable-background:new 0 0 60 60;" xml:space="preserve" width="60" height="60">
+        <style type="text/css">
+          .st0 {
+          fill: #231F20;
+          }
+        </style>
+        <polygon class="st0" points="60,29.5 30.5,29.5 30.5,0 29.5,0 29.5,29.5 0,29.5 0,30.5 29.5,30.5 29.5,60 30.5,60 30.5,30.5
+          60,30.5 " />
+      </svg>
+</symbol>
 
+</svg>
+
+<svg style="display:none">
+<symbol xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="60"
+viewBox="0 0 55 60">
+
+<image id="gift.svg" width="55" height="60"
+  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSU
+  hEUgAAADcAAAA8CAYAAADCHCKFAAADTElEQVRoge2aS0hVURSGP0uLUoiUw
+  rDoQggh0mPmpYkY9KLMclJBIDVoElQm5UhqFjjMQdFjEDgLahYFgRBBEUE0iQYN
+  EgVTKQq1oseNHevY8tzXOcd96e7L/uFwz2Otf6//7H336ywSoB64ADwDvgIZYAK4D3QCVUlIxa9
+  TeCaF1/A/By4CDQl5I+MQMCUF5zueAM0xeZvFrxCvKfdwqYSdCBX2ErgCnAduAtPq2SegPSJvu9gHvobnBtAr
+  /C9C5Zo4rKIV+C7kn4EDOchXAIPAL7GbAzqKBNEhdhnxGxSeMPZLucbuG7DZprh7QvwDSBex7Vb/xS9ASx67FnkeBNx
+  dhDct5Rv7uwl1ZKFB1cbViD5dyuctUBt6Xiv3gxrrisg7JD4/bXUw+1R7L1ZrGn3KbyhPkBmxi4q08ttjQ1yPIlwdw8907Q
+  /F7zfQJvfb5NrcfxRz6KhXsfTE1JETRxVhKqbvRmCWf0MEqsufledx+YJYjiXUswBbF9kNDyj/a+p8IAHXceW/JYF/FpYAo0L
+  4BlgW078uNAYGY1ldTJ5q4LX4j0pcVnBGBTacQGB/SFx/TP8a4I7yPxvFKfgzm+Z2EmjKY7cUWK+uJ2UsiwrzMtYp2wmZFESFGdjXKtt
+  xGQ5ywTy7BdxGpjmF5nSuHr2m5j7IWxkDHsd4m+WKndLKTOuar5lzFSAM0fFXk+5xMv8xIJuY12GtOy1HeHGuwotzFV6cq9Diku43lhvmdV
+  TJNGUN8B4YqQBx7bKoNfucC/Y6KunoC6rwlCx7mtSyZ0r2FG2hEVguS50Ji7wrpeUhy51xWe5cDxumVM1F3W6LihHhtd30u/Lt8fihwFV4ca7C
+  i3MVXpyr8OJchRfnKqoLxH0E2GZRV0r9XrLIGzmzIeX4em7BqqBQzc1JaoQt1MmnMJO9MGORt0bWdEXh13OuwItzFV6cq/DiXIUXV+bI+wEnLG5anT
+  c6Ik5nJun4s8TNSLINJZh+lQoHhXcsPGfN1SyH5Xe3A4k3Jr5dcj4cfpirvZps1FfABrl+CjyQ5M/F4DSwCXiXIy04LkyO9F5gh/iZFMXtwMcoPK3yMdK
+  FNZyJ08QbC6uAy5JFbtL/ykmQicfEZeIzcWYD+AOc88ir6CWlQgAAAABJRU5ErkJggg==" />
+
+  </symbol>
+
+
+
+
+</svg>
+
+<svg style="display: none">
+  <symbol id="m-vk.svg"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 22 12" class="footer__social-image footer__social-image-vk">
+
+
+    <image
+      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAYAAABm+U3GAAABd0lEQVQ4jX3TPUiWYRQG4KsCEYmm1KUGCaUhwgYpGwqbpKnBIY3+pKGiQbA5XCIkiGYXbTGKhiBFwr1sKW0IjXLsF2ooEvuhOHQ+evj83g488D73fc79nL93EwbQiy3+2gfcxDfcwElsT+4nHuMYPiUW8Xv8sxY8CuEfeIY3WEMP5jGKFbShH5+xFdO4jLvYi6eYKYRbU8N93CmIw/iOXWjCOxwt+EWcye/6WPngnCwjsj5QkA8w20Codh/IKiKBzoI7h6/YXQMmsIDNee9Ih4t4gaEieAkX8B5XCjzmtI4TZfrRl48YKbDjOaxf2cuazSf2sBh4O95iXAMbzE0oSzuC03Wu0fvzaC6wMTwvHtpg93LKLVUOFdaXbRitctiG5RxeU4VP9P82huvw/qz4WpX4DryOJUdXA34ST1Lkah0XA/yCS1Xi8adF1jG82MuzOIhuvMSp7H+IT2F/cnGuJ/5fO4RbeJW7/hur2JlR+zL7wGtnHZN/AOfzWAynJTtgAAAAAElFTkSuQmCC" />
+    </symbol>
+      </svg>
+
+<svg style="display: none;">
+<symbol id="m-insta.svg" viewBox="0 0 16 16">
+  <image id="m-insta.svg"
+  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgA
+  AABAAAAAQCAYAAAAf8/9hAAABV0lEQVQ4jYWTsUoDQRCGv4RTUFGwVWHxt
+  LKPRR5B0AeIAYtYi2ghvoJBC9tgpYhgY5S8goXPEPYyIraK4rXKyBzcXe5y
+  A8vuzf3/zD+7MzWA0LlV4AzYAmaZbDEwAE68SFQ38gvwBTSBxYqlmG/lKLc
+  WOnevZC/SqcisSmeAZS8yDJ27AhYCk90sISzp7kXezXUJ7IfObdj5ObCaJUf
+  cBs6BdfseAsfAAzANvAJTyq0XZFXyHdAF5mx1zVf3Inte5CfBBwXKL4BDL9JL
+  +Xqhc5iqpzQ4oyB0bkU34LogsPrWknspDJCy3xL/mGUCeJE3YAS0C7C7QJR6k
+  X8ruoMj4NZqvjFf256tNVGBqegb8NTaNrZzy/5lTBUoQNN95oL07VKT0vKmnFgD
+  6GAcAGOtXEJMTDkDnYVkmB6tzkxXlmRW8g7Q0M6KgE1gXnsb+KhYilFsw4uM/gC7
+  CHTDv9efJwAAAABJRU5ErkJggg==" />
+
+</symbol>
+
+  </svg>
+
+<svg display="none">
+<symbol id="m-fb.svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox="0 0 10 19" fill="red" >
+<image id="m-fb.svg"
+xlink:href="data:img/png;base64,iVBORw0KGgoAA
+AANSUhEUgAAAAoAAAATCAYAAACp65zuAAAAwUlEQVQokdXS
+PWrCQRAF8J8i2BktVIJBBQ+gXkD0Ct4h50nvBVLlJoFcwUISS
+0Gt/7IywrogSZsHU8zMmzcfuwoMscEPqtzqGW+ETzxhjS46mJZq7/gogxiH8hU
+1nLHKCG/YYpeItQgOIvCMPZo44TXIGliiFQW3Fr3IHfIZqlBLlZOI9cNP9n0TqGLgR5iV5/k
+VeeuXILfK1mngeSS/YoGEejzAAseyUz5rO/y2rPJP+I/EdL+0afqTD3H3o+/OgwsyhC43O8jNOgAAAABJRU5ErkJggg==" />
+    </symbol>
+</svg>
+
+    <header class="page-header">
+      <div class="page-header__menu">
+        <div class="page-header__menu-logos-links">
+          <a href="index.html" class="page-header__logo-site">
           <img src="img/logo-mobile.png" alt="logo header-mobile site" class="page-header__logo-site-image-mobile"
             width="33" height="38">
           <img src="img/logo-tablet.svg" alt="logo header-tablet site" class="page-header__logo-site-image-tablet"
             width="187" height="58">
           <img src="img/logo-desktop.svg" alt="logo header-desktop site" class="page-header__logo-site-image-desktop"
             width="202" height="61">
-        </a>
-        <a href="index.html" class="page-header__logo-mobile-page">
+          </a>
+          <a href="index.html" class="page-header__logo-mobile-page">
           <img src="img/logo-mobile-header.png" class="page-header__logo-page-image" alt="" width="101" height="18">
-        </a>
-        <a class="page-header__logo-mobile_menu">
+          </a>
+          <a class="page-header__logo-mobile_menu">
           <img src="img/icon-close.svg" class="page-header__logo-menu-image" alt="" width="24" height="18">
-        </a>
-      </div>
-      <nav class="page-header__menu-main">
-        <ul class="page-header__menu-main-sub">
-          <li class="page-header__menu-main-sub-menu-elem page-header__menu-main-sub-menu-elem-li--active"><a href="index.html"
+          </a>
+        </div>
+        <nav class="page-header__menu-main">
+          <ul class="page-header__menu-main-sub">
+            <li class="page-header__menu-main-sub-menu-elem "><a
+              href="index.html"
               class="page-header__menu-main-sub-menu-elem-link page-header__menu-main-sub-menu-elem-link--catalog ">Главная</a>
-          </li>
-          <li class="page-header__menu-main-sub-menu-elem "><a href="catalog.html"
-              class="page-header__menu-main-sub-menu-elem-link page-header__menu-main-sub-menu-elem-link--catalog">Каталог
-              продукции</a></li>
-          <li class="page-header__menu-main-sub-menu-elem"><a href="form.html"
+            </li>
+            <li class="page-header__menu-main-sub-menu-elem "><a href="catalog.html"
+              class="page-header__menu-main-sub-menu-elem-link page-header__menu-main-sub-menu-elem-link--catalog page-header__menu-main-sub-menu-elem-link--catalog-active">Каталог
+              продукции</a>
+            </li>
+            <li class="page-header__menu-main-sub-menu-elem"><a href="form.html"
               class="page-header__menu-main-sub-menu-elem-link page-header__menu-main-sub-menu-elem-link--catalog">Подбор
-              программы</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="main-catalog">
-    <h1 class="main-catalog__main-text">Каталог продукции</h1>
-    <section class="main-catalog__goods">
-      <h2 class="hidden">Каталог нашей продукции</h2>
-      <div class="main-catalog__good">
-        <div class="main-catalog__good-content">
-          <div class="main-catalog__good-content-sub-text">
-            <picture>
-              <source media="(min-width: 1220px)"
-                srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
-              <img class="main__catalog-image main__catalog--first-image" src="img/chicken-small-mobile@1x.jpg"
-                srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Первый товар с каталог галереи">
-            </picture>
-
-            <div class="main-catalog__good-data">
-              <span class="main-catalog__good-header">Cat Energy PRO 500 г</span>
-              <div class="main-catalog__good-volume main-catalog__good-data-sub">
-                <span class="main-catalog__good-volume-sub main-catalog__less-than-thousand">Объем </span>
-                <span class="main-catalog__good-volume-numbers">500 г </span>
-              </div>
-              <div class="main-catalog__good-taste main-catalog__good-data-sub">
-                <span class="main-catalog__good-taste-sub">Вкус </span>
-                <span class="main-catalog__good-taste-animal">Курица </span>
-              </div>
-              <div class="main-catalog__good-price main-catalog__good-data-sub">
-                <span class="main-catalog__good-price-sub">Цена </span>
-                <span class="main-catalog__good-price-rubles">700 P. </span>
+              программы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-catalog">
+      <h1 class="main-catalog__main-text">Каталог продукции</h1>
+      <section class="main-catalog__goods">
+        <h2 class="hidden">Каталог нашей продукции</h2>
+        <div class="main-catalog__good">
+          <div class="main-catalog__good-content">
+            <div class="main-catalog__good-content-sub-text">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/chicken-small-mobile@1x.webp 1x, img/chicken-small-mobile@2x.webp 2x">
+                <source media="(min-width: 1220px)"
+                  srcset="img/chicken-small-desktop@1x.png 1x, img/chicken-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/chicken-small-tablet@1x.png 1x, img/chicken-small-tablet@2x.png 2x">
+                <img class="main__catalog-image main__catalog--first-image" src="img/chicken-small-mobile@1x.jpg"
+                  srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Первый товар с каталог галереи">
+              </picture>
+              <div class="main-catalog__good-data">
+                <span class="main-catalog__good-header">Cat Energy PRO 500 г</span>
+                <div class="main-catalog__good-volume main-catalog__good-data-sub">
+                  <span class="main-catalog__good-volume-sub main-catalog__less-than-thousand">Объем </span>
+                  <span class="main-catalog__good-volume-numbers">500 г </span>
+                </div>
+                <div class="main-catalog__good-taste main-catalog__good-data-sub">
+                  <span class="main-catalog__good-taste-sub">Вкус </span>
+                  <span class="main-catalog__good-taste-animal">Курица </span>
+                </div>
+                <div class="main-catalog__good-price main-catalog__good-data-sub">
+                  <span class="main-catalog__good-price-sub">Цена </span>
+                  <span class="main-catalog__good-price-rubles">700 P. </span>
+                </div>
               </div>
             </div>
+            <button class="main-catalog__good-order">Заказать</button>
           </div>
-          <button class="main-catalog__good-order">Заказать</button>
         </div>
-      </div>
-      <div class="main-catalog__good">
-        <div class="main-catalog__good-content">
-          <div class="main-catalog__good-content-sub-text">
-            <picture>
-              <source media="(min-width: 1220px)"
-                srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
-              <img class="main__catalog-image main__catalog--second-image" src="img/chicken-big-mobile@1x.jpg"
-                srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Второй товар с каталог галереи">
-            </picture>
-            <div class="main-catalog__good-data main-catalog__good-data-second">
-              <span class="main-catalog__good-header">Cat Energy PRO 1000 г</span>
-              <div class="main-catalog__good-volume main-catalog__good-data-sub">
-                <span class="main-catalog__good-volume-sub main-catalog__more-than-thousand">Объем </span>
-                <span class="main-catalog__good-volume-numbers">1000 г </span>
-              </div>
-              <div class="main-catalog__good-taste main-catalog__good-data-sub">
-                <span class="main-catalog__good-taste-sub">Вкус </span>
-                <span class="main-catalog__good-taste-animal">Курица </span>
-              </div>
-              <div class="main-catalog__good-price main-catalog__good-data-sub">
-                <span class="main-catalog__good-price-sub">Цена </span>
-                <span class="main-catalog__good-price-rubles">1000 P. </span>
+        <div class="main-catalog__good">
+          <div class="main-catalog__good-content">
+            <div class="main-catalog__good-content-sub-text">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/chicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@1x.webp 2x">
+                <source type="image/webp" srcset="imgchicken-big-mobile@1x.webp 1x, img/chicken-big-mobile@2x.webp 2x">
+                <source media="(min-width: 1220px)"
+                  srcset="img/chicken-big-desktop@1x.png 1x, img/chicken-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/chicken-big-tablet@1x.png 1x, img/chicken-big-tablet@2x.png 2x">
+                <img class="main__catalog-image main__catalog--second-image" src="img/chicken-big-mobile@1x.jpg"
+                  srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Второй товар с каталог галереи">
+              </picture>
+              <div class="main-catalog__good-data main-catalog__good-data-second">
+                <span class="main-catalog__good-header">Cat Energy PRO 1000 г</span>
+                <div class="main-catalog__good-volume main-catalog__good-data-sub">
+                  <span class="main-catalog__good-volume-sub main-catalog__more-than-thousand">Объем </span>
+                  <span class="main-catalog__good-volume-numbers">1000 г </span>
+                </div>
+                <div class="main-catalog__good-taste main-catalog__good-data-sub">
+                  <span class="main-catalog__good-taste-sub">Вкус </span>
+                  <span class="main-catalog__good-taste-animal">Курица </span>
+                </div>
+                <div class="main-catalog__good-price main-catalog__good-data-sub">
+                  <span class="main-catalog__good-price-sub">Цена </span>
+                  <span class="main-catalog__good-price-rubles">1000 P. </span>
+                </div>
               </div>
             </div>
+            <button class="main-catalog__good-order">Заказать</button>
           </div>
-          <button class="main-catalog__good-order">Заказать</button>
         </div>
-      </div>
-      <div class="main-catalog__good main-catalog__good-third-item">
-        <div class="main-catalog__good-content">
-          <div class="main-catalog__good-content-sub-text">
-            <picture>
-              <source media="(min-width: 1220px)"
-                srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-              <img class="main__catalog-image " src="img/fish-small-mobile@1x.jpg"
-                srcset="img/fish-small-mobile@2x.jpg 2x" alt="Третий товар с каталог галереи">
-            </picture>
-            <div class="main-catalog__good-data">
-              <span class="main-catalog__good-header">Cat Energy PRO 500 г</span>
-              <div class="main-catalog__good-volume main-catalog__good-data-sub">
-                <span class="main-catalog__good-volume-sub main-catalog__less-than-thousand">Объем </span>
-                <span class="main-catalog__good-volume-numbers">500 г </span>
-              </div>
-              <div class="main-catalog__good-taste main-catalog__good-data-sub">
-                <span class="main-catalog__good-taste-sub">Вкус </span>
-                <span class="main-catalog__good-taste-animal">Рыба </span>
-              </div>
-              <div class="main-catalog__good-price main-catalog__good-data-sub">
-                <span class="main-catalog__good-price-sub">Цена </span>
-                <span class="main-catalog__good-price-rubles">700 P. </span>
+        <div class="main-catalog__good main-catalog__good-third-item">
+          <div class="main-catalog__good-content">
+            <div class="main-catalog__good-content-sub-text">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/fish-small-mobile@1x.webp 1x, img/fish-small-mobile@2x.webp 2x">
+                <source media="(min-width: 1220px)"
+                  srcset="img/fish-small-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/fish-small-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                <img class="main__catalog-image " src="img/fish-small-mobile@1x.jpg"
+                  srcset="img/fish-small-mobile@2x.jpg 2x" alt="Третий товар с каталог галереи">
+              </picture>
+              <div class="main-catalog__good-data">
+                <span class="main-catalog__good-header">Cat Energy PRO 500 г</span>
+                <div class="main-catalog__good-volume main-catalog__good-data-sub">
+                  <span class="main-catalog__good-volume-sub main-catalog__less-than-thousand">Объем </span>
+                  <span class="main-catalog__good-volume-numbers">500 г </span>
+                </div>
+                <div class="main-catalog__good-taste main-catalog__good-data-sub">
+                  <span class="main-catalog__good-taste-sub">Вкус </span>
+                  <span class="main-catalog__good-taste-animal">Рыба </span>
+                </div>
+                <div class="main-catalog__good-price main-catalog__good-data-sub">
+                  <span class="main-catalog__good-price-sub">Цена </span>
+                  <span class="main-catalog__good-price-rubles">700 P. </span>
+                </div>
               </div>
             </div>
+            <button class="main-catalog__good-order main-catalog__good-order--third-image">Заказать</button>
           </div>
-          <button class="main-catalog__good-order main-catalog__good-order--third-image">Заказать</button>
         </div>
-      </div>
-      <div class="main-catalog__good main-catalog__good-fourth-item">
-        <div class="main-catalog__good-content">
-          <div class="main-catalog__good-content-sub-text">
-            <picture>
-              <source media="(min-width: 1220px)"
-                srcset="img/fish-big-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/fish-big-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
-              <img class="main__catalog-image main__catalog--fourth-image" src="img/fish-big-mobile@1x.jpg"
-                srcset="img/fish-big-mobile@2x.jpg 2x" alt="Четвертый товар с каталог галереи">
-            </picture>
-            <div class="main-catalog__good-data">
-              <span class="main-catalog__good-header">Cat Energy PRO 1000 г</span>
-              <div class="main-catalog__good-volume main-catalog__good-data-sub">
-                <span class="main-catalog__good-volume-sub main-catalog__more-than-thousand">Объем </span>
-                <span class="main-catalog__good-volume-numbers">1000 г </span>
-              </div>
-              <div class="main-catalog__good-taste main-catalog__good-data-sub">
-                <span class="main-catalog__good-taste-sub">Вкус </span>
-                <span class="main-catalog__good-taste-animal">Рыба </span>
-              </div>
-              <div class="main-catalog__good-price main-catalog__good-data-sub">
-                <span class="main-catalog__good-price-sub">Цена </span>
-                <span class="main-catalog__good-price-rubles">1000 P. </span>
+        <div class="main-catalog__good main-catalog__good-fourth-item">
+          <div class="main-catalog__good-content">
+            <div class="main-catalog__good-content-sub-text">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/fish-big-mobile@1x.webp 1x, img/fish-big-mobile@2x.webp 2x">
+                <source media="(min-width: 1220px)"
+                  srcset="img/fish-big-desktop@1x.png 1x, img/fish-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/fish-big-tablet@1x.png 1x, img/fish-small-tablet@2x.png 2x">
+                <img class="main__catalog-image main__catalog--fourth-image" src="img/fish-big-mobile@1x.jpg"
+                  srcset="img/fish-big-mobile@2x.jpg 2x" alt="Четвертый товар с каталог галереи">
+              </picture>
+              <div class="main-catalog__good-data">
+                <span class="main-catalog__good-header">Cat Energy PRO 1000 г</span>
+                <div class="main-catalog__good-volume main-catalog__good-data-sub">
+                  <span class="main-catalog__good-volume-sub main-catalog__more-than-thousand">Объем </span>
+                  <span class="main-catalog__good-volume-numbers">1000 г </span>
+                </div>
+                <div class="main-catalog__good-taste main-catalog__good-data-sub">
+                  <span class="main-catalog__good-taste-sub">Вкус </span>
+                  <span class="main-catalog__good-taste-animal">Рыба </span>
+                </div>
+                <div class="main-catalog__good-price main-catalog__good-data-sub">
+                  <span class="main-catalog__good-price-sub">Цена </span>
+                  <span class="main-catalog__good-price-rubles">1000 P. </span>
+                </div>
               </div>
             </div>
+            <button class="main-catalog__good-order">Заказать</button>
           </div>
-          <button class="main-catalog__good-order">Заказать</button>
         </div>
-      </div>
-      <div class="main-catalog__good main-catalog__good-margin-zero">
-        <div class="main-catalog__good-content">
-          <div class="main-catalog__good-content-sub-text">
-            <picture>
-              <source media="(min-width: 1220px)"
-                srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@1x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@1x.png 2x">
-              <img class="main__catalog-image main__catalog--fifth-image " src="img/buckwheat-small-mobile@1x.jpg"
-                srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Пятый товар с каталог галереи">
-            </picture>
-            <div class="main-catalog__good-data">
-              <span class="main-catalog__good-header">Cat Energy SLIM 500 г</span>
-              <div class="main-catalog__good-volume main-catalog__good-data-sub">
-                <span class="main-catalog__good-volume-sub main-catalog__less-than-thousand">Объем </span>
-                <span class="main-catalog__good-volume-numbers">500 г </span>
-              </div>
-              <div class="main-catalog__good-taste main-catalog__good-data-sub">
-                <span class="main-catalog__good-taste-sub">Вкус </span>
-                <span class="main-catalog__good-taste-animal">Гречка </span>
-              </div>
-              <div class="main-catalog__good-price main-catalog__good-data-sub">
-                <span class="main-catalog__good-price-sub">Цена </span>
-                <span class="main-catalog__good-price-rubles">400 P. </span>
+        <div class="main-catalog__good main-catalog__good-margin-zero">
+          <div class="main-catalog__good-content">
+            <div class="main-catalog__good-content-sub-text">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/buckwheat-small-mobile@1x.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
+                <source media="(min-width: 1220px)"
+                  srcset="img/buckwheat-small-desktop@1x.png 1x, img/buckwheat-small-desktop@1x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/buckwheat-small-tablet@1x.png 1x, img/buckwheat-small-tablet@1x.png 2x">
+                <img class="main__catalog-image main__catalog--fifth-image " src="img/buckwheat-small-mobile@1x.jpg"
+                  srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Пятый товар с каталог галереи">
+              </picture>
+              <div class="main-catalog__good-data">
+                <span class="main-catalog__good-header">Cat Energy SLIM 500 г</span>
+                <div class="main-catalog__good-volume main-catalog__good-data-sub">
+                  <span class="main-catalog__good-volume-sub main-catalog__less-than-thousand">Объем </span>
+                  <span class="main-catalog__good-volume-numbers">500 г </span>
+                </div>
+                <div class="main-catalog__good-taste main-catalog__good-data-sub">
+                  <span class="main-catalog__good-taste-sub">Вкус </span>
+                  <span class="main-catalog__good-taste-animal">Гречка </span>
+                </div>
+                <div class="main-catalog__good-price main-catalog__good-data-sub">
+                  <span class="main-catalog__good-price-sub">Цена </span>
+                  <span class="main-catalog__good-price-rubles">400 P. </span>
+                </div>
               </div>
             </div>
+            <button class="main-catalog__good-order">Заказать</button>
           </div>
-          <button class="main-catalog__good-order">Заказать</button>
         </div>
-      </div>
-      <div class="main-catalog__good main-catalog__good-margin-zero">
-        <div class="main-catalog__good-content">
-          <div class="main-catalog__good-content-sub-text">
-            <picture>
-              <source media="(min-width: 1220px)"
-                srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-              <img class="main__catalog-image main__catalog--sixth-image" src="img/buckwheat-big-mobile@1x.jpg"
-                srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Шестой товар с каталог галереи">
-            </picture>
-            <div class="main-catalog__good-data">
-              <span class="main-catalog__good-header">Cat Energy SLIM 1000 г</span>
-              <div class="main-catalog__good-volume main-catalog__good-data-sub">
-                <span class="main-catalog__good-volume-sub main-catalog__more-than-thousand">Объем </span>
-                <span class="main-catalog__good-volume-numbers">1000 г </span>
-              </div>
-              <div class="main-catalog__good-taste main-catalog__good-data-sub">
-                <span class="main-catalog__good-taste-sub">Вкус </span>
-                <span class="main-catalog__good-taste-animal">Гречка </span>
-              </div>
-              <div class="main-catalog__good-price main-catalog__good-data-sub">
-                <span class="main-catalog__good-price-sub">Цена </span>
-                <span class="main-catalog__good-price-rubles">700 P. </span>
+        <div class="main-catalog__good main-catalog__good-margin-zero">
+          <div class="main-catalog__good-content">
+            <div class="main-catalog__good-content-sub-text">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/buckwheat-big-mobile@1x.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
+                <source media="(min-width: 1220px)"
+                  srcset="img/buckwheat-big-desktop@1x.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/buckwheat-big-tablet@1x.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+                <img class="main__catalog-image main__catalog--sixth-image" src="img/buckwheat-big-mobile@1x.jpg"
+                  srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Шестой товар с каталог галереи">
+              </picture>
+              <div class="main-catalog__good-data">
+                <span class="main-catalog__good-header">Cat Energy SLIM 1000 г</span>
+                <div class="main-catalog__good-volume main-catalog__good-data-sub">
+                  <span class="main-catalog__good-volume-sub main-catalog__more-than-thousand">Объем </span>
+                  <span class="main-catalog__good-volume-numbers">1000 г </span>
+                </div>
+                <div class="main-catalog__good-taste main-catalog__good-data-sub">
+                  <span class="main-catalog__good-taste-sub">Вкус </span>
+                  <span class="main-catalog__good-taste-animal">Гречка </span>
+                </div>
+                <div class="main-catalog__good-price main-catalog__good-data-sub">
+                  <span class="main-catalog__good-price-sub">Цена </span>
+                  <span class="main-catalog__good-price-rubles">700 P. </span>
+                </div>
               </div>
             </div>
+            <button class="main-catalog__good-order">Заказать</button>
           </div>
-          <button class="main-catalog__good-order">Заказать</button>
         </div>
-      </div>
-      <div class="main-catalog__good main-catalog__good-last-child main-catalog__good-margin-zero">
-        <div class="main-catalog__good-content">
-          <div class="main-catalog__good-content-sub-text">
-            <picture>
-              <source media="(min-width: 1220px)"
-                srcset="img/brice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
-              <img class="main__catalog-image main__catalog--seventh-image " src="img/rice-small-mobile@1x.jpg"
-                srcset="img/rice-small-mobile@2x.jpg 2x" alt="Седьмой товар с каталог галереи">
-            </picture>
-            <div class="main-catalog__good-data">
-              <span class="main-catalog__good-header">Cat Energy SLIM 500 г</span>
-              <div class="main-catalog__good-volume main-catalog__good-data-sub">
-                <span class="main-catalog__good-volume-sub main-catalog__less-than-thousand">Объем </span>
-                <span class="main-catalog__good-volume-numbers">500 г </span>
-              </div>
-              <div class="main-catalog__good-taste main-catalog__good-data-sub">
-                <span class="main-catalog__good-taste-sub">Вкус </span>
-                <span class="main-catalog__good-taste-animal">Рис </span>
-              </div>
-              <div class="main-catalog__good-price main-catalog__good-data-sub">
-                <span class="main-catalog__good-price-sub">Цена </span>
-                <span class="main-catalog__good-price-rubles">500 P. </span>
+        <div class="main-catalog__good main-catalog__good-last-child main-catalog__good-margin-zero">
+          <div class="main-catalog__good-content">
+            <div class="main-catalog__good-content-sub-text">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/rice-small-mobile@1x.webp 1x, img/rice-small-mobile@2x.webp 2x">
+                <source media="(min-width: 1220px)"
+                  srcset="img/rice-small-desktop@1x.png 1x, img/rice-small-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/rice-small-tablet@1x.png 1x, img/rice-small-tablet@2x.png 2x">
+                <img class="main__catalog-image main__catalog--seventh-image " src="img/rice-small-mobile@1x.jpg"
+                  srcset="img/rice-small-mobile@2x.jpg 2x" alt="Седьмой товар с каталог галереи">
+              </picture>
+              <div class="main-catalog__good-data">
+                <span class="main-catalog__good-header">Cat Energy SLIM 500 г</span>
+                <div class="main-catalog__good-volume main-catalog__good-data-sub">
+                  <span class="main-catalog__good-volume-sub main-catalog__less-than-thousand">Объем </span>
+                  <span class="main-catalog__good-volume-numbers">500 г </span>
+                </div>
+                <div class="main-catalog__good-taste main-catalog__good-data-sub">
+                  <span class="main-catalog__good-taste-sub">Вкус </span>
+                  <span class="main-catalog__good-taste-animal">Рис </span>
+                </div>
+                <div class="main-catalog__good-price main-catalog__good-data-sub">
+                  <span class="main-catalog__good-price-sub">Цена </span>
+                  <span class="main-catalog__good-price-rubles">500 P. </span>
+                </div>
               </div>
             </div>
+            <button class=" main-catalog__good-order main-catalog__good-order--last-child">Заказать</button>
           </div>
-          <button class=" main-catalog__good-order main-catalog__good-order--last-child">Заказать</button>
         </div>
-      </div>
-      <div class="main-catalog__good find-all-goods">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" class="find-all-goods__plus-mobile-img"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 60 60"
-          style="enable-background:new 0 0 60 60;" xml:space="preserve" width="30" height="30">
-          <style type="text/css">
-            .st0 {
-              fill: #231F20;
-            }
-          </style>
-          <polygon class="st0" points="60,29.5 30.5,29.5 30.5,0 29.5,0 29.5,29.5 0,29.5 0,30.5 29.5,30.5 29.5,60 30.5,60 30.5,30.5
-  60,30.5 " />
-        </svg>
-
-        <span class="find-all-goods__show-additional-goods">Показать еще 100500 товаров</span>
-        <span class="find-all-goods__more-tastes">На самом деле вкусов гораздо больше!</span>
-        <button class="find-all-goods__show-all-goods">Показать все</button>
-      </div>
-    </section>
-    <section class="additional-goods">
-      <h2 class="additional-goods__hidden-header">Additional goods</h2>
-      <div class="additional-goods__header">
-        <div class="additional-goods__header-line additional-goods_header-line-tablet-show">
+        <div class="main-catalog__good find-all-goods">
+<!-- Первый свг-->
+<svg class="find-all-goods__plus-mobile-img" width="60" height="60">
+  <use xlink:href="#find-all-goods__plus-mobile-img">
+  </use>
+</svg>
+          <span class="find-all-goods__show-additional-goods">Показать еще 100500 товаров</span>
+          <span class="find-all-goods__more-tastes">На самом деле вкусов гораздо больше!</span>
+          <button class="find-all-goods__show-all-goods">Показать все</button>
         </div>
-        <span class="additional-goods__header-sub-span">
+      </section>
+      <section class="additional-goods">
+        <h2 class="additional-goods__hidden-header">Additional goods</h2>
+        <div class="additional-goods__header">
+          <div class="additional-goods__header-line additional-goods_header-line-tablet-show">
+          </div>
+          <span class="additional-goods__header-sub-span">
           Дополнительные товары
-        </span>
-        <div class="additional-goods__header-line additional-goods_header-right-line">
+          </span>
+          <div class="additional-goods__header-line additional-goods_header-right-line">
+          </div>
         </div>
-      </div>
-      <div class="additional-goods__content">
-        <div class="additional-goods__content-desktop-articles">
-          <article class="additional-goods__article">
-            <h3 class="additional-goods__hidden-article-header"> Hidden article header</h3>
-            <div class="additional-goods__article-main-div">
-              <div class="additional-goods__article-main-text">
-
-                <span class="additional-goods__article-header">
+        <div class="additional-goods__content">
+          <div class="additional-goods__content-desktop-articles">
+            <article class="additional-goods__article">
+              <h3 class="additional-goods__hidden-article-header"> Hidden article header</h3>
+              <div class="additional-goods__article-main-div">
+                <div class="additional-goods__article-main-text">
+                  <span class="additional-goods__article-header">
                   Сахарозаменитель
-                </span>
-                <div class="additional-goods__article-content">
-                  <span class="additional-goods__article-how-many-weight">
+                  </span>
+                  <div class="additional-goods__article-content">
+                    <span class="additional-goods__article-how-many-weight">
                     1 упаковка (100 г)
-                  </span>
-                  <span class="additional-goods__article-how-many-price">
+                    </span>
+                    <span class="additional-goods__article-how-many-price">
                     200 Р.
-                  </span>
+                    </span>
+                  </div>
                 </div>
-
-              </div>
-              <button class="additional-goods__article-order">
+                <button class="additional-goods__article-order">
                 Заказать
-              </button>
-            </div>
-          </article>
-          <article class="additional-goods__article">
-            <h3 class="additional-goods__hidden-article-header"> Hidden article header</h3>
-            <div class="additional-goods__article-main-div">
-              <div class="additional-goods__article-main-text">
-
-                <span class="additional-goods__article-header">
+                </button>
+              </div>
+            </article>
+            <article class="additional-goods__article">
+              <h3 class="additional-goods__hidden-article-header"> Hidden article header</h3>
+              <div class="additional-goods__article-main-div">
+                <div class="additional-goods__article-main-text">
+                  <span class="additional-goods__article-header">
                   Питьевая вода
-                </span>
-                <div class="additional-goods__article-content">
-                  <span class="additional-goods__article-how-many-weight additional-goods__article-five-litres">
+                  </span>
+                  <div class="additional-goods__article-content">
+                    <span class="additional-goods__article-how-many-weight additional-goods__article-five-litres">
                     5 литров
-                  </span>
-                  <span class="additional-goods__article-how-many-price additional-goods__article-fifty-rubles">
+                    </span>
+                    <span class="additional-goods__article-how-many-price additional-goods__article-fifty-rubles">
                     50 Р.
-                  </span>
+                    </span>
+                  </div>
                 </div>
-
-              </div>
-              <button class="additional-goods__article-order">
+                <button class="additional-goods__article-order">
                 Заказать
-              </button>
-            </div>
-          </article>
-          <article class="additional-goods__article">
-            <h3 class="additional-goods__hidden-article-header"> Hidden article header</h3>
-            <div class="additional-goods__article-main-div">
-              <div class="additional-goods__article-main-text">
-
-                <div class="additional-goods__article-header">
-                  Молоко
-                </div>
-                <div class="additional-goods__article-content">
-                  <span
-                    class="additional-goods__article-how-many-weight additional-goods__article-how-many-weigh-one-litres">
+                </button>
+              </div>
+            </article>
+            <article class="additional-goods__article">
+              <h3 class="additional-goods__hidden-article-header"> Hidden article header</h3>
+              <div class="additional-goods__article-main-div">
+                <div class="additional-goods__article-main-text">
+                  <div class="additional-goods__article-header">
+                    Молоко
+                  </div>
+                  <div class="additional-goods__article-content">
+                    <span
+                      class="additional-goods__article-how-many-weight additional-goods__article-how-many-weigh-one-litres">
                     1 литр
-                  </span>
-                  <span class="additional-goods__article-how-many-price additional-goods__article-how-many-weight-milk">
+                    </span>
+                    <span class="additional-goods__article-how-many-price additional-goods__article-how-many-weight-milk">
                     100 Р.
-                  </span>
+                    </span>
+                  </div>
                 </div>
-              </div>
-
-
-              <button class="additional-goods__article-order">
+                <button class="additional-goods__article-order">
                 Заказать
-              </button>
-            </div>
-          </article>
-          <article class="additional-goods__article additional-goods__article-last-child">
-            <h3 class="additional-goods__hidden-article-header"> Hidden article header</h3>
-            <div class="additional-goods__article-main-div">
-              <div class="additional-goods__article-main-text">
-
-                <span class="additional-goods__article-header">
-                  Витамины
-                </span>
-                <div class="additional-goods__article-content">
-                  <span class="additional-goods__article-how-many-weight additional-goods__article-thirty-grammes">
-                    1 упаковка (30 г)
-                  </span>
-                  <span class="additional-goods__article-how-many-price additional-goods__article-three-hundred-rubles">
-                    300 Р.
-                  </span>
-                </div>
-
+                </button>
               </div>
-              <button class="additional-goods__article-order">Заказать</button>
-            </div>
-          </article>
-        </div>
-        <div class="additional-goods__green-background">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="60"
-            viewBox="0 0 55 60">
-            <image id="gift.svg" width="55" height="60"
-              xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADcAAAA8CAYAAADCHCKFAAADTElEQVRoge2aS0hVURSGP0uLUoiUwrDoQggh0mPmpYkY9KLMclJBIDVoElQm5UhqFjjMQdFjEDgLahYFgRBBEUE0iQYNEgVTKQq1oseNHevY8tzXOcd96e7L/uFwz2Otf6//7H336ywSoB64ADwDvgIZYAK4D3QCVUlIxa9TeCaF1/A/By4CDQl5I+MQMCUF5zueAM0xeZvFrxCvKfdwqYSdCBX2ErgCnAduAtPq2SegPSJvu9gHvobnBtAr/C9C5Zo4rKIV+C7kn4EDOchXAIPAL7GbAzqKBNEhdhnxGxSeMPZLucbuG7DZprh7QvwDSBex7Vb/xS9ASx67FnkeBNxdhDct5Rv7uwl1ZKFB1cbViD5dyuctUBt6Xiv3gxrrisg7JD4/bXUw+1R7L1ZrGn3KbyhPkBmxi4q08ttjQ1yPIlwdw8907Q/F7zfQJvfb5NrcfxRz6KhXsfTE1JETRxVhKqbvRmCWf0MEqsufledx+YJYjiXUswBbF9kNDyj/a+p8IAHXceW/JYF/FpYAo0L4BlgW078uNAYGY1ldTJ5q4LX4j0pcVnBGBTacQGB/SFx/TP8a4I7yPxvFKfgzm+Z2EmjKY7cUWK+uJ2UsiwrzMtYp2wmZFESFGdjXKttxGQ5ywTy7BdxGpjmF5nSuHr2m5j7IWxkDHsd4m+WKndLKTOuar5lzFSAM0fFXk+5xMv8xIJuY12GtOy1HeHGuwotzFV6cq9Diku43lhvmdVTJNGUN8B4YqQBx7bKoNfucC/Y6KunoC6rwlCx7mtSyZ0r2FG2hEVguS50Ji7wrpeUhy51xWe5cDxumVM1F3W6LihHhtd30u/Lt8fihwFV4ca7Ci3MVXpyr8OJchRfnKqoLxH0E2GZRV0r9XrLIGzmzIeX4em7BqqBQzc1JaoQt1MmnMJO9MGORt0bWdEXh13OuwItzFV6cq/DiXIUXV+bI+wEnLG5anTc6Ik5nJun4s8TNSLINJZh+lQoHhXcsPGfN1SyH5Xe3A4k3Jr5dcj4cfpirvZps1FfABrl+CjyQ5M/F4DSwCXiXIy04LkyO9F5gh/iZFMXtwMcoPK3yMdKFNZyJ08QbC6uAy5JFbtL/ykmQicfEZeIzcWYD+AOc88ir6CWlQgAAAABJRU5ErkJggg==" />
-          </svg>
-          <span class="additional-goods__green-background-text">
+            </article>
+            <article class="additional-goods__article additional-goods__article-last-child">
+              <h3 class="additional-goods__hidden-article-header"> Hidden article header</h3>
+              <div class="additional-goods__article-main-div">
+                <div class="additional-goods__article-main-text">
+                  <span class="additional-goods__article-header">
+                  Витамины
+                  </span>
+                  <div class="additional-goods__article-content">
+                    <span class="additional-goods__article-how-many-weight additional-goods__article-thirty-grammes">
+                    1 упаковка (30 г)
+                    </span>
+                    <span class="additional-goods__article-how-many-price additional-goods__article-three-hundred-rubles">
+                    300 Р.
+                    </span>
+                  </div>
+                </div>
+                <button class="additional-goods__article-order">Заказать</button>
+              </div>
+            </article>
+          </div>
+          <div class="additional-goods__green-background">
+
+<!-- Второй свг-->
+
+
+            <svg width="55" height="60">
+              <use xlink:href="#gift.svg">
+              </use>
+            </svg>
+
+
+            <span class="additional-goods__green-background-text">
             Закажите все
             и получите чехол
             для кота в подарок!
-          </span>
+            </span>
+          </div>
         </div>
-
-      </div>
-    </section>
-  </main>
-
-  <div class="map">
-    <div class="communicating communicating-form communicating-catalog-block">
-      <div class="communicating__main-text">
-        <span class="communicating__offer-communicating">приглашаем к сотрудничеству дилеров!</span>
-        <span class="communicating__address communicating__address-catalog">ул. Большая Конюшенная, д. 19/8 <span
+      </section>
+    </main>
+    <div class="map">
+      <div class="communicating communicating-form communicating-catalog-block">
+        <div class="communicating__main-text">
+          <span class="communicating__offer-communicating">приглашаем к сотрудничеству дилеров!</span>
+          <span class="communicating__address communicating__address-catalog">ул. Большая Конюшенная, д. 19/8 <span
             class="communicating__address-city">Санкт-Петербург</span></span>
+        </div>
       </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
+        style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+        class="map__iframe map__iframe-catalog"></iframe>
     </div>
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d20307.5497561974!2d30.498387490673824!3d50.48869895940726!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1586080633832!5m2!1sru!2sua"
-      style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
-      class="map__iframe map__iframe-catalog"></iframe>
-  </div>
+    <footer class="footer footer-index footer-catalog">
+      <div class="footer__footer-content">
+        <div class="footer__logo footer__logo-index">
+          <img src="img/logo-footer.svg" alt="logo-footer" class="footer__logo-image">
+        </div>
+        <ul class="footer__social-links">
+          <li class="footer__social-links-li">
+            <a href="https://vk.com" class="footer__vk-link">
 
-  <footer class="footer footer-index footer-catalog">
-    <div class="footer__footer-content">
-      <div class="footer__logo footer__logo-index">
-        <img src="img/logo-footer.svg" alt="logo-footer" class="footer__logo-image">
-      </div>
-      <ul class="footer__social-links">
-        <li class="footer__social-links-li">
-          <a href="https://vk.com" class="footer__vk-link">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="12"
-              viewBox="0 0 22 12" class="footer__social-image footer__social-image-vk">
-              <image id="m-vk.svg" width="22" height="12"
-                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAYAAABm+U3GAAABd0lEQVQ4jX3TPUiWYRQG4KsCEYmm1KUGCaUhwgYpGwqbpKnBIY3+pKGiQbA5XCIkiGYXbTGKhiBFwr1sKW0IjXLsF2ooEvuhOHQ+evj83g488D73fc79nL93EwbQiy3+2gfcxDfcwElsT+4nHuMYPiUW8Xv8sxY8CuEfeIY3WEMP5jGKFbShH5+xFdO4jLvYi6eYKYRbU8N93CmIw/iOXWjCOxwt+EWcye/6WPngnCwjsj5QkA8w20Codh/IKiKBzoI7h6/YXQMmsIDNee9Ih4t4gaEieAkX8B5XCjzmtI4TZfrRl48YKbDjOaxf2cuazSf2sBh4O95iXAMbzE0oSzuC03Wu0fvzaC6wMTwvHtpg93LKLVUOFdaXbRitctiG5RxeU4VP9P82huvw/qz4WpX4DryOJUdXA34ST1Lkah0XA/yCS1Xi8adF1jG82MuzOIhuvMSp7H+IT2F/cnGuJ/5fO4RbeJW7/hur2JlR+zL7wGtnHZN/AOfzWAynJTtgAAAAAElFTkSuQmCC" />
-            </svg>
-          </a>
-        </li>
-        <li class="footer__social-links-li">
-          <a href="https://instagramm.com" class="footer__instagramm-link">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"
-              viewBox="0 0 16 16" class="footer__social-image footer__social-image-insta">
-              <image id="m-insta.svg" width="16" height="16"
-                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABV0lEQVQ4jYWTsUoDQRCGv4RTUFGwVWHxtLKPRR5B0AeIAYtYi2ghvoJBC9tgpYhgY5S8goXPEPYyIraK4rXKyBzcXe5yA8vuzf3/zD+7MzWA0LlV4AzYAmaZbDEwAE68SFQ38gvwBTSBxYqlmG/lKLcWOnevZC/SqcisSmeAZS8yDJ27AhYCk90sISzp7kXezXUJ7IfObdj5ObCaJUfcBs6BdfseAsfAAzANvAJTyq0XZFXyHdAF5mx1zVf3Inte5CfBBwXKL4BDL9JL+Xqhc5iqpzQ4oyB0bkU34LogsPrWknspDJCy3xL/mGUCeJE3YAS0C7C7QJR6kX8ruoMj4NZqvjFf256tNVGBqegb8NTaNrZzy/5lTBUoQNN95oL07VKT0vKmnFgD6GAcAGOtXEJMTDkDnYVkmB6tzkxXlmRW8g7Q0M6KgE1gXnsb+KhYilFsw4uM/gC7CHTDv9efJwAAAABJRU5ErkJggg==" />
-            </svg>
-          </a>
-        </li>
-        <li class="footer__social-links-li footer__social-links-li-facebook">
-          <a href="https://facebook.com" class="footer__facebook-link">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="19"
-              viewBox="0 0 10 19" fill="red" class="footer__social-image footer__social-image-fb">
-              <image id="m-fb.svg" width="10" height="20"
-                xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAYAAACp65zuAAAAwUlEQVQokdXSPWrCQRAF8J8i2BktVIJBBQ+gXkD0Ct4h50nvBVLlJoFcwUISS0Gt/7IywrogSZsHU8zMmzcfuwoMscEPqtzqGW+ETzxhjS46mJZq7/gogxiH8hU1nLHKCG/YYpeItQgOIvCMPZo44TXIGliiFQW3Fr3IHfIZqlBLlZOI9cNP9n0TqGLgR5iV5/kVeeuXILfK1mngeSS/YoGEejzAAseyUz5rO/y2rPJP+I/EdL+0afqTD3H3o+/OgwsyhC43O8jNOgAAAABJRU5ErkJggg==" />
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="footer__right-logo">
-        <a href="https://htmlacademy.ru" class="right-logo__link-organization">
+
+
+              <svg  width="22" height="12" class="footer__social-image footer__social-image-vk">
+                <use xlink:href="#m-vk.svg"></use>
+              </svg>
+
+
+
+
+            </a>
+          </li>
+          <li class="footer__social-links-li">
+            <a href="https://instagramm.com" class="footer__instagramm-link">
+
+              <svg  width="16" height="16" class="footer__social-image footer__social-image-insta">
+                <use xlink:href="#m-insta.svg"></use>
+              </svg>
+
+
+
+
+
+            </a>
+          </li>
+          <li class="footer__social-links-li footer__social-links-li-facebook">
+            <a href="https://facebook.com" class="footer__facebook-link">
+
+              <svg  width="10" height="19" class="footer__social-image footer__social-image-fb">
+                <use xlink:href="#m-fb.svg"></use>
+              </svg>
+
+
+
+
+
+
+            </a>
+          </li>
+        </ul>
+        <div class="footer__right-logo">
+          <a href="https://htmlacademy.ru" class="right-logo__link-organization">
           HTML Academy
-        </a>
-        <img src="img/htmlacademy.svg" alt="" class="right-logo__logo-organization" width="27" height="34">
+          </a>
+          <img src="img/htmlacademy.svg" alt="" class="right-logo__logo-organization" width="27" height="34">
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
