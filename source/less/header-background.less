@@ -1,22 +1,24 @@
 @white: #fff;
 @mobile: 320px;
 @tablet: 768px;
-@desktop:1220px;
+@desktop: 1220px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
 @font-face {
-  font-family: 'fontello';
-  src: url('../font/fontello.eot?11710255');
-  src: url('../font/fontello.eot?11710255#iefix') format('embedded-opentype'),
-  url('../font/fontello.woff2?11710255') format('woff2'),
-  url('../font/fontello.woff?11710255') format('woff'),
-  url('../font/fontello.ttf?11710255') format('truetype'),
-  url('../font/fontello.svg?11710255#fontello') format('svg');
+  font-family: "fontello";
+  src: url("../font/fontello.eot?11710255");
+  src: url("../font/fontello.eot?11710255#iefix") format("embedded-opentype"), url("../font/fontello.woff2?11710255") format("woff2"), url("../font/fontello.woff?11710255") format("woff"), url("../font/fontello.ttf?11710255") format('truetype'), url('../font/fontello.svg?11710255#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
+
 /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+
 /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+
 /*
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
@@ -26,46 +28,40 @@
 }
 */
 
-  [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  font-family: "fontello", sans-serif;
   font-style: normal;
   font-weight: normal;
-  speak: none;
-
   display: inline-block;
   text-decoration: inherit;
   width: 1em;
-  margin-right: .2em;
+  margin-right: 0.2em;
   text-align: center;
   /* opacity: .8; */
-
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-
   /* fix buttons height, for twitter bootstrap */
   line-height: 1em;
-
   /* Animation center compensation - margins should be symmetric */
   /* remove if not needed */
-  margin-left: .2em;
-
+  margin-left: 0.2em;
   /* you can be more comfortable with increased icons size */
   /* font-size: 120%; */
-
   /* Font smoothing. That was taken from TWBS */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
 
-.icon-check-empty:before { content: '\f096'; } /* 'п‚–' */
+.icon-check-empty::before {
+  content: "\f096";
+}
 
 
-
-
+/* 'п‚–' */
 
 .header-background__work-for-your-cat {
   font-size: 14px;
@@ -78,16 +74,14 @@
   text-transform: uppercase;
 }
 
-
-
-
 @media (min-width:@mobile) {
   .header-background__mobile-img {
     position: absolute;
     top: 165px;
-      left: 20px;
-      display: block;
+    left: 20px;
+    display: block;
   }
+
   .header-background::after {
     content: "";
     display: block;
@@ -101,17 +95,22 @@
     z-index: -1;
     background-position: 50% center;
     background-repeat: no-repeat;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("img/index-background-mobile@2x.jpg");
+      background-image: url("../img/index-background-mobile@2x.jpg");
       background-position: 50% center;
     }
-    }
+
+  }
+
   .header-background__tablet-img {
     display: none;
   }
+
   .header-background__desktop-img {
     display: none;
   }
+
   .header-background__img {
     position: absolute;
     top: 167px;
@@ -125,46 +124,48 @@
     flex-direction: column;
     position: relative;
   }
+
   .header-background__main-words {
     font-family: "Oswald-Regular", "Arial", sans-serif;
     font-size: 36px;
     font-weight: normal;
     line-height: 36px;
-    margin-top: -7px;
     max-width: 249px;
-    margin-left: auto;
     margin-left: 36px;
     margin-top: 1px;
     color: @white;
-}
-.check-your-program {
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Oswald-Regular", "Arial", sans-serif;
-  text-align: center;
-  color: @white;
-  background-color: #68b738;
-  text-decoration: none;
-  padding: 11px 76px 12px 74px;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  max-width: 280px;
-  margin: 0 auto;
-}
+  }
+
+  .check-your-program {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Oswald-Regular", "Arial", sans-serif;
+    text-align: center;
+    color: @white;
+    background-color: #68b738;
+    text-decoration: none;
+    padding: 11px 76px 12px 74px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    max-width: 280px;
+    margin: 0 auto;
+  }
 }
 
-@media (min-width:@tablet) {
+@media (min-width: @tablet) {
   .header-background__tablet-img {
     display: block;
     position: absolute;
     z-index: -1000;
     top: 29.4%;
     left: 24px;
-}
+  }
+
   .header-background__mobile-img {
     display: none;
   }
+
   .header-background__main-words {
     font-size: 60px;
     line-height: 60px;
@@ -174,8 +175,8 @@
     margin-left: 115px;
     text-align: left;
     margin-bottom: 36px;
-    letter-spacing: 0px;
-}
+    letter-spacing: 0;
+  }
 
   .header-background__work-for-your-cat {
     font-size: 20px;
@@ -184,26 +185,29 @@
     max-width: 284px;
     display: flex;
     margin-left: 115px;
+    margin-bottom: 0;
     margin-top: 40px;
   }
+
   .header-background {
     max-width: 761px;
   }
+
   .header-background::after {
-display: none;
-    }
-    .header-background__work-for-your-cat {
-      margin-bottom: 0;
-    }
-    .header-background__img {
-      position: absolute;
-      left: 25px;
-      top: 241px;
-    }
-    .header-background {
-      position: relative;
-    }
-    .check-your-program {
+    display: none;
+  }
+
+  .header-background__img {
+    position: absolute;
+    left: 25px;
+    top: 241px;
+  }
+
+  .header-background {
+    position: relative;
+  }
+
+  .check-your-program {
     margin-bottom: 507px;
     margin-top: 49px;
     max-width: 246px;
@@ -212,16 +216,18 @@ display: none;
     line-height: 20px;
     padding: 16px 28px 16px 26px;
     z-index: 100;
-    }
+  }
 }
 
-@media (min-width:@desktop){
+@media (min-width:@desktop) {
   .header-background__tablet-img {
     display: none;
   }
+
   .header-background__mobile-img {
     display: none;
   }
+
   .header-background__desktop-img {
     display: block;
     width: 552px;
@@ -229,7 +235,8 @@ display: none;
     position: absolute;
     right: 219px;
     top: 10px;
-}
+  }
+
   .header-background::after {
     content: "";
     display: block;
@@ -249,47 +256,66 @@ display: none;
       background-image: url("img/index-background-desktop@2x.jpg");
       background-size: 1338px auto;
     }
-    }
-.header-background__headers {
-  display: flex;
-  flex-direction: column;
-  margin-top: 50px;
-}
-.header-background {
-  max-width: 1220px;
-  display: flex;
-  margin: 0 auto;
-  position: relative;
-}
-.header-background__main-words{
-  margin-left: 79px;
-  margin-bottom: 0px;
-  margin-top: 14px;
-}
-.header-background__work-for-your-cat {
-  margin-bottom: 6px;
-  margin-left: 80px;
-}
-.menu-main__sub-menu-elem {
-  padding-top: 15px;
-}
-.check-your-program {
-  margin-bottom: 507px;
-  margin-top: 47px;
-  max-width: 246px;
-  margin-left: 78px;
-  font-size: 20px;
-  line-height: 20px;
-  padding: 15px 28px 18px 28px;
-}
-.check-your-program {
-  margin-bottom: 248px;
-}
-.header-background__img {
-  position: absolute;
-  top: 10px;
-  right: 219px;
-  left:450px;
-}
+  }
 
+  .header-background__headers {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
+  .header-background {
+    max-width: 1220px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .header-background__main-words {
+    margin-left: 79px;
+    margin-bottom: 0px;
+    margin-top: 14px;
+    max-width: 414px;
+  }
+
+  .header-background__work-for-your-cat {
+    margin-bottom: 6px;
+    margin-left: 80px;
+    max-width: 284px;
+  }
+
+  .menu-main__sub-menu-elem {
+    padding-top: 15px;
+  }
+
+  .check-your-program {
+    margin-bottom: 507px;
+    margin-top: 47px;
+    max-width: 246px;
+    margin-left: 78px;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 15px 28px 18px 28px;
+  }
+
+  .check-your-program {
+    margin-bottom: 248px;
+    max-width: 192px;
+  }
+
+  .header-background__img {
+    position: absolute;
+    top: 10px;
+    right: 219px;
+    left: 450px;
+  }
+
+  .check-your-program:hover {
+    background-color: #5eaa2f;
+  }
+
+  .check-your-program:active {
+    background-color: #5eaa2f;
+    color: #8fc46e;
+  }
 }

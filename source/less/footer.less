@@ -1,6 +1,21 @@
 @mobile: 320px;
 @tablet: 768px;
 @desktop: 1220px;
+.right-logo__logo-organization:hover {
+  fill: #76bd4a;
+}
+
+.footer__logo-image:hover {
+  opacity: 75%;
+}
+
+.footer__logo-image:active {
+  opacity: 50%;
+}
+
+.footer__right-logo:active {
+  opacity: 50%;
+}
 
 .footer {
   background-color: #f2f2f2;
@@ -56,7 +71,7 @@
   padding-bottom: 27px;
 }
 
-@media (min-width:@mobile){
+@media (min-width: @mobile) {
   .footer__footer-content {
     max-width: 280px;
     margin: 0 auto;
@@ -65,145 +80,154 @@
     align-items: center;
   }
 
-.footer__social-links {
-  margin-bottom: 17px;
-  margin-top: 22px;
-  align-items: center;
-  width: 127px;
-  justify-content: space-between;
-  display: flex;
-  margin-left: -7px;
+  .footer__social-links {
+    margin-bottom: 17px;
+    margin-top: 22px;
+    align-items: center;
+    width: 127px;
+    justify-content: space-between;
+    display: flex;
+    margin-left: -7px;
+  }
+
+  .footer__social-links-li-facebook {
+    margin-left: -5px;
+  }
+
+  .footer__logo {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #d9d9d9;
+    padding-bottom: 0;
+  }
+
+  .footer__logo-index {
+    padding-bottom: 29px;
+  }
+
+  .footer__logo-image {
+    width: 159px;
+    height: 24px;
+  }
+
+  .footer__logo-catalog {
+    padding-bottom: 0px;
+  }
+
+  .footer__social-links-catalog {
+    padding-bottom: 2px;
+  }
+
+  .footer__social-links-li:first-child {
+    margin-right: -7px;
+  }
+
+  .right-logo__logo-organization {
+    width: 35px;
+    height: 35px;
+  }
 }
 
-.footer__social-links-li-facebook {
-  margin-left: -5px;
+@media (min-width: @tablet) {
+  .footer {
+    max-width: 768px;
+    padding-top: 42px;
+  }
+
+  .footer__logo {
+    margin-top: 18px;
+    margin-left: -11px;
+    border: 0;
+    width: 145px;
+  }
+
+  .footer__social-links-li:first-child {
+    margin-right: 1px;
+    margin-left: 4px;
+  }
+
+  .footer__footer-content {
+    width: 761px;
+    max-width: 708px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__footer-logo {
+    padding-bottom: 0;
+    width: 132px;
+  }
+
+  .footer__social-links-li-facebook {
+    margin-left: -1px;
+    margin-top: -4px;
+  }
+
+  .right-logo__link-organization {
+    margin-right: 0;
+    margin-top: -4px;
+  }
+
+  .footer__right-logo {
+    padding-top: 0;
+    border: 0;
+    width: 164px;
+    margin-top: -16px;
+    margin-left: -7px;
+  }
+
+  .footer__social-links-catalog {
+    width: 150px;
+    padding-left: 0;
+  }
+
+  .right-logo__link-organization {
+    margin-right: 0;
+  }
+
+  .footer-index {
+    padding-top: 43px;
+  }
+
+  .footer__social-links {
+    margin: 0 auto;
+  }
+
+  .footer__social-links {
+    margin-top: -14px;
+    padding-left: 0;
+    max-width: 125px;
+  }
+
+  .footer__social-image-vk {
+    width: 30px;
+    height: 15px;
+  }
+
+  .footer__social-image-insta {
+    width: 23px;
+    height: 23px;
+  }
+
+  .footer__social-image {
+    margin-right: 28px;
+  }
+
+  .footer__social-image-fb {
+    width: 14px;
+    height: 28px;
+  }
+
+  .footer__logo-image {
+    width: 152px;
+    height: 24px;
+  }
+  .footer-catalog {
+    padding-top: 41px;
+  }
 }
 
-.footer__logo {
-  width: 100%;
-  text-align: center;
-  border-bottom: 1px solid #d9d9d9;
-  padding-bottom: 0;
-}
-
-.footer__logo-index {
-  padding-bottom: 29px;
-}
-
-.footer__logo-image {
-  width: 159px;
-  height: 24px;
-}
-
-.footer__logo-catalog {
-  padding-bottom: 0px;
-}
-
-.footer__social-links-catalog {
-  padding-bottom: 2px;
-}
-.footer__social-links-li:first-child {
-  margin-right: -7px;
-}
-.right-logo__logo-organization {
-  width: 35px;
-  height: 35px;
-}
-}
-
-@media (min-width:@tablet){
-.footer {
-  max-width: 768px;
-  padding-top: 42px;
-}
-
-.footer__logo {
-  margin-top: 18px;
-  margin-left: -11px;
-  border: 0;
-  width: 145px;
-}
-
-.footer__social-links-li:first-child {
-  margin-right: 1px;
-  margin-left: 4px;
-}
-
-.footer__footer-content {
-  width: 761px;
-  max-width: 708px;
-  flex-direction: row;
-  justify-content:space-between;
-}
-
-.footer__footer-logo {
-  padding-bottom: 0;
-  width: 132px;
-}
-
-.footer__social-links-li-facebook {
-  margin-left: -1px;
-  margin-top: -4px;
-}
-
-.right-logo__link-organization {
-  margin-right: 0;
-  margin-top: -4px;
-}
-
-.footer__right-logo {
-  padding-top: 0;
-  border: 0;
-  width: 164px;
-  margin-top: -16px;
-  margin-left: -7px;
-}
-
-.footer__social-links-catalog {
-  width: 150px;
-  padding-left: 0;
-}
-
-.right-logo__link-organization {
-  margin-right: 0;
-}
-
-.footer-index {
-  padding-top: 43px;
-}
-.footer__social-links{
-  margin: 0 auto;
-}
-.footer__social-links {
-  margin-top: -14px;
-  padding-left: 0;
-  max-width: 125px;
-}
-.footer__social-image-vk {
-  width: 30px;
-  height: 15px;
-}
-.footer__social-image-insta {
-  width: 23px;
-  height: 23px;
-}
-.footer__social-image {
-  margin-right: 28px;
-}
-.footer__social-image-fb {
-  width: 14px;
-  height: 28px;
-}
-.footer__logo-image {
-  width: 152px;
-  height: 24px;
-}
-.footer-catalog {
-  padding-top: 41px;
-}
-}
-
-@media (min-width:@desktop) {
+@media (min-width: @desktop) {
   .footer {
     max-width: 1440px;
     margin: 0 auto;
@@ -213,29 +237,29 @@
   .right-logo__link-organization {
     margin-right: 0;
     margin-top: 3px;
-}
+  }
 
   .footer__social-links-li:first-child {
     margin-right: -7px;
     padding-left: 2px;
-}
+  }
 
-.footer__social-links-li-facebook {
-  margin-left: -10px;
-}
+  .footer__social-links-li-facebook {
+    margin-left: -10px;
+  }
 
   .footer__social-links {
     margin-top: -12px;
     padding-left: 0;
     max-width: 125px;
-}
+  }
 
   .footer__logo {
     margin-top: 19px;
     margin-left: -12px;
     border: 0;
     width: 145px;
-}
+  }
 
   .footer-catalog {
     padding-top: 41px;
@@ -252,15 +276,13 @@
 
   .footer__social-image {
     margin-right: 33px;
-}
-.footer-logo-form {
-  margin-top: 12px;
-}
-.footer__social-links-li {
-  margin-right: 7px;
-}
-.right-logo__logo-organization {
-  width: 35px;
-  height: 42px;
-}
+  }
+
+  .footer-logo-form {
+    margin-top: 12px;
+  }
+
+  .footer__social-links-li {
+    margin-right: 7px;
+  }
 }
