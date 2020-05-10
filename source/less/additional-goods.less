@@ -3,12 +3,15 @@
 @desktop: 1220px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
+
 .additional-goods__hidden-header {
   display: none;
 }
+
 .additional-goods__hidden-article-header {
   display: none;
 }
+
 .additional-goods__header-sub-span {
   font-size: 24px;
   line-height: 24px;
@@ -59,7 +62,7 @@
   text-align: center;
 }
 
-@media (min-width:@mobile) {
+@media (min-width: @mobile) {
   .additional-goods__tablet-show {
     display: none;
   }
@@ -76,9 +79,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 41px;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("img/gift-photo-mobile@2x.jpg");
     }
+
   }
 
   .additional-goods__article {
@@ -109,7 +114,7 @@
   }
 }
 
-@media(min-width:@tablet) {
+@media(min-width: @tablet) {
   .additional-goods_header-line-tablet-show {
     display: block;
     width: 28px;
@@ -121,8 +126,9 @@
 
   .additional-goods__green-background {
     background-image: url("../img/gift-photo-tablet@1x.jpg");
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("img/gift-photo-tablet@2x.jpg");
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
     }
   }
 
@@ -135,16 +141,19 @@
     border-right: 1px solid #cdcdcd;
     padding-bottom: 4px;
   }
+
   .additional-goods__header-sub-span {
     margin-left: 38px;
     font-size: 36px;
     line-height: 36px;
     margin-top: 2px;
   }
+
   .additional-goods__header {
     padding-left: 0;
     margin-bottom: 48px;
   }
+
   .additional-goods_header-right-line {
     height: 3px;
     background-color: #68b738;
@@ -153,25 +162,30 @@
     margin-left: 37px;
     display: block;
   }
+
   .additional-goods__article-main-text {
     display: flex;
     align-items: center;
     padding-top: 10px;
     justify-content: space-between;
   }
+
   .additional-goods__article-header {
     font-size: 20px;
     margin-bottom: 10px;
     line-height: 20px;
   }
+
   .additional-goods__article-content {
     margin-top: 11px;
     font-size: 16px;
     line-height: 20px;
   }
+
   .additional-goods__article-how-many-weight {
     margin-right: 52px;
   }
+
   .additional-goods__article-order {
     width: 89.66%;
     max-width: 89.66%;
@@ -185,18 +199,22 @@
     margin-top: 17px;
     padding-left: 117px;
   }
+
   .additional-goods__article-main-text {
     display: flex;
     align-items: center;
   }
+
   .additional-goods__article-main-text {
     padding-top: 10px;
     padding-top: 10px;
     justify-content: space-between;
   }
+
   .additional-goods__article-last-child {
     border-bottom: 1px solid #cdcdcd;
   }
+
   .additional-goods__green-background {
     display: flex;
     max-width: 707px;
@@ -207,19 +225,23 @@
     padding-bottom: 68px;
     padding-right: 135px;
   }
+
   .additional-goods__green-background svg {
     margin-bottom: 0;
   }
+
   .additional-goods__green-background svg {
     margin-bottom: 0;
     margin-left: 79px;
     margin-top: -12px;
   }
+
   .additional-goods__green-background svg {
     margin-bottom: 0;
     margin-left: 89px;
     margin-top: -3px;
   }
+
   .additional-goods__green-background-text {
     font-size: 16px;
     line-height: 19px;
@@ -230,18 +252,22 @@
     text-align: left;
     margin-top: 9px;
   }
+
   .additional-goods__article-main-text {
     max-width: 631px;
     margin-left: 37px;
   }
+
   .additional-goods__article-five-litres {
     margin-right: 60px;
   }
+
   .additional-goods__header {
     margin-top: 36px;
     text-align: left;
     position: relative;
   }
+
   .additional-goods_header-line-tablet-show {
     display: block;
     width: 30px;
@@ -249,6 +275,7 @@
     top: 39px;
     left: 1px;
   }
+
   .additional-goods__header-sub-span {
     margin-left: 63px;
     position: relative;
@@ -256,27 +283,31 @@
     line-height: 36px;
     margin-top: 2px;
   }
+
   .additional-goods_header-right-line {
     position: absolute;
     top: 39px;
     right: -4px;
     width: 327px;
   }
+
   .additional-goods__content {
     display: flex;
     margin-top: 0 auto;
     max-width: 733px;
     flex-direction: column;
   }
+
   .additional-goods__article {
     flex-direction: column;
   }
+
   .additional-goods__content-desktop-articles {
     width: 895px;
   }
 }
 
-@media (min-width:@desktop) {
+@media (min-width: @desktop) {
   .additional-goods__article {
     max-width: 895px;
     margin-right: 0;
@@ -285,31 +316,43 @@
     justify-content: space-between;
     padding-bottom: 4px;
     border-left: 0;
-    border-right:0;
+    border-right: 0;
   }
+
   .additional-goods__green-background {
     width: 245px;
     max-width: 245px;
     margin-top: 0;
   }
+
   .additional-goods__header {
     margin-bottom: 47px;
   }
+
   .additional-goods__article-main-text {
     padding-top: 0;
     margin-top: 0;
     margin-left: 0;
     padding-left: 0;
   }
+
   .additional-goods__article-header {
     margin-top: 12px;
+    max-width: 160px;
   }
+
+  .additional-goods__gift-image {
+    margin-bottom: 51px;
+  }
+
   .additional-goods__article-content {
     margin-top: 0;
   }
+
   .additional-goods__article-how-many-weight {
     margin-right: 0;
   }
+
   .additional-goods__article-main-text {
     padding-top: 0;
     margin-top: 0;
@@ -317,11 +360,13 @@
     padding-left: 0;
     display: inline-flex;
   }
+
   .additional-goods__article-how-many-weight {
     margin-top: 13px;
     margin-left: 162px;
     width: 146px;
   }
+
   .additional-goods__article-how-many-price {
     margin-left: 27px;
     margin-left: 98px;
@@ -329,6 +374,7 @@
     margin-top: 12px;
     width: 44px;
   }
+
   .additional-goods__article-order {
     max-width: 243px;
     margin-left: 39px;
@@ -341,42 +387,52 @@
     margin-top: 16px;
     padding-left: 93px;
   }
+
   .additional-goods__green-background {
     width: 245px;
     max-width: 245px;
     margin-top: 0;
     margin-left: 80px;
   }
+
   .additional-goods__green-background svg {
     margin-left: 3px;
     margin-top: -1px;
     margin-bottom: 53px;
   }
+
   .additional-goods__green-background-text {
     margin-left: 0;
     text-align: center;
     font-size: 16px;
     line-height: 20px;
   }
+
   .additional-goods__article-five-litres {
     margin-left: 194px;
     margin-right: 0;
   }
+
   .additional-goods__article-fifty-rubles {
     margin-left: 98px;
   }
+
   .additional-goods__article-how-many-weigh-one-litres {
     margin-left: 256px;
   }
+
   .additional-goods__article-how-many-weight-milk {
     margin-left: 98px;
   }
+
   .additional-goods__article-thirty-grammes {
     margin-left: 234px;
   }
+
   .additional-goods__article-three-hundred-rubles {
     margin-left: 99px;
   }
+
   .additional-goods__green-background {
     flex-direction: column;
     padding-bottom: 0;
@@ -384,10 +440,12 @@
     padding-left: 41px;
     padding-right: 41px;
   }
+
   .additional-goods {
     max-width: 1220px;
     margin: 0 auto;
   }
+
   .additional-goods__header-sub-span {
     margin-left: 0px;
     position: relative;
@@ -395,9 +453,11 @@
     line-height: 36px;
     margin-top: 2px;
   }
+
   .additional-goods__header {
     margin-top: 46px;
   }
+
   .additional-goods_header-line-tablet-show {
     display: block;
     width: 70px;
@@ -405,16 +465,19 @@
     top: 39px;
     left: -107px;
   }
+
   .additional-goods_header-right-line {
     position: absolute;
     top: 39px;
     right: -110px;
     width: 958px;
   }
+
   .additional-goods__content {
     flex-direction: row;
     max-width: 1220px;
   }
+
   .additional-goods__article-main-div {
     display: flex;
   }
