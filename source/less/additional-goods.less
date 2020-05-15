@@ -1,6 +1,7 @@
 @mobile: 320px;
 @tablet: 768px;
 @desktop: 1220px;
+@desktop-custom: 1220px;
 @retina-dpi: 144dpi;
 @retina-dppx: 1.5dppx;
 
@@ -81,9 +82,8 @@
     margin-top: 41px;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("img/gift-photo-mobile@2x.jpg");
+      background-image: url("../img/gift-photo-mobile@2x.jpg");
     }
-
   }
 
   .additional-goods__article {
@@ -114,66 +114,21 @@
   }
 }
 
-@media(min-width: @tablet) {
-  .additional-goods_header-line-tablet-show {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: #68b738;
-    margin-left: -4px;
-    margin-top: 14px;
-  }
-
-  .additional-goods__green-background {
-    background-image: url("../img/gift-photo-tablet@1x.jpg");
-
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/gift-photo-tablet@2x.jpg");
-    }
-  }
-
-  .additional-goods__article {
-    max-width: 706px;
-    margin-left: 27px;
-    border-left: 0;
-    border-right: 0;
-    border-left: 1px solid #cdcdcd;
-    border-right: 1px solid #cdcdcd;
-    padding-bottom: 4px;
-  }
-
-  .additional-goods__header-sub-span {
-    margin-left: 38px;
-    font-size: 36px;
-    line-height: 36px;
-    margin-top: 2px;
-  }
-
+@media (min-width: @tablet) {
   .additional-goods__header {
     padding-left: 0;
+    margin-top: 36px;
+    text-align: left;
+    position: relative;
     margin-bottom: 48px;
-  }
-
-  .additional-goods_header-right-line {
-    height: 3px;
-    background-color: #68b738;
-    width: 324px;
-    margin-top: 14px;
-    margin-left: 37px;
-    display: block;
-  }
-
-  .additional-goods__article-main-text {
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
-    justify-content: space-between;
   }
 
   .additional-goods__article-header {
     font-size: 20px;
     margin-bottom: 10px;
     line-height: 20px;
+    max-width: 407px;
+    word-break: break-all;
   }
 
   .additional-goods__article-content {
@@ -184,6 +139,13 @@
 
   .additional-goods__article-how-many-weight {
     margin-right: 52px;
+    max-width: 132px;
+    word-break: break-all;
+  }
+
+  .additional-goods__article-how-many-price {
+    max-width: 44px;
+    word-break: break-all;
   }
 
   .additional-goods__article-order {
@@ -203,12 +165,10 @@
   .additional-goods__article-main-text {
     display: flex;
     align-items: center;
-  }
-
-  .additional-goods__article-main-text {
-    padding-top: 10px;
     padding-top: 10px;
     justify-content: space-between;
+    max-width: 631px;
+    margin-left: 37px;
   }
 
   .additional-goods__article-last-child {
@@ -222,18 +182,13 @@
     flex-direction: row;
     margin-top: 68px;
     margin-left: 27px;
-    padding-bottom: 68px;
+    padding-bottom: 14px;
     padding-right: 135px;
-  }
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
 
-  .additional-goods__green-background svg {
-    margin-bottom: 0;
-  }
-
-  .additional-goods__green-background svg {
-    margin-bottom: 0;
-    margin-left: 79px;
-    margin-top: -12px;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .additional-goods__green-background svg {
@@ -247,25 +202,15 @@
     line-height: 19px;
     font-family: "Arial", "Tahoma", sans-serif;
     color: #ffffff;
-    max-width: 149px;
     margin-left: 278px;
     text-align: left;
-    margin-top: 9px;
-  }
-
-  .additional-goods__article-main-text {
-    max-width: 631px;
-    margin-left: 37px;
+    margin-top: -45px;
+    max-width: 162px;
+    word-break: break-all;
   }
 
   .additional-goods__article-five-litres {
     margin-right: 60px;
-  }
-
-  .additional-goods__header {
-    margin-top: 36px;
-    text-align: left;
-    position: relative;
   }
 
   .additional-goods_header-line-tablet-show {
@@ -274,6 +219,10 @@
     position: absolute;
     top: 39px;
     left: 1px;
+    height: 3px;
+    background-color: #68b738;
+    margin-left: -4px;
+    margin-top: 14px;
   }
 
   .additional-goods__header-sub-span {
@@ -282,13 +231,19 @@
     font-size: 36px;
     line-height: 36px;
     margin-top: 2px;
+    max-width: 338px;
   }
 
   .additional-goods_header-right-line {
+    height: 3px;
+    background-color: #68b738;
+    margin-top: 14px;
+    margin-left: 37px;
+    display: block;
     position: absolute;
     top: 39px;
-    right: -4px;
-    width: 327px;
+    right: 1%;
+    width: 42.57%;
   }
 
   .additional-goods__content {
@@ -300,10 +255,25 @@
 
   .additional-goods__article {
     flex-direction: column;
+    max-width: 706px;
+    margin-left: 27px;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    padding-bottom: 4px;
   }
 
-  .additional-goods__content-desktop-articles {
-    width: 895px;
+  .additional-goods__gift-image {
+    margin-left: 90px;
+    margin-top: 0px;
+  }
+}
+
+@media (min-width:900px) {
+  .additional-goods_header-right-line {
+    position: absolute;
+    top: 38px;
+    right: -0.5%;
+    width: 43%;
   }
 }
 
@@ -319,26 +289,26 @@
     border-right: 0;
   }
 
+  .additional-goods__gift-image {
+    margin-left: 6px;
+    margin-top: 1px;
+}
   .additional-goods__green-background {
     width: 245px;
     max-width: 245px;
     margin-top: 0;
-  }
-
-  .additional-goods__header {
-    margin-bottom: 47px;
-  }
-
-  .additional-goods__article-main-text {
-    padding-top: 0;
-    margin-top: 0;
-    margin-left: 0;
-    padding-left: 0;
+    margin-left: 80px;
+    flex-direction: column;
+    padding-bottom: 0;
+    display: flex;
+    padding-left: 41px;
+    padding-right: 41px;
   }
 
   .additional-goods__article-header {
     margin-top: 12px;
     max-width: 160px;
+    word-break: inherit;
   }
 
   .additional-goods__gift-image {
@@ -347,10 +317,6 @@
 
   .additional-goods__article-content {
     margin-top: 0;
-  }
-
-  .additional-goods__article-how-many-weight {
-    margin-right: 0;
   }
 
   .additional-goods__article-main-text {
@@ -363,14 +329,14 @@
 
   .additional-goods__article-how-many-weight {
     margin-top: 13px;
-    margin-left: 162px;
-    width: 146px;
+    margin-left: 164px;
+    max-width: 146px;
+    margin-right: 0;
+    word-break: break-all;
   }
 
   .additional-goods__article-how-many-price {
-    margin-left: 27px;
-    margin-left: 98px;
-    margin-top: 10px;
+    margin-left: 111px;
     margin-top: 12px;
     width: 44px;
   }
@@ -388,13 +354,6 @@
     padding-left: 93px;
   }
 
-  .additional-goods__green-background {
-    width: 245px;
-    max-width: 245px;
-    margin-top: 0;
-    margin-left: 80px;
-  }
-
   .additional-goods__green-background svg {
     margin-left: 3px;
     margin-top: -1px;
@@ -406,6 +365,8 @@
     text-align: center;
     font-size: 16px;
     line-height: 20px;
+    margin-top: 10px;
+    max-width: 161px;
   }
 
   .additional-goods__article-five-litres {
@@ -414,7 +375,7 @@
   }
 
   .additional-goods__article-fifty-rubles {
-    margin-left: 98px;
+    margin-left: 180px;
   }
 
   .additional-goods__article-how-many-weigh-one-litres {
@@ -422,7 +383,7 @@
   }
 
   .additional-goods__article-how-many-weight-milk {
-    margin-left: 98px;
+    margin-left: 196px;
   }
 
   .additional-goods__article-thirty-grammes {
@@ -430,15 +391,7 @@
   }
 
   .additional-goods__article-three-hundred-rubles {
-    margin-left: 99px;
-  }
-
-  .additional-goods__green-background {
-    flex-direction: column;
-    padding-bottom: 0;
-    display: flex;
-    padding-left: 41px;
-    padding-right: 41px;
+    margin-left: 121px;
   }
 
   .additional-goods {
@@ -447,7 +400,7 @@
   }
 
   .additional-goods__header-sub-span {
-    margin-left: 0px;
+    margin-left: 0;
     position: relative;
     font-size: 36px;
     line-height: 36px;
@@ -455,7 +408,8 @@
   }
 
   .additional-goods__header {
-    margin-top: 46px;
+    margin-top: 45px;
+    margin-bottom: 47px;
   }
 
   .additional-goods_header-line-tablet-show {
@@ -480,5 +434,8 @@
 
   .additional-goods__article-main-div {
     display: flex;
+    width: 895px;
   }
 }
+
+

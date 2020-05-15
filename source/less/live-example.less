@@ -1,6 +1,7 @@
 @mobile: 320px;
 @tablet: 768px;
 @desktop: 1220px;
+@desktopBig: 1440px;
 
 .live-example__content {
   max-width: 279px;
@@ -53,6 +54,11 @@
   background-image: url("../img/weight-back-left.png");
   background-repeat: no-repeat;
   background-size: 125px 55px;
+  padding-top: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45.65%;
 }
 
 .live-example__numbers-sub-header {
@@ -76,6 +82,7 @@
 .live-example__slider {
   padding-top: 37px;
   padding-bottom: 25px;
+  position: relative;
 }
 
 .live-example__slider-button {
@@ -83,20 +90,6 @@
   line-height: 20px;
   text-transform: uppercase;
   font-family: "Oswald-Regular", "Arial", sans-serif;
-}
-
-.live-example__numbers-sub:first-child {
-  padding-top: 13px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 45.65%;
-}
-
-.live-example__slider {
-  position: relative;
 }
 
 .slide-2 {
@@ -143,14 +136,6 @@
     margin-bottom: 26px;
   }
 
-  .live-example__numbers-sub:last-child {
-    width: 44.65%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 13px;
-  }
-
   .live-example__numbers-sub-header:first-child {
     margin-bottom: 9px;
   }
@@ -159,6 +144,11 @@
     background-image: url("../img/weight-back-right.png");
     background-repeat: no-repeat;
     background-size: 125px 55px;
+    width: 44.65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13px;
   }
 
   .live-example__slider-slide {
@@ -203,7 +193,6 @@
     justify-content: space-between;
     max-width: 197px;
     margin-left: 44px;
-    margin-top: 32px;
     margin-top: -206px;
   }
 
@@ -295,7 +284,7 @@
 
   .live-example__numbers-sub-content-low-weight {
     padding-left: 10px;
-    background-color: #fff;
+    background-color: #ffffff;
     max-width: 198px;
     margin-left: -24px;
     padding-right: 0;
@@ -307,7 +296,7 @@
   }
 
   .live-example__numbers-sub-content-total-time {
-    background-color: #fff;
+    background-color: #ffffff;
     max-width: 127px;
     margin-left: 13px;
     margin-top: 2px;
@@ -317,18 +306,15 @@
 
   .live-example__numbers-plus-price {
     display: flex;
+    margin-top: 52px;
   }
 
   .live-example__price {
     font-size: 20px;
     line-height: 20px;
     display: flex;
-    flex-direction: column;
-  }
-
-  .live-example__price {
-    display: flex;
     align-items: flex-end;
+    flex-direction: column;
     margin-left: 156px;
     margin-top: 11px;
   }
@@ -338,25 +324,13 @@
   }
 
   .live-example__numbers-sub:last-child {
-    width: 189px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 13px;
-  }
-
-  .live-example__numbers-sub-last-child {
-    width: 189px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 13px;
-  }
-
-  .live-example__numbers-sub:last-child {
-    background-size: 162px 71px;
     background-size: 161px 71px;
     padding-right: 12px;
+    width: 189px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 13px;
   }
 
   .live-example__price-fifteen-thousand {
@@ -419,10 +393,6 @@
     margin-left: 1px;
   }
 
-  .live-example__numbers-plus-price {
-    margin-top: 52px;
-  }
-
   /*Стилизация большого кота в слайдере индекс*/
   .live-example__slider-two-cats {
     height: 277px;
@@ -433,17 +403,10 @@
   }
 
   .live-example__slider-before-cat {
-    height: 226px;
-    width: 280px;
-    background-image: url(../imgs/index/before-desktop.png);
-    background-size: cover;
-    background-position: 50%;
     background-repeat: no-repeat;
-    background-color: #f2f2f2;
     position: absolute;
     top: -15px;
     left: 49%;
-    margin-left: -140px;
     z-index: 1;
     height: 589px;
     width: 348px;
@@ -451,7 +414,7 @@
     background-size: 672px 518px;
     background-position: 15px 10px;
     background-color: transparent;
-    background-image: url(../img/before-desktop@1x.png);
+    background-image: url("../img/before-desktop@1x.png");
   }
 
   .live-example__slider-after-cat {
@@ -462,10 +425,10 @@
     width: 600px;
     margin-left: -342px;
     background-size: 559px 514px;
-    background-position: 85px 0px;
+    background-position: 85px 0;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-image: url(../img/after-desktop@1x.png);
+    background-image: url("../img/after-desktop@1x.png");
   }
 }
 
@@ -488,14 +451,15 @@
     font-size: 60px;
     line-height: 60px;
     margin-top: 7px;
-    margin-bottom: 74px;
-    margin-left: 0;
+    margin-bottom: 76px;
     display: flex;
     margin-left: 109px;
+    max-width: 650px;
   }
 
   .live-example__main-content {
     display: flex;
+    z-index: 1;
   }
 
   .live-example__main-content-left-column {
@@ -506,17 +470,8 @@
   .live-example__content {
     flex-direction: row;
     display: flex;
-    max-width: 1220px;
+    max-width: 1316px;
     margin: 0;
-  }
-
-  .live-example__numbers-plus-price {
-    flex-direction: column;
-    display: flex;
-  }
-
-  .live-example__price {
-    margin-left: 0;
   }
 
   .live-example__sub {
@@ -525,12 +480,14 @@
     margin-bottom: 50px;
     margin-left: 80px;
     max-width: 432px;
-    margin-top: 73px;
+    margin-top: 72px;
   }
 
   .live-example__numbers-plus-price {
     margin-top: 18px;
     margin-left: 81px;
+    flex-direction: column;
+    display: flex;
   }
 
   .live-example__numbers-sub:first-child {
@@ -573,10 +530,7 @@
     flex-direction: row;
     margin-top: 28px;
     padding-left: 0;
-  }
-
-  .live-example__how-many-u-spent {
-    width: 175px;
+    margin-left: 0;
   }
 
   .live-example__price-fifteen-thousand {
@@ -584,11 +538,12 @@
   }
 
   .live-example__slider {
-    margin-top: 0px;
-    margin-left: 90px;
+    margin-top: 0;
+    margin-left: -146px;
     margin-right: -28px;
     position: relative;
     background-color: #f2f2f2;
+    padding-bottom: 18px;
   }
 
   .live-example__slider-slide-show-tablet {
@@ -602,9 +557,10 @@
 
   .live-example__content-slider {
     display: flex;
-    width: 1440px;
+    max-width: 1220px;
     background-color: #f2f2f2;
-    margin-top: 0px;
+    margin-top: 0;
+    padding-right: 25.5%;
   }
 
   .live-example__slider-on-off-content {
@@ -622,7 +578,7 @@
   .live-example__slider-controls {
     max-width: 569px;
     margin-top: -219px;
-    margin-left: 103px;
+    margin-left: 37.86%;
     margin-bottom: 48px;
   }
 
@@ -633,10 +589,7 @@
 
   .live-example__how-many-u-spent {
     margin-left: -2px;
-  }
-
-  .live-example__slider {
-    padding-bottom: 18px;
+    width: 175px;
   }
 
   /*Стилизация большого кота в слайдере индекс*/
@@ -645,45 +598,62 @@
     position: relative;
     width: 100%;
     top: -222px;
-    left: -20px;
-  }
+    left: 25%;
+}
 
   .live-example__slider-before-cat {
-    height: 226px;
-    width: 280px;
-    background-image: url(../imgs/index/before-desktop.png);
-    background-size: cover;
-    background-position: 50%;
     background-repeat: no-repeat;
-    background-color: #f2f2f2;
     position: absolute;
     top: -15px;
     left: 49%;
-    margin-left: -140px;
     z-index: 1;
-    height: 589px;
+    height: 558px;
     width: 374px;
     margin-left: -294px;
     background-size: 672px 518px;
     background-position: 15px 10px;
     background-color: transparent;
-    background-image: url(../img/before-desktop@1x.png);
+    background-image: url("../img/before-desktop@1x.png");
   }
 
   .live-example__slider-after-cat {
     position: absolute;
     top: -4px;
     left: 55%;
-    height: 583px;
+    height: 556px;
     width: 600px;
     margin-left: -337px;
     background-size: 559px 514px;
-    background-position: 85px 0px;
+    background-position: 85px 0;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-image: url(../img/after-desktop@1x.png);
+    background-image: url("../img/after-desktop@1x.png");
   }
-  .live-example__header {
-    max-width: 650px;
+  .live-example__slider{
+    margin-left: -152px;
+
+    }
+}
+@media (min-width: @desktopBig) {
+  .live-example__header-plus-how-many-spent {
+    width: 100%;
   }
+
+  .live-example__content-slider {
+    display: flex;
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: 0;
+    padding-right: 15.3%;
+}
+
+.live-example__content {
+  max-width: 1440px;
+}
+
+.live-example__slider{
+margin-left: -23px;
+
+}
+
 }
