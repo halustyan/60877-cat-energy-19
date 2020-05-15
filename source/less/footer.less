@@ -1,12 +1,21 @@
 @mobile: 320px;
 @tablet: 768px;
 @desktop: 1220px;
+
 .right-logo__logo-organization:hover {
   fill: #76bd4a;
 }
 
 .footer__logo-image:hover {
   opacity: 75%;
+}
+
+.soc-image:hover {
+ fill:#68b738;
+}
+
+.soc-image:active {
+  color:#c8e0ba ;
 }
 
 .footer__logo-image:active {
@@ -36,6 +45,7 @@
 
 .footer__social-links-li {
   list-style-type: none;
+  max-width: 41px;
 }
 
 .footer__footer-logo {
@@ -111,7 +121,7 @@
   }
 
   .footer__logo-catalog {
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .footer__social-links-catalog {
@@ -181,22 +191,17 @@
     padding-left: 0;
   }
 
-  .right-logo__link-organization {
-    margin-right: 0;
-  }
-
   .footer-index {
-    padding-top: 43px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .footer__social-links {
     margin: 0 auto;
-  }
-
-  .footer__social-links {
     margin-top: -14px;
     padding-left: 0;
     max-width: 125px;
+    flex-wrap: wrap;
   }
 
   .footer__social-image-vk {
@@ -209,10 +214,6 @@
     height: 23px;
   }
 
-  .footer__social-image {
-    margin-right: 28px;
-  }
-
   .footer__social-image-fb {
     width: 14px;
     height: 28px;
@@ -222,8 +223,9 @@
     width: 152px;
     height: 24px;
   }
+
   .footer-catalog {
-    padding-top: 41px;
+    padding-top: 69px;
   }
 }
 
@@ -274,15 +276,7 @@
     margin-left: 55px;
   }
 
-  .footer__social-image {
-    margin-right: 33px;
-  }
-
   .footer-logo-form {
     margin-top: 12px;
-  }
-
-  .footer__social-links-li {
-    margin-right: 7px;
   }
 }

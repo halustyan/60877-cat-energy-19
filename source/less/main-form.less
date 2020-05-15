@@ -47,8 +47,12 @@
   outline: 0;
 }
 
-.input-error {
+.form input:invalid {
   border: 1px solid #ff8282;
+}
+
+.form input:invalid svg{
+  border: 1px solid #ff9797;
 }
 
 .form__checkbox-label:active {
@@ -497,6 +501,7 @@
     font-size: 60px;
     margin-top: 42px;
     margin-left: 10px;
+    max-width: 432px;
   }
 
   .main-form__full-anket {
@@ -514,6 +519,8 @@
   .form__first-three-inputs {
     font-size: 20px;
     line-height: 20px;
+    max-width: 631px;
+    margin-bottom: 12px;
   }
 
   .form__first-three-inputs:nth-child(1n) {
@@ -656,7 +663,7 @@
   }
 
   .form__contact-data-cat-owner-email {
-    max-width: 672px;
+    max-width: 686px;
     margin-bottom: 21px;
     margin-left: 11px;
   }
@@ -679,14 +686,16 @@
 
   .form__email-input-img {
     position: absolute;
-    right: 20px;
-    top: 19px;
+    right: 37px;
+    top: 20px;
   }
 
   .form__commentary-comment {
     font-size: 36px;
     line-height: 36px;
     margin-left: 50px;
+    max-width: 181px;
+    word-break: break-all;
     margin-right: 18px;
   }
 
@@ -695,6 +704,7 @@
     position: relative;
     display: flex;
     margin-left: 11px;
+    max-width: 716px;
   }
 
   .form__sub-label-telephone {
@@ -719,7 +729,7 @@
   }
 
   .form__commentary {
-    margin-top: 39px;
+    margin-top: 64px;
     position: relative;
   }
 
@@ -762,6 +772,8 @@
   .form__sub-add {
     font-size: 36px;
     line-height: 36px;
+    max-width: 230px;
+    word-break: break-all;
   }
 
   .form__sub-additional {
@@ -825,13 +837,13 @@
   }
 
   .form__checkboxes {
-    margin-top: 19px;
+    margin-top: 51px;
     margin-left: 11px;
   }
 
   .form__sub-checkbox {
     margin-bottom: 39px;
-    max-width: 326px;
+    max-width: 360px;
   }
 
   .form__sub-label-sugarchange {
@@ -876,8 +888,9 @@
   .communicating-form-transformed {
     margin: 0 auto;
     margin-top: 52px;
-    max-width: 766px;
+    max-width: 768px;
     margin-left: 0;
+    background-color: #f2f2f2;
   }
 
   .form__sub-age {
@@ -895,11 +908,6 @@
   .form__sub-weight {
     max-width: 631px;
     margin-top: 15px;
-  }
-
-  .form__first-three-inputs {
-    max-width: 631px;
-    margin-bottom: 12px;
   }
 
   .map__iframe-form {
@@ -1010,11 +1018,11 @@
 
   .form__contact-data-for-cat-owner-line {
     height: 3px;
-    width: 778px;
+    width: 54.77%;
     margin-top: 14px;
     background-color: #68b738;
     position: absolute;
-    right: -111px;
+    right: 0%;
     top: 8px;
   }
 
@@ -1090,16 +1098,16 @@
     margin-left: 0;
     margin-right: 18px;
     margin-top: 2px;
-    max-width: 180px;
+    max-width: 181px;
   }
 
   .form__commentary-line {
     height: 3px;
     background-color: #68b738;
-    width: 91.1%;
+    width: 83.1%;
     margin-top: 22px;
     position: absolute;
-    right: -110px;
+    right: 0%;
     top: 2px;
   }
 
@@ -1142,8 +1150,8 @@
   .forsm__sub-additional-line {
     height: 3px;
     background-color: #68b738;
-    width: 1077px;
-    right: -109px;
+    width: 80.08%;
+    right: 0;
     margin-top: 8px;
     position: absolute;
   }
