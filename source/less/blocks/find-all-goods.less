@@ -1,6 +1,4 @@
-@mobile: 320px;
-@tablet: 768px;
-@desktop: 1220px;
+@import url("variables.less");
 
 .find-all-goods {
   display: flex;
@@ -46,6 +44,8 @@
   padding: 11px 94px 11px 95px;
   text-align: center;
   margin-bottom: 22px;
+  color: #444444;
+  text-decoration: none;
 }
 
 .find-all-goods__more-tastes {
@@ -55,14 +55,17 @@
   margin-bottom: 21px;
 }
 
-@media (min-width:@mobile) {
+@media (min-width: @mobile) {
   .find-all-goods__plus-mobile-img {
     display: none;
   }
-  .find-all-goods__plus-mobile{
+
+  .find-all-goods__plus-mobile {
     display: block;
     margin-bottom: 22px;
+    fill:#dbdbdb;
   }
+
   .additional-goods__gift-image {
     margin-bottom: 61px;
   }
@@ -81,12 +84,6 @@
 
   .find-all-goods__plus-mobile-img {
     display: block;
-  }
-  .find-all-goods__plus-mobile{
-    display: none;
-  }
-
-  .find-all-goods__plus-mobile-img {
     margin-top: 13px;
     margin-bottom: 50px;
   }
@@ -116,6 +113,17 @@
     font-size: 16px;
     margin-bottom: 35px;
   }
+
+  .find-all-goods__plus-mobile-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .find-all-goods__plus-mobile {
+    width: 60px;
+    height: 60px;
+    fill:#dbdbdb;
+  }
 }
 
 @media (min-width: @desktop) {
@@ -127,9 +135,8 @@
 
   .find-all-goods__plus-mobile-img {
     display: block;
-  }
-  .find-all-goods__plus-mobile{
-    display: none;
+    margin-top: 13px;
+    margin-bottom: 48px;
   }
 
   .find-all-goods__show-all-goods {
@@ -139,10 +146,5 @@
     font-size: 16px;
     margin-bottom: 32px;
     line-height: 20px;
-  }
-
-  .find-all-goods__plus-mobile-img {
-    margin-top: 13px;
-    margin-bottom: 48px;
   }
 }

@@ -1,21 +1,23 @@
-@mobile: 320px;
-@tablet: 768px;
-@desktop: 1220px;
+@import url("variables.less");
 
-.right-logo__logo-organization:hover {
-  fill: #76bd4a;
+.footer__right-logo-link-organization {
+  fill:#666666;
+}
+
+.footer__right-logo-link-organization:hover svg {
+  fill: #68b738;
 }
 
 .footer__logo-image:hover {
   opacity: 75%;
 }
 
-.soc-image:hover {
- fill:#68b738;
+.footer__soc-image:hover {
+  fill: #68b738;
 }
 
-.soc-image:active {
-  color:#c8e0ba ;
+.footer__soc-image:active {
+  color: #c8e0ba;
 }
 
 .footer__logo-image:active {
@@ -35,6 +37,7 @@
   align-items: center;
   max-width: 320px;
   margin: 0 auto;
+  padding-top: 36px;
 }
 
 .footer__logo {
@@ -56,17 +59,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 21px;
+  padding-top: 22px;
   border-top: 1px solid #d9d9d9;
 }
 
-.right-logo__link-organization {
+.footer__right-logo-link-organization {
   font-size: 16px;
   line-height: 16px;
   font-family: "Arial", "Tahoma", sans-serif;
   color: #444444;
   text-decoration: none;
-  margin-right: 131px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .footer__social-links-catalog {
@@ -90,6 +95,15 @@
     align-items: center;
   }
 
+  .footer__social-links-li-facebook-catalog {
+    margin-right: 2px;
+  }
+
+  .footer__social-links-li-instagramm {
+    margin-top: 4px;
+    margin-left: -4px;
+  }
+
   .footer__social-links {
     margin-bottom: 17px;
     margin-top: 22px;
@@ -98,10 +112,13 @@
     justify-content: space-between;
     display: flex;
     margin-left: -7px;
+    padding-left: 82px;
+    padding-right: 82px;
   }
 
   .footer__social-links-li-facebook {
-    margin-left: -5px;
+    margin-left: -3px;
+    margin-right: 2px;
   }
 
   .footer__logo {
@@ -112,7 +129,7 @@
   }
 
   .footer__logo-index {
-    padding-bottom: 29px;
+    padding-bottom: 27px;
   }
 
   .footer__logo-image {
@@ -132,9 +149,34 @@
     margin-right: -7px;
   }
 
-  .right-logo__logo-organization {
+  .footer__right-logo-organization {
     width: 35px;
     height: 35px;
+  }
+  .footer__name-org {
+    width: 115px;
+    margin-right: 132px;
+    margin-top: -1px;
+  }
+
+  .footer__svg {
+    width: 30px;
+  }
+
+  .footer__name-org-index {
+    width: 115px;
+    margin-right: 140px;
+    margin-top: -1px;
+    margin-left: -3px;
+  }
+
+  .footer__social-links-li-instagramm-form {
+    margin-top: 3px;
+    margin-left: -3px;
+  }
+
+  .footer__social-links-li-facebook-form {
+    margin-right: 2px;
   }
 }
 
@@ -151,9 +193,18 @@
     width: 145px;
   }
 
+  .footer__name-org {
+    width: 115px;
+    margin-right: 19px;
+  }
+
   .footer__social-links-li:first-child {
     margin-right: 1px;
     margin-left: 4px;
+  }
+
+  .footer__right-logo-organization {
+    margin-left: 15px;
   }
 
   .footer__footer-content {
@@ -173,7 +224,7 @@
     margin-top: -4px;
   }
 
-  .right-logo__link-organization {
+  .footer__right-logo-link-organization {
     margin-right: 0;
     margin-top: -4px;
   }
@@ -182,7 +233,7 @@
     padding-top: 0;
     border: 0;
     width: 164px;
-    margin-top: -16px;
+    margin-top: -10px;
     margin-left: -7px;
   }
 
@@ -192,7 +243,7 @@
   }
 
   .footer-index {
-    padding-top: 40px;
+    padding-top: 45px;
     padding-bottom: 40px;
   }
 
@@ -202,6 +253,7 @@
     padding-left: 0;
     max-width: 125px;
     flex-wrap: wrap;
+    padding-right: 0px;
   }
 
   .footer__social-image-vk {
@@ -225,7 +277,30 @@
   }
 
   .footer-catalog {
-    padding-top: 69px;
+    padding-top: 44px;
+  }
+
+  .footer__right-logo-organization {
+    margin-left: -7px;
+    margin-top: -3px;
+  }
+
+  .footer__social-links-li-instagramm-catalog {
+    margin-left: -2px;
+  }
+
+  .footer__social-links-li-facebook-catalog {
+    margin-right: -3px;
+    margin-top: 1px;
+  }
+
+  .footer__social-links-li-facebook-index {
+    margin-right: -3px;
+    margin-top: 1px;
+  }
+
+  .footer__name-org-index {
+    margin-left: 0;
   }
 }
 
@@ -236,18 +311,28 @@
     padding-top: 45px;
   }
 
-  .right-logo__link-organization {
+  .footer__right-logo-organization {
+    margin-left: -5px;
+    margin-top: 0px;
+  }
+
+  .footer__right-logo-link-organization {
     margin-right: 0;
-    margin-top: 3px;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .footer__social-links-li:first-child {
     margin-right: -7px;
-    padding-left: 2px;
+    padding-left: 0;
   }
 
   .footer__social-links-li-facebook {
     margin-left: -10px;
+    margin-right: -2px;
+    margin-top: 1px;
   }
 
   .footer__social-links {
@@ -257,7 +342,7 @@
   }
 
   .footer__logo {
-    margin-top: 19px;
+    margin-top: 22px;
     margin-left: -12px;
     border: 0;
     width: 145px;
@@ -277,6 +362,11 @@
   }
 
   .footer-logo-form {
-    margin-top: 12px;
+    margin-top: 17px;
   }
+
+  .footer__social-links-li-instagramm-form {
+    margin-top: 3px;
+    margin-left: 4px;
+}
 }

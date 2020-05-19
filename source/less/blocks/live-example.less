@@ -1,7 +1,4 @@
-@mobile: 320px;
-@tablet: 768px;
-@desktop: 1220px;
-@desktopBig: 1440px;
+@import url("variables.less");
 
 .live-example__content {
   max-width: 279px;
@@ -53,7 +50,7 @@
 .live-example__numbers-sub:first-child {
   background-image: url("../img/weight-back-left.png");
   background-repeat: no-repeat;
-  background-size: 125px 55px;
+  background-size: 123px 57px;
   padding-top: 13px;
   display: flex;
   flex-direction: column;
@@ -75,8 +72,8 @@
   font-family: "Arial", "Tahoma", sans-serif;
   max-width: 55px;
   background-color: #f2f2f2;
-  padding-left: 16px;
   padding-right: 18px;
+  padding-left: 11px;
 }
 
 .live-example__slider {
@@ -90,12 +87,6 @@
   line-height: 20px;
   text-transform: uppercase;
   font-family: "Oswald-Regular", "Arial", sans-serif;
-}
-
-.slide-2 {
-  position: absolute;
-  top: 0;
-  left: -10000px;
 }
 
 .live-example__slider-slide {
@@ -128,6 +119,27 @@
     margin: 0 auto;
   }
 
+  .live-example__numbers-sub-header-five-kg {
+    margin-left: -4px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+
+  .live-example__sub-br {
+    display: none;
+  }
+
+  .live-example__numbers-sub-content-total-time {
+    padding-left: 17px;
+    margin-top: 10px;
+  }
+
+  .live-example__numbers-sub-header-sixty-days {
+    margin-left: 1px;
+    margin-bottom: 0px;
+    margin-top: 8px;
+  }
+
   .live-example__sub {
     font-size: 14px;
     line-height: 17px;
@@ -136,19 +148,15 @@
     margin-bottom: 26px;
   }
 
-  .live-example__numbers-sub-header:first-child {
-    margin-bottom: 9px;
-  }
-
   .live-example__numbers-sub:last-child {
     background-image: url("../img/weight-back-right.png");
     background-repeat: no-repeat;
-    background-size: 125px 55px;
+    background-size: 125px 57px;
     width: 44.65%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 13px;
+    padding-top: 6px;
   }
 
   .live-example__slider-slide {
@@ -178,14 +186,12 @@
     line-height: 20px;
     text-align: center;
     padding-left: 4px;
-    margin-left: 40px;
-    margin-top: 20px;
-    display: flex;
+    margin-left: 39px;
+    margin-top: 17px;
   }
 
   .live-example__how-many-u-spent {
     margin-left: 3px;
-    margin-right: 3px;
   }
 
   .live-example__slider-controls {
@@ -196,7 +202,6 @@
     margin-top: -206px;
   }
 
-  /*Стилизация большого кота в слайдере индекс*/
   .live-example__slider-two-cats {
     height: 277px;
     position: relative;
@@ -205,16 +210,29 @@
     left: -46px;
   }
 
-  .mobile-show {
+  .live-example__mobile-show {
     display: block;
     margin-top: 198px;
     margin-left: 27px;
+    width: 317px;
   }
 }
 
 @media (min-width: @tablet) {
-  .mobile-show {
+  .live-example__mobile-show {
     display: none;
+  }
+
+  .live-example__numbers-sub-header-sixty-days {
+    margin-top: 2px;
+  }
+
+  .how-it-is-work__br-none {
+    display: block;
+  }
+
+  .live-example__sub-br {
+    display: block;
   }
 
   .live-example {
@@ -261,9 +279,9 @@
   }
 
   .live-example__numbers-sub-header-five-kg {
-    margin-bottom: 12px;
-    margin-top: 10px;
-    margin-left: -15px;
+    margin-bottom: 6%;
+    margin-top: 1%;
+    margin-left: -12px;
     width: 109px;
   }
 
@@ -273,35 +291,31 @@
   }
 
   .live-example__numbers-sub:first-child {
-    padding-top: 5px;
+    padding-top: 13px;
     max-width: 162px;
-    padding-right: 33px;
+    padding-right: 8px;
     text-align: center;
-    padding-left: 23px;
-    margin-right: 16px;
-    background-size: 162px 72px;
+    padding-left: 15px;
+    margin-right: 38px;
+    background-size: 99.4% 72px;
   }
 
   .live-example__numbers-sub-content-low-weight {
     padding-left: 10px;
     background-color: #ffffff;
     max-width: 198px;
-    margin-left: -24px;
-    padding-right: 0;
-  }
-
-  .live-example__numbers-sub-header-sixty-days {
-    margin-left: 8px;
-    margin-top: 2px;
+    margin-left: -7px;
+    padding-top: 3px;
+    padding-right: 14px;
   }
 
   .live-example__numbers-sub-content-total-time {
     background-color: #ffffff;
     max-width: 127px;
-    margin-left: 13px;
-    margin-top: 2px;
+    margin-left: 4px;
+    margin-top: 11px;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 2px;
   }
 
   .live-example__numbers-plus-price {
@@ -315,7 +329,7 @@
     display: flex;
     align-items: flex-end;
     flex-direction: column;
-    margin-left: 156px;
+    margin-left: 148px;
     margin-top: 11px;
   }
 
@@ -324,7 +338,7 @@
   }
 
   .live-example__numbers-sub:last-child {
-    background-size: 161px 71px;
+    background-size: 163px 71px;
     padding-right: 12px;
     width: 189px;
     display: flex;
@@ -346,6 +360,7 @@
     position: relative;
     background-color: #f2f2f2;
     max-width: 768px;
+    padding-bottom: 20px;
   }
 
   .live-example__slider-slide-show-tablet {
@@ -358,6 +373,8 @@
   .live-example__slider-button {
     font-size: 20px;
     line-height: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #b8b8b8;
   }
 
   .live-example__slider-controls {
@@ -393,7 +410,6 @@
     margin-left: 1px;
   }
 
-  /*Стилизация большого кота в слайдере индекс*/
   .live-example__slider-two-cats {
     height: 277px;
     position: relative;
@@ -408,7 +424,7 @@
     top: -15px;
     left: 49%;
     z-index: 1;
-    height: 589px;
+    height: 539px;
     width: 348px;
     margin-left: -294px;
     background-size: 672px 518px;
@@ -421,7 +437,7 @@
     position: absolute;
     top: -4px;
     left: 55%;
-    height: 583px;
+    height: 532px;
     width: 600px;
     margin-left: -342px;
     background-size: 559px 514px;
@@ -433,7 +449,15 @@
 }
 
 @media (min-width: @desktop) {
-  .mobile-show {
+  .live-example__mobile-show {
+    display: none;
+  }
+
+  .live-example__header-plus-how-many-spent {
+    width: 100%;
+  }
+
+  .live-example__sub-br {
     display: none;
   }
 
@@ -479,8 +503,8 @@
     line-height: 24px;
     margin-bottom: 50px;
     margin-left: 80px;
-    max-width: 432px;
-    margin-top: 72px;
+    max-width: 434px;
+    margin-top: 70px;
   }
 
   .live-example__numbers-plus-price {
@@ -500,25 +524,20 @@
     background-size: 162px 72px;
   }
 
-  .live-example__numbers-sub-header:first-child {
-    margin-bottom: 9px;
-    margin-left: -7px;
-  }
-
   .live-example__numbers-sub-content-low-weight {
     padding-left: 10px;
-    background-color: inherit;
+    background-color: #f2f2f2;
     max-width: 198px;
     margin-left: -17px;
-    padding-right: 0;
-    margin-top: 1px;
+    padding-right: 4px;
+    margin-top: -2%;
   }
 
   .live-example__numbers-sub-content-total-time {
-    background-color: inherit;
+    background-color: #f2f2f2;
     max-width: 127px;
     margin-left: -6px;
-    margin-top: 2px;
+    margin-top: 8%;
     padding-left: 0;
     padding-right: 0;
   }
@@ -539,11 +558,11 @@
 
   .live-example__slider {
     margin-top: 0;
-    margin-left: -146px;
-    margin-right: -28px;
+    margin-right: 137px;
     position: relative;
     background-color: #f2f2f2;
-    padding-bottom: 18px;
+    padding-bottom: 22px;
+    margin-left: -152px;
   }
 
   .live-example__slider-slide-show-tablet {
@@ -560,7 +579,7 @@
     max-width: 1220px;
     background-color: #f2f2f2;
     margin-top: 0;
-    padding-right: 25.5%;
+    padding-right: 12.9%;
   }
 
   .live-example__slider-on-off-content {
@@ -577,13 +596,13 @@
 
   .live-example__slider-controls {
     max-width: 569px;
-    margin-top: -219px;
-    margin-left: 37.86%;
+    margin-top: -221px;
+    margin-left: 44%;
     margin-bottom: 48px;
   }
 
   .live-example__slider-button {
-    padding-bottom: 7px;
+    padding-bottom: 4px;
     border-bottom: 1px dotted #bebebe;
   }
 
@@ -592,14 +611,13 @@
     width: 175px;
   }
 
-  /*Стилизация большого кота в слайдере индекс*/
   .live-example__slider-two-cats {
     height: 550px;
     position: relative;
     width: 100%;
     top: -222px;
-    left: 25%;
-}
+    left: 31%;
+  }
 
   .live-example__slider-before-cat {
     background-repeat: no-repeat;
@@ -621,22 +639,31 @@
     top: -4px;
     left: 55%;
     height: 556px;
-    width: 600px;
+    width: 617px;
     margin-left: -337px;
-    background-size: 559px 514px;
-    background-position: 85px 0;
+    background-size: 581px 514px;
+    background-position: 82px 0;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-image: url("../img/after-desktop@1x.png");
+    background-image: url(../img/after-desktop@1x.png);
   }
-  .live-example__slider{
-    margin-left: -152px;
-
-    }
 }
+
 @media (min-width: @desktopBig) {
   .live-example__header-plus-how-many-spent {
     width: 100%;
+  }
+
+  .live-example__numbers-sub-header-five-kg {
+    margin-bottom: 12px;
+    margin-top: 9px;
+    margin-left: -12px;
+    width: 109px;
+  }
+
+  .live-example__numbers-sub-header-sixty-days {
+    margin-left: -5px;
+    margin-top: 0px;
   }
 
   .live-example__content-slider {
@@ -645,15 +672,13 @@
     background-color: #f2f2f2;
     margin-top: 0;
     padding-right: 15.3%;
-}
+  }
 
-.live-example__content {
-  max-width: 1440px;
-}
+  .live-example__content {
+    max-width: 1440px;
+  }
 
-.live-example__slider{
-margin-left: -23px;
-
-}
-
+  .live-example__slider {
+    margin-left: -59px;
+  }
 }

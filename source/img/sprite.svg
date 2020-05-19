@@ -73,11 +73,6 @@
   C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4
   C7.8,20,8.1,19.7,8.1,19.4z"/>
 </symbol><symbol id="icon-plus-mobile" viewBox="0 0 30 30">
-  <style type="text/css">
-    .st0 {
-      fill: #231F20;
-    }
-  </style>
   <polygon class="st0" points="30,14 16,14 16,0 14,0 14,14 0,14 0,16 14,16 14,30 16,30 16,16 30,16 "/>
 </symbol><symbol id="icon-plus" viewBox="0 0 60 60">
   <style type="text/css">

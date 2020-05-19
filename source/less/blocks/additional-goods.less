@@ -1,12 +1,11 @@
-@mobile: 320px;
-@tablet: 768px;
-@desktop: 1220px;
-@desktop-custom: 1220px;
-@retina-dpi: 144dpi;
-@retina-dppx: 1.5dppx;
+@import url("variables.less");
 
 .additional-goods__hidden-header {
   display: none;
+}
+
+.additional-goods__article-order {
+  text-decoration: none;
 }
 
 .additional-goods__hidden-article-header {
@@ -48,6 +47,7 @@
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  display: block;
 }
 
 .additional-goods__background-img {
@@ -59,7 +59,7 @@
   line-height: 20px;
   font-family: "Arial", "Tahoma", sans-serif;
   color: #ffffff;
-  max-width: 160px;
+  max-width: 161px;
   text-align: center;
 }
 
@@ -80,9 +80,11 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 41px;
+    background-color: green;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-mobile@2x.jpg");
+      background-size: cover;
     }
   }
 
@@ -120,7 +122,7 @@
     margin-top: 36px;
     text-align: left;
     position: relative;
-    margin-bottom: 48px;
+    margin-bottom: 46px;
   }
 
   .additional-goods__article-header {
@@ -138,26 +140,28 @@
   }
 
   .additional-goods__article-how-many-weight {
-    margin-right: 52px;
+    margin-right: 50px;
     max-width: 132px;
     word-break: break-all;
   }
 
   .additional-goods__article-how-many-price {
-    max-width: 44px;
+    max-width: 47px;
     word-break: break-all;
+    margin-right: -1px;
   }
 
   .additional-goods__article-order {
-    width: 89.66%;
-    max-width: 89.66%;
+    width: 597px;
+    text-align: center;
+    max-width: 396px;
     margin-left: 36px;
     padding-right: 119px;
     padding-top: 10px;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     margin-top: 17px;
     padding-left: 117px;
   }
@@ -183,7 +187,7 @@
     margin-top: 68px;
     margin-left: 27px;
     padding-bottom: 14px;
-    padding-right: 135px;
+    padding-right: 112px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -204,7 +208,8 @@
     color: #ffffff;
     margin-left: 278px;
     text-align: left;
-    margin-top: -45px;
+    margin-top: -47px;
+    margin-right: 10px;
     max-width: 162px;
     word-break: break-all;
   }
@@ -231,7 +236,7 @@
     font-size: 36px;
     line-height: 36px;
     margin-top: 2px;
-    max-width: 338px;
+    max-width: 339px;
   }
 
   .additional-goods_header-right-line {
@@ -264,11 +269,11 @@
 
   .additional-goods__gift-image {
     margin-left: 90px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
-@media (min-width:900px) {
+@media (min-width: 900px) {
   .additional-goods_header-right-line {
     position: absolute;
     top: 38px;
@@ -289,10 +294,6 @@
     border-right: 0;
   }
 
-  .additional-goods__gift-image {
-    margin-left: 6px;
-    margin-top: 1px;
-}
   .additional-goods__green-background {
     width: 245px;
     max-width: 245px;
@@ -303,6 +304,7 @@
     display: flex;
     padding-left: 41px;
     padding-right: 41px;
+    background-color: green;
   }
 
   .additional-goods__article-header {
@@ -313,6 +315,8 @@
 
   .additional-goods__gift-image {
     margin-bottom: 51px;
+    margin-left: 2px;
+    margin-top: 0px;
   }
 
   .additional-goods__article-content {
@@ -329,8 +333,8 @@
 
   .additional-goods__article-how-many-weight {
     margin-top: 13px;
-    margin-left: 164px;
-    max-width: 146px;
+    margin-left: 162px;
+    max-width: 152px;
     margin-right: 0;
     word-break: break-all;
   }
@@ -338,13 +342,13 @@
   .additional-goods__article-how-many-price {
     margin-left: 111px;
     margin-top: 12px;
-    width: 44px;
+    width: 47px;
   }
 
   .additional-goods__article-order {
     max-width: 243px;
     margin-left: 39px;
-    padding-right: 119px;
+    padding-right: 132px;
     padding-top: 10px;
     padding-bottom: 8px;
     font-size: 16px;
@@ -352,6 +356,7 @@
     margin-bottom: 13px;
     margin-top: 16px;
     padding-left: 93px;
+    width: 2%;
   }
 
   .additional-goods__green-background svg {
@@ -366,7 +371,8 @@
     font-size: 16px;
     line-height: 20px;
     margin-top: 10px;
-    max-width: 161px;
+    max-width: 184px;
+    margin-right: 0;
   }
 
   .additional-goods__article-five-litres {
@@ -375,7 +381,7 @@
   }
 
   .additional-goods__article-fifty-rubles {
-    margin-left: 180px;
+    margin-left: 178px;
   }
 
   .additional-goods__article-how-many-weigh-one-litres {
@@ -383,15 +389,15 @@
   }
 
   .additional-goods__article-how-many-weight-milk {
-    margin-left: 196px;
+    margin-left: 194px;
   }
 
   .additional-goods__article-thirty-grammes {
-    margin-left: 234px;
+    margin-left: 233px;
   }
 
   .additional-goods__article-three-hundred-rubles {
-    margin-left: 121px;
+    margin-left: 120px;
   }
 
   .additional-goods {
@@ -409,22 +415,22 @@
 
   .additional-goods__header {
     margin-top: 45px;
-    margin-bottom: 47px;
+    margin-bottom: 45px;
   }
 
   .additional-goods_header-line-tablet-show {
     display: block;
     width: 70px;
     position: absolute;
-    top: 39px;
+    top: 37px;
     left: -107px;
   }
 
   .additional-goods_header-right-line {
     position: absolute;
-    top: 39px;
-    right: -110px;
-    width: 958px;
+    top: 37px;
+    right: 0%;
+    width: 70%;
   }
 
   .additional-goods__content {
@@ -436,6 +442,21 @@
     display: flex;
     width: 895px;
   }
+
+  .additional-goods__green-background {
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .additional-goods__br {
+    display: block;
+  }
 }
 
-
+@media (min-width:@desktopBig) {
+  .additional-goods_header-right-line {
+    position: absolute;
+    top: 37px;
+    right: -9%;
+    width: 78%;
+  }
+}

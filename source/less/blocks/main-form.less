@@ -1,8 +1,4 @@
-/* LESS Document */
-
-@mobile: 320px;
-@tablet: 768px;
-@desktop: 1220px;
+@import url("variables.less");
 
 .main-form__radio-part {
   padding-top: 22px;
@@ -12,76 +8,76 @@
   padding-left: 18px;
 }
 
-.form__sub-label-input-radio:active::after {
+.main-form__sub-label-input-radio:active::after {
   border: 1px solid #6ab83c;
 }
 
-.form__sub-label-input-name:hover {
+.main-form__sub-label-input-name:hover {
   border: 1px solid #cdcdcd;
 }
 
-.form__checkbox-label:hover::after {
+.main-form__checkbox-label:hover::after {
   border: 1px solid #bababa;
 }
 
-.form__sub-label-input-name:active {
+.main-form__sub-label-input-name:active {
   border: 1px solid #444444;
   outline: 0;
 }
 
-.form__sub-label-input-weight:hover {
+.main-form__sub-label-input-weight:hover {
   border: 1px solid #cdcdcd;
 }
 
-.form__sub-label-input-weight:active {
+.main-form__sub-label-input-radio:hover::after {
+  border: 1px solid #bcbcbc;
+}
+
+.main-form__sub-label-input-weight:active {
   border: 1px solid #444444;
   outline: 0;
 }
 
-.form__sub-input-age:hover {
+.main-form__sub-input-age:hover {
   border: 1px solid #cdcdcd;
 }
 
-.form__sub-input-age:active {
+.main-form__sub-input-age:active {
   border: 1px solid #444444;
   outline: 0;
 }
 
-.form input:invalid {
+.main-form input:invalid {
   border: 1px solid #ff8282;
 }
 
-.form input:invalid svg{
-  border: 1px solid #ff9797;
-}
-
-.form__checkbox-label:active {
+.main-form__checkbox-label:active {
   opacity: 50%;
 }
 
-.form__sub-label-input-radio:active {
+.main-form__sub-label-input-radio:active {
   opacity: 50%;
 }
 
-.form__sub-input-text-email:hover {
+.main-form__sub-input-text-email:hover {
   border: 1px solid #cdcdcd;
 }
 
-.form__sub-input-text-email:active {
+.main-form__sub-input-text-email:active {
   border: 1px solid #444444;
   outline: 0;
 }
 
-.form__sub-input-text-telephone:hover {
+.main-form__sub-input-text-telephone:hover {
   border: 1px solid #cdcdcd;
 }
 
-.form__sub-input-text-telephone:active {
+.main-form__sub-input-text-telephone:active {
   border: 1px solid #444444;
   outline: 0;
 }
 
-.form__sub-label-input-radio {
+.main-form__sub-label-input-radio {
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -91,14 +87,14 @@
   margin-top: 4px;
 }
 
-.form__sub-radio {
+.main-form__sub-radio {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
   position: relative;
 }
 
-.form__sub-input-radio:checked + .form__sub-label-input-radio::before {
+.main-form__sub-input-radio:checked + .main-form__sub-label-input-radio::before {
   content: "";
   width: 12px;
   background-color: #68b738;
@@ -109,22 +105,22 @@
   border-radius: 50%;
 }
 
-.form__sub-input-radio {
+.main-form__sub-input-radio {
   display: none;
 }
 
-.form__sub-radio:last-child {
+.main-form__sub-radio:last-child {
   margin-bottom: 0;
 }
 
-.form__contact {
+.main-form__contact {
   display: flex;
   margin-top: 29px;
   margin-bottom: 33px;
   padding-left: 18px;
 }
 
-.form__contact-data-for-cat-owner {
+.main-form__contact-data-for-cat-owner {
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -132,14 +128,14 @@
   max-width: 202px;
 }
 
-.form__contact-data-for-cat-owner-line {
+.main-form__contact-data-for-cat-owner-line {
   height: 3px;
   width: 101px;
   margin-top: 14px;
   background-color: #68b738;
 }
 
-.form__sub-contact-cat-data {
+.main-form__sub-contact-cat-data {
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
@@ -150,37 +146,40 @@
   margin-left: 18px;
 }
 
-.form__contact-data-cat-owner-telephone {
+.main-form__contact-data-cat-owner-telephone {
   margin-bottom: 26px;
   position: relative;
 }
 
-.form__phone-image {
+.main-form__phone-image {
   position: absolute;
   right: 33px;
   top: 14px;
 }
 
-.form__sub-input-text-email {
+.main-form__sub-input-text-email {
   border: 1px solid #e7e7e7;
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  padding: 13px 0 12px 15px;
+  padding: 13px 15px 12px 15px;
   position: relative;
   text-transform: uppercase;
-  width: 63%;
+  width: 187px;
+  max-width: 70%;
 }
 
-.form__sub-input-text-telephone {
+.main-form__sub-input-text-telephone {
   border: 1px solid #e7e7e7;
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  padding: 14px 50px 13px 15px;
+  width: 172px;
+  padding: 14px 15px 13px 15px;
+  max-width: 70%;
 }
 
-.form__submit-input {
+.main-form__submit-input {
   background-color: #68b738;
   border: 0;
   font-family: "Oswald-Regular", "Arial", sans-serif;
@@ -200,7 +199,7 @@
   justify-content: center;
 }
 
-.form__required-fields-text {
+.main-form__required-fields-text {
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -208,11 +207,11 @@
   margin-bottom: 32px;
 }
 
-.form__commentary {
+.main-form__commentary {
   display: flex;
 }
 
-.form__commentary-comment {
+.main-form__commentary-comment {
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 24px;
   line-height: 24px;
@@ -220,7 +219,7 @@
   margin-left: 19px;
 }
 
-.form__commentary-line {
+.main-form__commentary-line {
   height: 3px;
   background-color: #68b738;
   width: 52%;
@@ -228,7 +227,7 @@
   margin-left: 23px;
 }
 
-.form__commentary-textarea {
+.main-form__commentary-textarea {
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald-Regular", "Arial", sans-serif;
@@ -240,13 +239,13 @@
   width: 100%;
 }
 
-.form__sub-additional {
+.main-form__sub-additional {
   margin-bottom: 32px;
   display: flex;
   align-items: center;
 }
 
-.form__sub-add {
+.main-form__sub-add {
   font-size: 24px;
   line-height: 24px;
   font-family: "Oswald-Regular", "Arial", sans-serif;
@@ -254,71 +253,75 @@
   padding-left: 20px;
 }
 
-.forsm__sub-additional-line {
+.main-form__sub-additional-line {
   height: 3px;
   background-color: #68b738;
   width: 100%;
   margin-top: 9px;
 }
 
-.form__sub-checkbox {
+.main-form__sub-checkbox {
   position: relative;
   display: flex;
   margin-bottom: 18px;
 }
 
-.form__checkboxes {
+.main-form__checkboxes {
   padding-left: 20px;
   padding-top: 3px;
 }
 
-.form__checkboxes-sub-input {
+.main-form__checkboxes-sub-input {
   display: none;
 }
 
-.form__submit {
+.main-form__submit {
   display: flex;
   flex-direction: column;
   max-width: 280px;
   margin: 0 auto;
 }
 
-.form__sub-label-name {
+.main-form__sub-label-name {
   margin-top: -1px;
   margin-right: -3px;
 }
 
-.form__sub-label-input-name {
+.main-form__sub-label-input-name {
   font-size: 16px;
   max-width: 229px;
   line-height: 18px;
   font-family: "Oswald-Regular", "Arial", sans-serif;
   border: 1px solid #e6e6e6;
-  padding: 13px 75px 12px 15px;
+  padding: 13px 15px 12px 15px;
   margin-left: 16px;
   text-transform: uppercase;
+  width: 196px;
+  max-width: 79%;
 }
 
-.form__sub-label-weight {
+.main-form__sub-label-weight {
   margin-right: 17px;
 }
 
-.form__sub-label-input-weight {
+.main-form__sub-label-input-weight {
   font-size: 16px;
   line-height: 18px;
   font-family: "Oswald-Regular", "Arial", sans-serif;
   padding-top: 12px;
   padding-left: 15px;
   padding-bottom: 13px;
-  padding-right: 49px;
+  padding-right: 15px;
   border: 1px solid #e6e6e6;
+  width: 171px;
+  max-width: 70%;
 }
 
-.form__sub-label-age {
+.main-form__sub-label-age {
   margin-right: 14px;
 }
 
-.form__sub-input-age {
+.main-form__sub-input-age {
   padding-top: 14px;
   padding-left: 14px;
   padding-right: 19px;
@@ -326,23 +329,23 @@
   border: 1px solid #e6e6e6;
 }
 
-.form__email-input-img {
+.main-form__email-input-img {
   position: absolute;
   right: 36px;
   top: 17px;
 }
 
-.form__sub-label-telephone {
-  margin-right: 7px;
+.main-form__sub-label-telephone {
+  margin-right: 11px;
 }
 
-.form__textarea {
+.main-form__textarea {
   max-width: 280px;
   padding-left: 20px;
   padding-right: 37px;
 }
 
-.form__checkbox-label::after {
+.main-form__checkbox-label::after {
   content: "";
   display: block;
   position: absolute;
@@ -354,7 +357,7 @@
   border: 1px solid #cfcfcf;
 }
 
-.form__checkboxes-sub-input:checked + .form__checkbox-label::before {
+.main-form__checkboxes-sub-input:checked + .main-form__checkbox-label::before {
   content: "";
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
@@ -377,6 +380,10 @@
     margin-left: 21px;
   }
 
+  .main-form__contact-data-cat-owner-telephone {
+    display: flex;
+  }
+
   .main-form__how-u-can-choose-program {
     font-size: 36px;
     line-height: 60px;
@@ -386,11 +393,11 @@
     font-family: "Oswald-Regular", "Arial", sans-serif;
   }
 
-  .form__sub-label-age {
+  .main-form__sub-label-age {
     margin-right: 14px;
   }
 
-  .form__first-three-inputs {
+  .main-form__first-three-inputs {
     font-family: "Oswald-Regular", "Arial", sans-serif;
     font-size: 14px;
     line-height: 18px;
@@ -402,20 +409,21 @@
     align-items: center;
   }
 
-  .form__sub-input-age {
+  .main-form__sub-input-age {
     padding-top: 12px;
     padding-left: 15px;
-    padding-right: 40px;
+    padding-right: 15px;
     padding-bottom: 15px;
     border: 1px solid #e6e6e6;
-    max-width: 172px;
+    max-width: 70%;
+    width: 140px;
   }
 
   .main-form__contact-inputs {
-    margin-left: 20px;
+    margin-left: 19px;
   }
 
-  .form__contact-data-for-cat-owner-left-line {
+  .main-form__contact-data-for-cat-owner-left-line {
     display: none;
   }
 
@@ -431,25 +439,25 @@
     margin: 0 auto;
   }
 
-  .form__commentary-left-line {
+  .main-form__commentary-left-line {
     display: none;
   }
 
-  .forsm__sub-additional-left-line {
+  .main-form__sub-additional-left-line {
     display: none;
   }
 
-  .form__sub-label-input-text {
+  .main-form__sub-label-input-text {
     font-size: 16px;
     line-height: 18px;
   }
 
-  .form__sub-label-name {
+  .main-form__sub-label-name {
     margin-right: -3px;
     margin-left: -1px;
   }
 
-  .form__sub-label-input-radio::after {
+  .main-form__sub-label-input-radio::after {
     content: "";
     display: block;
     position: absolute;
@@ -462,18 +470,18 @@
     border: 1px solid #cecece;
   }
 
-  .form__contact-data-cat-owner-email {
+  .main-form__contact-data-cat-owner-email {
     max-width: 320px;
     display: flex;
     margin-bottom: 14px;
     position: relative;
   }
 
-  .form__sub-checkbox:last-child {
+  .main-form__sub-checkbox:last-child {
     margin-bottom: 18px;
   }
 
-  .form__sub-contact-additional-data {
+  .main-form__sub-contact-additional-data {
     font-family: "Oswald-Regular", sans-serif;
     font-size: 16px;
     line-height: 18px;
@@ -501,14 +509,14 @@
     font-size: 60px;
     margin-top: 42px;
     margin-left: 10px;
-    max-width: 432px;
+    max-width: 460px;
   }
 
   .main-form__full-anket {
     font-family: "Oswald-Regular", "Arial", sans-serif;
     font-size: 20px;
     line-height: 30px;
-    margin-top: 27px;
+    margin-top: 28px;
     margin-left: 50px;
     margin-bottom: 38px;
     max-width: 371px;
@@ -516,59 +524,66 @@
     text-transform: uppercase;
   }
 
-  .form__first-three-inputs {
+  .main-form__first-three-inputs {
     font-size: 20px;
     line-height: 20px;
     max-width: 631px;
     margin-bottom: 12px;
   }
 
-  .form__first-three-inputs:nth-child(1n) {
+  .main-form__first-three-inputs {
     margin-top: 17px;
     margin-left: 32px;
+    margin-bottom: 11px;
   }
 
-  .form__sub-label-input-name {
+  .main-form__sub-label-input-name {
     font-size: 20px;
     line-height: 18px;
     font-family: "Oswald-Regular", "Arial", sans-serif;
     border: 1px solid #e6e6e6;
-    padding: 11px 367px 9px 17px;
+    padding: 9px 22px 11px 17px;
     margin-left: 19px;
     text-transform: uppercase;
+    width: 84%;
+    max-width: 649px;
   }
 
-  .form__sub-label-input-weight {
+  .main-form__sub-label-input-weight {
     font-size: 20px;
     line-height: 20px;
     margin-top: -7px;
     padding-left: 19px;
-    padding-right: 335px;
-    padding-bottom: 11px;
-    padding-top: 8px;
+    padding-right: 19px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 498px;
+    max-width: 89%;
   }
 
-  .form__sub-label-weight {
-    margin-top: -12px;
-    margin-right: 20px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-
-  .form__first-three-inputs-last-child {
-    margin-top: -11px;
+  .main-form__sub-label-weight {
+    margin-top: -6px;
     margin-right: 18px;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .form__sub-input-age {
+  .main-form__first-three-inputs-last-child {
+    margin-top: -11px;
+    margin-right: 20px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-form__sub-input-age {
     padding-top: 14px;
-    padding-left: 17px;
-    padding-right: 305px;
+    padding-left: 19px;
+    padding-right: 19px;
     padding-bottom: 13px;
     border: 1px solid #e6e6e6;
     margin-top: -8px;
+    width: 620px;
+    max-width: 72%;
   }
 
   .main-form__contact-inputs {
@@ -580,21 +595,21 @@
 
   .main-form__radio-part {
     padding-top: 22px;
-    padding-bottom: 36px;
-    margin-top: 59px;
+    padding-bottom: 34px;
+    margin-top: 60px;
     border: 1px solid #ededed;
-    padding-left: 18px;
+    padding-left: 17px;
     max-width: 592px;
-    margin-left: 52px;
+    margin-left: 51px;
     padding-right: 17px;
   }
 
-  .form__sub-label-input-radio::after {
+  .main-form__sub-label-input-radio::after {
     content: "";
     display: block;
     position: absolute;
     left: 8px;
-    top: 3px;
+    top: 4px;
     width: 39px;
     height: 37px;
     background-repeat: no-repeat;
@@ -602,7 +617,7 @@
     border: 1px solid #cecece;
   }
 
-  .form__sub-input-radio:checked + .form__sub-label-input-radio::before {
+  .main-form__sub-input-radio:checked + .main-form__sub-label-input-radio::before {
     content: "";
     width: 17px;
     background-color: #68b738;
@@ -613,93 +628,94 @@
     border-radius: 50%;
   }
 
-  .form__sub-label-input-radio {
+  .main-form__sub-label-input-radio {
     font-family: "Oswald-Regular", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
     color: #222222;
     margin-left: 68px;
     text-transform: uppercase;
-    margin-top: 12px;
+    margin-top: 13px;
   }
 
-  .form__contact-data-for-cat-owner-left-line {
+  .main-form__contact-data-for-cat-owner-left-line {
     display: block;
     width: 30px;
     height: 3px;
     background-color: #68b738;
     left: -21px;
-    top: 22px;
+    top: 24px;
     position: absolute;
   }
 
-  .form__contact-data-for-cat-owner {
+  .main-form__contact-data-for-cat-owner {
     font-size: 36px;
     line-height: 36px;
     max-width: 570px;
     margin-left: 30px;
   }
 
-  .form__contact-data-for-cat-owner-line {
+  .main-form__contact-data-for-cat-owner-line {
     height: 3px;
     width: 145px;
-    margin-top: 14px;
+    margin-top: 16px;
     background-color: #68b738;
     position: absolute;
-    right: -22px;
-    top: 8px;
+    right: -1%;
+    top: 6px;
   }
 
-  .form__contact {
+  .main-form__contact {
     margin-top: 74px;
     position: relative;
     margin-bottom: 77px;
     align-items: center;
   }
 
-  .form__sub-contact-cat-data {
+  .main-form__sub-contact-cat-data {
     font-size: 20px;
     line-height: 20px;
   }
 
-  .form__contact-data-cat-owner-email {
+  .main-form__contact-data-cat-owner-email {
     max-width: 686px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     margin-left: 11px;
   }
 
-  .form__sub-label-email {
+  .main-form__sub-label-email {
     margin-left: 40px;
-    margin-right: 20px;
+    margin-right: 19px;
+    margin-top: 15px;
   }
 
-  .form__sub-input-text-email {
+  .main-form__sub-input-text-email {
     border: 1px solid #e7e7e7;
     font-family: "Oswald-Regular", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
-    padding: 9px 159px 11px 20px;
+    padding: 9px 161px 11px 20px;
     position: relative;
     text-transform: uppercase;
     width: 53.5%;
   }
 
-  .form__email-input-img {
+  .main-form__email-input-img {
     position: absolute;
     right: 37px;
     top: 20px;
   }
 
-  .form__commentary-comment {
+  .main-form__commentary-comment {
     font-size: 36px;
     line-height: 36px;
-    margin-left: 50px;
+    margin-left: 49px;
     max-width: 181px;
     word-break: break-all;
     margin-right: 18px;
   }
 
-  .form__contact-data-cat-owner-telephone {
+  .main-form__contact-data-cat-owner-telephone {
     margin-bottom: 26px;
     position: relative;
     display: flex;
@@ -707,33 +723,33 @@
     max-width: 716px;
   }
 
-  .form__sub-label-telephone {
-    margin-right: 17px;
+  .main-form__sub-label-telephone {
+    margin-right: 16px;
     margin-left: 37px;
-    margin-top: 15px;
+    margin-top: 13px;
   }
 
-  .form__sub-input-text-telephone {
+  .main-form__sub-input-text-telephone {
     border: 1px solid #e7e7e7;
     font-family: "Oswald-Regular", "Arial", sans-serif;
     font-size: 20px;
     line-height: 20px;
-    padding: 9px 56px 11px 17px;
+    padding: 9px 56px 9px 18px;
     width: 64%;
   }
 
-  .form__phone-image {
+  .main-form__phone-image {
     position: absolute;
     right: 62px;
     top: 17px;
   }
 
-  .form__commentary {
-    margin-top: 64px;
+  .main-form__commentary {
+    margin-top: 66px;
     position: relative;
   }
 
-  .form__commentary-left-line {
+  .main-form__commentary-left-line {
     display: block;
     position: absolute;
     width: 30px;
@@ -743,17 +759,17 @@
     left: -21px;
   }
 
-  .form__commentary-line {
+  .main-form__commentary-line {
     height: 3px;
     background-color: #68b738;
     width: 65.9%;
     margin-top: 22px;
     position: absolute;
-    right: -21px;
-    top: 1px;
+    right: -1%;
+    top: 0px;
   }
 
-  .form__textarea {
+  .main-form__textarea {
     max-width: 611px;
     padding-left: 20px;
     padding-right: 37px;
@@ -761,7 +777,7 @@
     margin-left: 30px;
   }
 
-  .form__commentary-textarea {
+  .main-form__commentary-textarea {
     font-size: 20px;
     line-height: 30px;
     padding-top: 9px;
@@ -769,55 +785,55 @@
     padding-bottom: 103px;
   }
 
-  .form__sub-add {
+  .main-form__sub-add {
     font-size: 36px;
     line-height: 36px;
     max-width: 230px;
     word-break: break-all;
   }
 
-  .form__sub-additional {
+  .main-form__sub-additional {
     margin-top: 39px;
     margin-left: 29px;
     position: relative;
   }
 
-  .forsm__sub-additional-left-line {
+  .main-form__sub-additional-left-line {
     display: block;
     width: 30px;
     position: absolute;
     height: 3px;
     background-color: #68b738;
     left: -50px;
-    top: 23px;
+    top: 21px;
   }
 
-  .forsm__sub-additional-line {
+  .main-form__sub-additional-line {
     height: 3px;
     background-color: #68b738;
     width: 446px;
-    right: -21px;
+    right: -1%;
     margin-top: 5px;
     position: absolute;
   }
 
-  .form__checkbox-label {
+  .main-form__checkbox-label {
     font-size: 20px;
     line-height: 20px;
   }
 
-  .form__sub-two-checkbox {
+  .main-form__sub-two-checkbox {
     display: flex;
     margin-left: 18px;
   }
 
-  .form__checkbox-label::after {
-    width: 40px;
-    height: 40px;
-    top: 1px;
+  .main-form__checkbox-label::after {
+    width: 39px;
+    height: 39px;
+    top: 2px;
   }
 
-  .form__checkboxes-sub-input:checked + .form__checkbox-label::before {
+  .main-form__checkboxes-sub-input:checked + .main-form__checkbox-label::before {
     content: "";
     width: 21px;
     height: 17px;
@@ -825,7 +841,7 @@
     left: 12px;
   }
 
-  .form__submit-input {
+  .main-form__submit-input {
     margin-top: 6px;
     padding-left: 76px;
     max-width: 283px;
@@ -836,40 +852,40 @@
     margin-right: 61px;
   }
 
-  .form__checkboxes {
+  .main-form__checkboxes {
     margin-top: 51px;
     margin-left: 11px;
   }
 
-  .form__sub-checkbox {
+  .main-form__sub-checkbox {
     margin-bottom: 39px;
     max-width: 360px;
   }
 
-  .form__sub-label-sugarchange {
+  .main-form__sub-label-sugarchange {
     margin-top: 13px;
     margin-left: 30px;
     margin-right: 123px;
   }
 
-  .form__sub-label-drink-water {
+  .main-form__sub-label-drink-water {
     margin-top: 12px;
     margin-left: 29px;
   }
 
-  .form__sub-label-milk {
+  .main-form__sub-label-milk {
     margin-top: 11px;
     margin-left: 30px;
     margin-right: 217px;
   }
 
-  .form__sub-label-vitamines {
+  .main-form__sub-label-vitamines {
     margin-top: 12px;
     margin-left: 29px;
   }
 
-  .form__submit {
-    max-width: 523px;
+  .main-form__submit {
+    max-width: 530px;
     display: flex;
     flex-direction: row;
     margin-top: 21px;
@@ -878,8 +894,8 @@
     margin-left: 50px;
   }
 
-  .form__required-fields-text {
-    max-width: 180px;
+  .main-form__required-fields-text {
+    max-width: 181px;
     font-size: 16px;
     line-height: 16px;
     margin-top: 12px;
@@ -893,25 +909,31 @@
     background-color: #f2f2f2;
   }
 
-  .form__sub-age {
-    margin-top: 16px;
+  .main-form__sub-age {
+    margin-top: 19px;
     margin-left: 31px;
   }
 
-  .form__sub-label-name {
+  .main-form__sub-label-name {
     margin-right: -3px;
     margin-left: -1px;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .form__sub-weight {
+  .main-form__sub-weight {
     max-width: 631px;
     margin-top: 15px;
   }
 
   .map__iframe-form {
     margin-left: 0;
+  }
+
+  .footer__social-links-li-facebook-form {
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-top: 1px;
   }
 }
 
@@ -930,18 +952,18 @@
     max-width: 570px;
   }
 
-  .form__contact-data-for-cat-owner {
-    max-width: 512px;
+  .main-form__contact-data-for-cat-owner {
+    max-width: 536px;
     margin-left: 0;
   }
 
-  .form__first-three-inputs {
-    max-width: 570px;
+  .main-form__first-three-inputs {
+    max-width: 591px;
     margin-left: 0;
     margin-bottom: 1px;
   }
 
-  .form__sub-radio {
+  .main-form__sub-radio {
     max-width: 534px;
   }
 
@@ -955,28 +977,33 @@
     align-items: flex-start;
   }
 
-  .form__first-three-inputs:nth-child(1n) {
+  .main-form__first-three-inputs {
     margin-left: 0;
     margin-top: 27.5px;
   }
 
-  .form__sub-label-input-name {
-    padding: 10px 307px 10px 17px;
+  .main-form__sub-label-input-name {
+    padding: 10px 17px 10px 17px;
+    width: 82.6%;
   }
 
-  .form__sub-label-input-weight {
-    padding-right: 275px;
+  .main-form__sub-label-input-weight {
+    padding-right: 19px;
+    max-width: 441px;
+    width: 440px;
   }
 
-  .form__sub-label-weight {
+  .main-form__sub-label-weight {
     margin-top: -8px;
     margin-left: 0;
-    margin-right: 17px;
+    margin-right: 15px;
   }
 
-  .form__sub-input-age {
-    padding-right: 244px;
+  .main-form__sub-input-age {
+    padding-right: 0;
     padding-bottom: 12px;
+    max-width: 414px;
+    width: 437px;
   }
 
   .main-form__radio-part {
@@ -985,12 +1012,12 @@
     padding-bottom: 33px;
   }
 
-  .form__sub-label-input-radio {
+  .main-form__sub-label-input-radio {
     margin-top: 13px;
     margin-left: 70px;
   }
 
-  .form__contact {
+  .main-form__contact {
     margin-top: 67px;
     position: relative;
     margin-bottom: 77px;
@@ -999,14 +1026,14 @@
     max-width: 1220px;
   }
 
-  .form__first-three-inputs-last-child {
+  .main-form__first-three-inputs-last-child {
     margin-top: -11px;
-    margin-right: 16px;
+    margin-right: 18px;
     font-size: 20px;
     line-height: 20px;
   }
 
-  .form__contact-data-for-cat-owner-left-line {
+  .main-form__contact-data-for-cat-owner-left-line {
     display: block;
     width: 70px;
     height: 3px;
@@ -1016,83 +1043,85 @@
     position: absolute;
   }
 
-  .form__contact-data-for-cat-owner-line {
+  .main-form__contact-data-for-cat-owner-line {
     height: 3px;
-    width: 54.77%;
-    margin-top: 14px;
+    width: 56%;
+    margin-top: 16px;
     background-color: #68b738;
     position: absolute;
     right: 0%;
     top: 8px;
   }
 
-  .form__sub-input-radio:checked + .form__sub-label-input-radio::before {
+  .main-form__sub-input-radio:checked + .main-form__sub-label-input-radio::before {
     left: 21px;
   }
 
-  .form__contact-data-cat-owner-email {
+  .main-form__contact-data-cat-owner-email {
     margin-left: 0;
     width: 46.72%;
     align-items: flex-start;
   }
 
-  .form__sub-label-email {
+  .main-form__sub-label-email {
     margin-left: 1px;
-    margin-top: 15px;
+    margin-top: 16px;
+    margin-right: 22px;
   }
 
-  .form__sub-label-input-radio::after {
+  .main-form__sub-label-input-radio::after {
     width: 40px;
     height: 40px;
   }
 
-  .form__sub-input-text-email {
-    padding: 9px 159px 11px 20px;
+  .main-form__sub-input-text-email {
+    padding: 9px 160px 11px 17px;
   }
 
-  .form__email-input-img {
+  .main-form__email-input-img {
     position: absolute;
     right: 20px;
-    top: 19px;
+    top: 20px;
   }
 
-  .form__contact__email-plus-phone {
+  .main-form__contact__email-plus-phone {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
-  .form__contact-data-cat-owner-telephone {
+  .main-form__contact-data-cat-owner-telephone {
     width: 46.72%;
     margin-left: 0;
   }
 
-  .form__sub-input-text-telephone {
+  .main-form__sub-input-text-telephone {
     padding-right: 87px;
+    padding-bottom: 12px;
   }
 
-  .form__sub-label-telephone {
+  .main-form__sub-label-telephone {
     margin-right: 17px;
     margin-left: -1px;
     margin-top: 15px;
   }
 
-  .form__phone-image {
+  .main-form__phone-image {
     position: absolute;
     right: 19px;
     top: 17px;
   }
 
-  .form__commentary-left-line {
+  .main-form__commentary-left-line {
     position: absolute;
     width: 70px;
     height: 3px;
     background-color: #68b738;
-    top: 25px;
+    top: 23px;
     left: -110px;
   }
 
-  .form__commentary-comment {
+  .main-form__commentary-comment {
     font-size: 36px;
     line-height: 36px;
     margin-left: 0;
@@ -1101,17 +1130,17 @@
     max-width: 181px;
   }
 
-  .form__commentary-line {
+  .main-form__commentary-line {
     height: 3px;
     background-color: #68b738;
-    width: 83.1%;
+    width: 83%;
     margin-top: 22px;
     position: absolute;
-    right: 0%;
-    top: 2px;
+    right: 0;
+    top: 1px;
   }
 
-  .form__textarea {
+  .main-form__textarea {
     max-width: 1220px;
     padding-right: 20px;
     margin-top: 40px;
@@ -1119,7 +1148,7 @@
     margin-left: 0;
   }
 
-  .form__commentary-textarea {
+  .main-form__commentary-textarea {
     font-size: 20px;
     line-height: 30px;
     padding-top: 9px;
@@ -1128,79 +1157,79 @@
     width: 100%;
   }
 
-  .form__sub-additional {
+  .main-form__sub-additional {
     margin-left: 0;
   }
 
-  .form__sub-add {
+  .main-form__sub-add {
     margin-left: 0;
     padding-left: 0;
   }
 
-  .forsm__sub-additional-left-line {
+  .main-form__sub-additional-left-line {
     display: block;
     width: 70px;
     position: absolute;
     height: 3px;
     background-color: #68b738;
     left: -111px;
-    top: 24px;
+    top: 22px;
   }
 
-  .forsm__sub-additional-line {
+  .main-form__sub-additional-line {
     height: 3px;
     background-color: #68b738;
-    width: 80.08%;
+    width: 81%;
     right: 0;
-    margin-top: 8px;
+    margin-top: 6px;
     position: absolute;
   }
 
-  .form__checkboxes {
+  .main-form__checkboxes {
     display: flex;
     margin-left: 0;
     padding-left: 0;
-    margin-top: 54px;
+    margin-top: 52px;
   }
 
-  .form__checkbox-label::after {
+  .main-form__checkbox-label::after {
     width: 38px;
     height: 38px;
   }
 
-  .form__sub-two-checkbox {
+  .main-form__sub-two-checkbox {
     margin-left: 0;
   }
 
-  .form__checkboxes-sub-input:checked + .form__checkbox-label::before {
+  .main-form__checkboxes-sub-input:checked + .main-form__checkbox-label::before {
     left: 10px;
   }
 
-  .form__sub-label-sugarchange {
+  .main-form__sub-label-sugarchange {
     margin-top: 12px;
     margin-left: 29px;
     margin-right: 106px;
   }
 
-  .form__sub-label-drink-water {
+  .main-form__sub-label-drink-water {
     margin-top: 12px;
     margin-right: 138px;
     margin-left: 29px;
   }
 
-  .form__sub-label-milk {
+  .main-form__sub-label-milk {
     margin-left: 28px;
     margin-right: 199px;
   }
 
-  .form__submit {
+  .main-form__submit {
     margin-left: 2px;
     margin-top: 19px;
     max-width: 831px;
     margin-bottom: 61px;
   }
 
-  .form__submit-input {
+  .main-form__submit-input {
     max-width: 569px;
     padding-left: 210px;
     padding-right: 209px;
@@ -1208,12 +1237,12 @@
     padding-top: 15px;
   }
 
-  .form__required-fields-text {
-    max-width: 180px;
+  .main-form__required-fields-text {
+    max-width: 181px;
     font-size: 16px;
     line-height: 16px;
     margin-top: 21px;
-    margin-left: 21px;
+    margin-right: 3px;
   }
 
   .communicating-form-transformed {
@@ -1237,6 +1266,7 @@
   .main-form__contact-inputs {
     margin-left: 3px;
     margin-top: 0;
+    max-width: 570px;
   }
 
   .map__iframe-form {
@@ -1246,4 +1276,9 @@
   .main-catalog__main-text {
     max-width: 570px;
   }
+
+  .main-form__commentary {
+    margin-top: 40px;
+    position: relative;
+}
 }
