@@ -1511,7 +1511,7 @@
     line-height: 24px;
     margin-bottom: 50px;
     margin-left: 80px;
-    max-width: 432px;
+    max-width: 434px;
     margin-top: 70px;
   }
   .live-example__numbers-plus-price {
@@ -2362,17 +2362,20 @@
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  padding: 13px 0 12px 15px;
+  padding: 13px 15px 12px 15px;
   position: relative;
   text-transform: uppercase;
-  width: 63%;
+  width: 187px;
+  max-width: 70%;
 }
 .main-form__sub-input-text-telephone {
   border: 1px solid #e7e7e7;
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  padding: 14px 50px 13px 15px;
+  width: 172px;
+  padding: 14px 15px 13px 15px;
+  max-width: 70%;
 }
 .main-form__submit-input {
   background-color: #68b738;
@@ -2474,9 +2477,11 @@
   line-height: 18px;
   font-family: "Oswald-Regular", "Arial", sans-serif;
   border: 1px solid #e6e6e6;
-  padding: 13px 75px 12px 15px;
+  padding: 13px 15px 12px 15px;
   margin-left: 16px;
   text-transform: uppercase;
+  width: 196px;
+  max-width: 79%;
 }
 .main-form__sub-label-weight {
   margin-right: 17px;
@@ -2488,8 +2493,10 @@
   padding-top: 12px;
   padding-left: 15px;
   padding-bottom: 13px;
-  padding-right: 49px;
+  padding-right: 15px;
   border: 1px solid #e6e6e6;
+  width: 171px;
+  max-width: 70%;
 }
 .main-form__sub-label-age {
   margin-right: 14px;
@@ -2507,7 +2514,7 @@
   top: 17px;
 }
 .main-form__sub-label-telephone {
-  margin-right: 7px;
+  margin-right: 11px;
 }
 .main-form__textarea {
   max-width: 280px;
@@ -2574,10 +2581,11 @@
   .main-form__sub-input-age {
     padding-top: 12px;
     padding-left: 15px;
-    padding-right: 40px;
+    padding-right: 15px;
     padding-bottom: 15px;
     border: 1px solid #e6e6e6;
-    max-width: 172px;
+    max-width: 70%;
+    width: 140px;
   }
   .main-form__contact-inputs {
     margin-left: 19px;
@@ -2684,7 +2692,7 @@
     line-height: 18px;
     font-family: "Oswald-Regular", "Arial", sans-serif;
     border: 1px solid #e6e6e6;
-    padding: 9px 17px 11px 17px;
+    padding: 9px 22px 11px 17px;
     margin-left: 19px;
     text-transform: uppercase;
     width: 84%;
@@ -2698,7 +2706,8 @@
     padding-right: 19px;
     padding-bottom: 10px;
     padding-top: 10px;
-    width: 78.7%;
+    width: 498px;
+    max-width: 89%;
   }
   .main-form__sub-label-weight {
     margin-top: -6px;
@@ -2708,17 +2717,19 @@
   }
   .main-form__first-three-inputs-last-child {
     margin-top: -11px;
-    margin-right: 15px;
+    margin-right: 20px;
     font-size: 20px;
     line-height: 20px;
   }
   .main-form__sub-input-age {
     padding-top: 14px;
     padding-left: 19px;
-    padding-right: 305px;
+    padding-right: 19px;
     padding-bottom: 13px;
     border: 1px solid #e6e6e6;
     margin-top: -8px;
+    width: 620px;
+    max-width: 72%;
   }
   .main-form__contact-inputs {
     margin-left: 20px;
@@ -2980,7 +2991,7 @@
     margin-left: 29px;
   }
   .main-form__submit {
-    max-width: 523px;
+    max-width: 530px;
     display: flex;
     flex-direction: row;
     margin-top: 21px;
@@ -2989,7 +3000,7 @@
     margin-left: 50px;
   }
   .main-form__required-fields-text {
-    max-width: 180px;
+    max-width: 181px;
     font-size: 16px;
     line-height: 16px;
     margin-top: 12px;
@@ -3099,7 +3110,7 @@
   }
   .main-form__first-three-inputs-last-child {
     margin-top: -11px;
-    margin-right: 17px;
+    margin-right: 18px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -3465,9 +3476,11 @@
     font-family: "Oswald-Regular", "Arial", sans-serif;
     padding-bottom: 2px;
     margin-top: 15px;
-    margin-left: 22px;
-    margin-bottom: 26px;
+    padding-left: 22px;
+    padding-bottom: 26px;
     display: flex;
+    margin: 0 auto;
+    max-width: 320px;
   }
   .main__catalog--small-mobile-image {
     width: 64px;
@@ -3475,6 +3488,25 @@
   }
   .main-catalog__first-image {
     margin-top: 1px;
+    width: 140px;
+  }
+  .main-catalog__second-image {
+    width: 140px;
+  }
+  .main-catalog__image-third {
+    width: 140px;
+  }
+  .main-catalog__fourth-image {
+    width: 140px;
+  }
+  .main-catalog__fifth-image {
+    width: 140px;
+  }
+  .main-catalog__sixth-image {
+    width: 140px;
+  }
+  .main-catalog__seventh-image {
+    width: 140px;
   }
   .main-catalog__good-order {
     margin-top: -4px;
@@ -3500,10 +3532,11 @@
     font-family: "Oswald-Regular", "Arial", sans-serif;
     padding-bottom: 2px;
     margin-top: 42px;
-    margin-left: 27px;
+    padding-left: 27px;
     display: flex;
-    margin-bottom: 165px;
-    max-width: 460px;
+    padding-bottom: 165px;
+    max-width: 768px;
+    margin: 0 auto;
   }
   .main-catalog__show-more-plus {
     width: 60px;
