@@ -529,7 +529,7 @@
     font-size: 20px;
     line-height: 20px;
     max-width: 631px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
 
   .main-form__sub-label-input-name {
@@ -537,7 +537,7 @@
     line-height: 18px;
     font-family: "Oswald-Regular", "Arial", sans-serif;
     border: 1px solid #e6e6e6;
-    padding: 9px 22px 11px 17px;
+    padding: 9px 17px 11px 17px;
     margin-left: 19px;
     text-transform: uppercase;
     width: 84%;
@@ -549,7 +549,7 @@
     line-height: 20px;
     margin-top: -7px;
     padding-left: 19px;
-    padding-right: 19px;
+    padding-right: 17px;
     padding-bottom: 10px;
     padding-top: 10px;
     width: 498px;
@@ -565,7 +565,7 @@
 
   .main-form__first-three-inputs-last-child {
     margin-top: -11px;
-    margin-right: 20px;
+    margin-right: 16px;
     font-size: 20px;
     line-height: 20px;
   }
@@ -573,7 +573,7 @@
   .main-form__sub-input-age {
     padding-top: 14px;
     padding-left: 19px;
-    padding-right: 19px;
+    padding-right: 21px;
     padding-bottom: 13px;
     border: 1px solid #e6e6e6;
     margin-top: -8px;
@@ -591,7 +591,7 @@
   .main-form__radio-part {
     padding-top: 22px;
     padding-bottom: 34px;
-    margin-top: 60px;
+    margin-top: 62px;
     border: 1px solid #ededed;
     padding-left: 17px;
     max-width: 592px;
@@ -652,11 +652,11 @@
 
   .main-form__contact-data-for-cat-owner-line {
     height: 3px;
-    width: 145px;
+    width: 140px;
     margin-top: 16px;
     background-color: #68b738;
     position: absolute;
-    right: -1%;
+    right: -2%;
     top: 6px;
   }
 
@@ -757,10 +757,10 @@
   .main-form__commentary-line {
     height: 3px;
     background-color: #68b738;
-    width: 65.9%;
+    width: 64.8%;
     margin-top: 22px;
     position: absolute;
-    right: -1%;
+    right: -2%;
     top: 0;
   }
 
@@ -806,8 +806,8 @@
   .main-form__sub-additional-line {
     height: 3px;
     background-color: #68b738;
-    width: 446px;
-    right: -1%;
+    width: 437px;
+    right: -2%;
     margin-top: 5px;
     position: absolute;
   }
@@ -1181,6 +1181,7 @@
     margin-left: 0;
     padding-left: 0;
     margin-top: 52px;
+    flex-wrap: wrap;
   }
 
   .main-form__checkbox-label::after {
@@ -1271,5 +1272,36 @@
   .main-form__commentary {
     margin-top: 40px;
     position: relative;
+  }
+}
+
+@media (min-width: @desktopBig) {
+  .main-form__contact-data-for-cat-owner-line {
+    height: 3px;
+    background-color: #68b738;
+    width: 63%;
+    margin-top: 21px;
+    position: absolute;
+    right: -8.3%;
+    top: 1px;
+  }
+
+  .main-form__commentary-line {
+    height: 3px;
+    background-color: #68b738;
+    width: 90.3%;
+    margin-top: 22px;
+    position: absolute;
+    right: -8.3%;
+    top: 1px;
+  }
+
+  .main-form__sub-additional-line {
+    height: 3px;
+    background-color: #68b738;
+    width: 87.6%;
+    right: -8.3%;
+    margin-top: 6px;
+    position: absolute;
   }
 }
