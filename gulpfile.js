@@ -8,17 +8,18 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var minify = require('gulp-minify');
-var posthtml = require ('gulp-posthtml');
-var include = require ("posthtml-include");
+var posthtml = require('gulp-posthtml');
+var include = require("posthtml-include");
 var csso = require("gulp-csso");
 var webp = require("gulp-webp");
-var posthtml = require("gulp-posthtml");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var server = require("browser-sync").create();
-var include = require ("posthtml-include");
+var include = require("posthtml-include");
 var rename = require("gulp-rename");
 var htmlmin = require('gulp-htmlmin');
+var cssmin = require('gulp-cssmin');
+var jsmin = require('gulp-jsmin');
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -41,80 +42,65 @@ gulp.task("css2", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
-
-gulp.task("images", function(){
+gulp.task("images", function () {
   return gulp.src("source/img/**/*.{}")
-  .pipe(imagemin([
-    imagemin.optipng({optimizationLevel:3})
-  ]
+    .pipe(imagemin([
+        imagemin.optipng({
+          optimizationLevel: 3
+        })
+      ]
 
-  ))
-  .pipe(gulp.dest("build/img"));
-  });
+    ))
+    .pipe(gulp.dest("source/img"));
+});
 
-  gulp.task("webp", function (){
-    return gulp.src("source/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
-  });
-  /*NEW*/
-  gulp.task("copy", function () {
-    return gulp.src([
-      "source/fonts/**/*.{woff,woff2}",
-      "source/img/**"
-    ], {
-      base: "source"
-    })
-    .pipe(gulp.dest("build/"));
+gulp.task("jsmin", async function () {
+  gulp.src("source/js/**/*.js")
+    .pipe(jsmin())
+    .pipe(gulp.dest("build/js"))
+    .pipe(server.stream());
+});
 
-  });
 
-  gulp.task("sprite", function() {
-    return gulp.src("source/img/icon-*.svg").pipe(svgstore({
+gulp.task("webp", function () {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({
+      quality: 90
+    }))
+    .pipe(gulp.dest("source/img"));
+});
+/*NEW*/
+
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg").pipe(svgstore({
       inlineSvg: true
     }))
-   .pipe(rename("sprite.svg"))
-      .pipe(gulp.dest("source/img"));
-  });
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
 
 
-  gulp.task("html", function() {
-  return gulp.src("source/*.html")
-  .pipe(posthtml([
-    include()
-  ]))
-  .pipe(gulp.dest("build"));
-  });/*
-  gulp.task('compress', function() {
-    gulp.src('source/js/*.js')
-      .pipe(minify({
-          ext:{
-              src:'-debug.js',
-              min:'.js'
-          },
-          exclude: ['tasks'],
-          ignoreFiles: ['.combo.js', '-min.js']
-      }))
-      .pipe(gulp.dest('build/js/'))
-  });*/
-
-
-
-gulp.task('minify', () => {
-  return gulp.src('source/*.html')
-    .pipe(htmlmin({ collapseWhitespace: true }))
+gulp.task('html', function () {
+  return gulp.src(['source/**/*.html'])
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
     .pipe(gulp.dest('build'));
 });
 
-  gulp.task('message', function(done) {
-    console.log("HTTP Server Started");
-    done();
-  });
+
+gulp.task('message', function (done) {
+  console.log("HTTP Server Started");
+  done();
+});
 
 gulp.task("server", function () {
   server.init({
@@ -129,8 +115,18 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
+gulp.task("copy", function () {
+  return gulp.src([
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/**",
+    ], {
+      base: "source"
+    })
+    .pipe(gulp.dest("build/"));
+
+});
 
 
 gulp.task("start", gulp.series("css", "server"));
 
-gulp.task("build", gulp.series("css", "css2", "html", "sprite", "webp", "images", "copy", "minify", "server"));
+gulp.task("build", gulp.series("css", "css2", "html", "jsmin", "sprite", "webp", "images", "copy", "server"));
