@@ -1657,7 +1657,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    max-width: 1316px;
+    max-width: 100%;
     margin: 0;
   }
   .live-example__sub {
@@ -4780,7 +4780,7 @@
   .additional-goods_header-right-line {
     position: absolute;
     top: 37px;
-    right: 0%;
+    right: 1%;
     width: 70%;
   }
   .additional-goods__content {
