@@ -129,4 +129,4 @@ gulp.task("copy", function () {
 
 gulp.task("start", gulp.series("css", "server"));
 
-gulp.task("build", gulp.series("css", "css2", "html", "jsmin", "sprite", "webp", "images", "copy", "server"));
+gulp.task("build", gulp.series("css", "css2", "html", "jsmin", "sprite", "webp", "images", "copy"));
