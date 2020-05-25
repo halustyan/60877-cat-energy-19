@@ -1,4 +1,4 @@
-@import url("variables.less");
+@import "../variables.less";
 
 .main-catalog__hidden {
   width: 1px;
@@ -24,13 +24,6 @@
 .main-catalog {
   max-width: 320px;
   margin: 0 auto;
-}
-
-.main__main-text {
-  font-size: 36px;
-  line-height: 60px;
-  color: #111111;
-  font-family: "Oswald-Regular", "Arial", sans-serif;
 }
 
 .main-catalog__good {
@@ -99,10 +92,6 @@
 }
 
 @media (min-width: @mobile) {
-  .main__catalog-mobile-image {
-    display: block;
-  }
-
   .main-catalog__good-header-sub {
     margin-left: -11px;
   }
@@ -199,11 +188,6 @@
     display: flex;
     margin: 0 auto;
     max-width: 320px;
-  }
-
-  .main__catalog--small-mobile-image {
-    width: 64px;
-    height: 78px;
   }
 
   .main-catalog__first-image {
@@ -417,11 +401,6 @@
     margin-left: 2px;
   }
 
-  .main__catalog-tablet-big-image {
-    top: -81px;
-    left: 32px;
-  }
-
   .main-catalog__good-last-child {
     margin-bottom: 0;
   }
@@ -481,7 +460,11 @@
 @media (min-width: @desktop) {
   .main-catalog {
     max-width: 1220px;
-    margin-bottom: 86px;
+    margin-bottom: 45px;
+  }
+
+  .main-catalog__main-text {
+    max-width: 570px;
   }
 
   .main-catalog__main-text {
@@ -512,13 +495,6 @@
     flex-direction: column;
     max-width: 169px;
     margin: 0 auto;
-  }
-
-  .main__catalog-tablet-image {
-    display: block;
-    position: absolute;
-    top: -46px;
-    left: 6px;
   }
 
   .main-catalog__good-data {
@@ -583,17 +559,13 @@
     margin-top: 32px;
   }
 
-  .main__catalog-tablet-big-image {
-    top: -79px;
-    left: -8px;
-  }
-
   .main-catalog__goods {
     justify-content: inherit;
     padding-right: 0;
     max-width: 1220px;
     margin: 0 auto;
     padding-left: 0;
+    align-items: inherit;
   }
 
   .main-catalog__good-third-item {
@@ -622,30 +594,6 @@
     left: -38px;
     top: -15%;
     width: 242px;
-  }
-
-  .main__catalog--second-image {
-    top: -82px;
-  }
-
-  .main__catalog--third-image {
-    top: -82px;
-  }
-
-  .main__catalog--fourth-image {
-    top: -84px;
-    width: 251px;
-    height: 208px;
-    left: -40px;
-  }
-
-  .main__catalog--fifth-image {
-    width: 248px;
-    top: -50px;
-  }
-
-  .main__catalog--sixth-image {
-    top: -85px;
   }
 
   .main-catalog__seventh-image {

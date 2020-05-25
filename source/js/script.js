@@ -7,8 +7,9 @@ btnClose.onclick = function () {
 var programsProgramLinks = document.querySelectorAll(".programs__program-link");
 var arrows = document.querySelectorAll(".programs__icon-right-arrow-long");
 var contentLinks = document.querySelectorAll(".programs__program-main-content-link");
-for (let i = 0; i < contentLinks.length; i++) {
-  for (let i = 0; i < arrows.length; i++) {
+/*
+for (let i = 0; i<contentLinks.length; i++) {
+  for (let i = 0; i<arrows.length; i++) {
     contentLinks[i].onmouseover = function () {
       arrows[i].src = "img/icon-right-arrow-verylong.svg";
     }
@@ -16,4 +17,4 @@ for (let i = 0; i < contentLinks.length; i++) {
       arrows[i].src = "img/icon-right-arrow-long.svg";
     }
   }
-}
+}*/

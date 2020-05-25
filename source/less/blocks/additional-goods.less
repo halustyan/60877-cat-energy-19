@@ -1,4 +1,4 @@
-@import url("variables.less");
+@import "../variables.less";
 
 .additional-goods__hidden-header {
   display: none;
@@ -20,15 +20,34 @@
   display: block;
 }
 
+.additional-goods__header-sub-span::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 0;
+  height: 3px;
+  background-color: #68b738;
+  z-index: -1;
+  width: 100vw;
+}
+
 .additional-goods__hidden-article-header {
   display: none;
 }
 
 .additional-goods__header-sub-span {
+  position: relative;
   font-size: 24px;
   line-height: 24px;
   font-family: "Oswald-Regular", "Arial", sans-serif;
   font-weight: 400;
+  margin-right: 22px;
+  background-color: #fff;
+  padding-right: 23px;
+}
+
+.additional-goods {
+  overflow: hidden;
 }
 
 .additional-goods__header {
@@ -37,6 +56,8 @@
   align-items: center;
   padding-top: 28px;
   padding-bottom: 34px;
+  max-width: 320px;
+  margin: 0 auto;
 }
 
 .additional-goods__article-content {
@@ -110,6 +131,14 @@
 
   .additional-goods__green-background svg {
     margin-bottom: 61px;
+  }
+
+  .additional-goods__header-right-line {
+    display: block;
+    height: 3px;
+    background-color: #68b738;
+    width: 17.3%;
+    margin-top: 7px;
   }
 }
 
@@ -215,7 +244,7 @@
     margin-right: 60px;
   }
 
-  .additional-goods_header-line-tablet-show {
+  .additional-goods__header-line-tablet-show {
     display: block;
     width: 30px;
     position: absolute;
@@ -228,15 +257,16 @@
   }
 
   .additional-goods__header-sub-span {
-    margin-left: 63px;
+    margin-left: 31px;
     position: relative;
     font-size: 36px;
     line-height: 36px;
     margin-top: 2px;
     max-width: 339px;
+    padding: 0 37px;
   }
 
-  .additional-goods_header-right-line {
+  .additional-goods__header-right-line {
     height: 3px;
     background-color: #68b738;
     margin-top: 14px;
@@ -250,9 +280,9 @@
 
   .additional-goods__content {
     display: flex;
-    margin-top: 0 auto;
-    max-width: 733px;
+    max-width: 761px;
     flex-direction: column;
+    margin: 0 auto;
   }
 
   .additional-goods__article {
@@ -267,6 +297,39 @@
   .additional-goods__gift-image {
     margin-left: 90px;
     margin-top: 0;
+  }
+
+  .additional-goods__header-sub-span::before {
+    content: "";
+    min-width: 100vw;
+    height: 3px;
+    background-color: #68b738;
+    position: absolute;
+    left: -500px;
+    top: 23px;
+    z-index: -1;
+  }
+
+  .additional-goods__header {
+    max-width: 768px;
+  }
+
+  .additional-goods__header-sub-span {
+    background-color: #fff;
+  }
+
+  .additional-goods {
+    overflow: hidden;
+  }
+
+  .additional-goods__header-sub-span::after {
+    content: "";
+    min-width: 100vw;
+    height: 3px;
+    background-color: #68b738;
+    position: absolute;
+    z-index: -1;
+    top: 23px;
   }
 }
 
@@ -291,6 +354,18 @@
     border-right: 0;
   }
 
+  .additional-goods__header-line-tablet-show {
+    display: block;
+    width: 5.2%;
+    margin-top: 39px;
+    left: 1px;
+    height: 3px;
+    background-color: #68b738;
+    margin-left: -4px;
+    margin-top: 12px;
+    position: unset;
+  }
+
   .additional-goods__green-background {
     width: 245px;
     max-width: 245px;
@@ -301,7 +376,7 @@
     display: flex;
     padding-left: 41px;
     padding-right: 41px;
-    background-color: green;
+    background-color: #68b738;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 
@@ -398,22 +473,36 @@
     margin-left: 120px;
   }
 
-  .additional-goods {
-    max-width: 1220px;
-    margin: 0 auto;
-  }
-
   .additional-goods__header-sub-span {
     margin-left: 0;
     position: relative;
     font-size: 36px;
     line-height: 36px;
     margin-top: 2px;
+    width: 24.4%;
+    margin-left: 37px;
+    margin-left: 72px;
+    padding: 0 37px;
+  }
+
+  .additional-goods__header-right-line {
+    height: 3px;
+    background-color: #68b738;
+    margin-top: 14px;
+    margin-left: 37px;
+    display: block;
+    margin-top: 10px;
+    right: 1%;
+    width: 66.45%;
+    position: unset;
   }
 
   .additional-goods__header {
-    margin-top: 45px;
+    margin-top: -1px;
+    max-width: 1440px;
     margin-bottom: 45px;
+    margin: 0 auto;
+    padding-bottom: 79px;
   }
 
   .additional-goods_header-line-tablet-show {
@@ -434,6 +523,8 @@
   .additional-goods__content {
     flex-direction: row;
     max-width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 86px;
   }
 
   .additional-goods__article-main-div {
@@ -443,6 +534,16 @@
 
   .additional-goods__br {
     display: block;
+  }
+
+  .additional-goods {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1300px) {
+  .additional-goods__header-sub-span {
+    width: 26%;
   }
 }
 

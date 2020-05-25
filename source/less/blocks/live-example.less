@@ -1,4 +1,4 @@
-@import url("variables.less");
+@import "../variables.less";
 
 .live-example__content {
   max-width: 279px;
@@ -36,7 +36,7 @@
 
 .live-example__sub {
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
   font-family: "Arial", "Tahoma", sans-serif;
   color: #444444;
   margin-bottom: 26px;
@@ -117,7 +117,7 @@
     display: flex;
     flex-direction: column;
     padding: 17px 0 12px 0;
-    max-width: 320px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -465,6 +465,10 @@
     display: none;
   }
 
+  .live-example__numbers-sub-header-five-kg {
+    margin-top: 8px;
+  }
+
   .live-example__header-plus-how-many-spent {
     width: 100%;
   }
@@ -543,7 +547,7 @@
     max-width: 198px;
     margin-left: -17px;
     padding-right: 4px;
-    margin-top: -2%;
+    margin-top: 0%;
   }
 
   .live-example__numbers-sub-content-total-time {
@@ -555,6 +559,11 @@
     padding-right: 0;
   }
 
+  .live-example__numbers-sub-header-sixty-days {
+    margin-top: -3px;
+    margin-bottom: 5px;
+  }
+
   .live-example__price {
     max-width: 326px;
     justify-content: space-between;
@@ -564,6 +573,10 @@
     padding-left: 0;
     margin-left: 0;
     padding-bottom: 50px;
+  }
+
+  .live-example__numbers-sub-content-total-time {
+    margin-top: 8px;
   }
 
   .live-example__price-fifteen-thousand {
@@ -668,6 +681,10 @@
     width: 100%;
   }
 
+  .live-example__numbers {
+    margin-bottom: 16px;
+  }
+
   .live-example__numbers-sub-header-five-kg {
     margin-bottom: 12px;
     margin-top: 9px;
@@ -694,5 +711,24 @@
 
   .live-example__slider {
     margin-left: -59px;
+  }
+}
+
+@media (min-width: 1441px){
+.live-example__content {
+    max-width: 100%;
+  }
+
+  .live-example__content-slider {
+    display: flex;
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .live-example {
+    max-width: 100%;
   }
 }

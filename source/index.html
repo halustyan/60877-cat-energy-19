@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Функциональное питание для котов</title>
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.min.css" rel="stylesheet" type="text/css">
   <script src="js/picturefill.js"></script>
 </head>
 
@@ -100,6 +100,7 @@
     </div>
   </header>
   <div class="header-background">
+    <div class="header-background__wrapper">
     <div class="header-background__headers">
       <h1 class="header-background__main-words">Функциональное питание для котов</h1>
       <h2 class="header-background__work-for-your-cat">Занялся собой? Займись котом!</h2>
@@ -113,7 +114,8 @@
       <img class="header-background__img" src="img/index-can-mobile.png" srcset="img/index-can-mobile@2x.png 2x"
         alt="Индекс большой стакан">
     </picture>
-    <a href="find-program.html" class="header-background__check-your-program" aria-label="check program"> Подобрать программу</a>
+    <a href="form.html" class="header-background__check-your-program" aria-label="check program"> Подобрать программу</a>
+  </div>
   </div>
   <main class="main">
     <section class="programs">
@@ -264,17 +266,17 @@
               <div class="live-example__numbers-plus-price">
                 <div class="live-example__numbers">
                   <div class="live-example__numbers-sub live-example__numbers-sub-first-child">
-                    <span class="live-example__numbers-sub-header live-example__numbers-sub-header-five-kg">5 кг</span>
-                    <span
+                    <div class="live-example__numbers-sub-header live-example__numbers-sub-header-five-kg">5 кг</div>
+                    <div
                       class="live-example__numbers-sub-content live-example__numbers-sub-content-low-weight">снижение
-                      веса</span>
+                      веса</div>
                   </div>
                   <div class="live-example__numbers-sub live-example__numbers-sub-last-child">
-                    <span class="live-example__numbers-sub-header live-example__numbers-sub-header-sixty-days">60
-                      дней</span>
-                    <span
+                    <div class="live-example__numbers-sub-header live-example__numbers-sub-header-sixty-days">60
+                      дней</div>
+                    <div
                       class="live-example__numbers-sub-content live-example__numbers-sub-content-total-time">затрачено
-                      времени</span>
+                      времени</div>
                   </div>
                 </div>
                 <span class="live-example__price"><span class="live-example__how-many-u-spent">Затраты на питание:
@@ -313,9 +315,9 @@
             class="map__communicating-address-city">Санкт-Петербург</span></span>
       </div>
     </div>
-    <div class="map__img"><img src="img/map-pin.png" alt="map-pin" class="map__map-pin"></div>
+    <iframe class="map__iframe-thing" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6099477678288!2d30.323261120376586!3d59.93861426452755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2sDokhodnyy%20Dom%20N.%20A.%20Mel&#39;tsera!5e0!3m2!1sen!2sua!4v1590414500268!5m2!1sen!2sua" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
-  <footer class="footer footer-index">
+  <footer class="footer footer-index footer__index-new">
     <div class="footer__footer-content">
       <div class="footer__logo footer__logo-index">
         <a href="https://catenergy.html" aria-label="footer catenergy"><img src="img/logo-footer.svg" alt="logo-footer" class="footer__logo-image" width="152" height="24"></a>
@@ -347,7 +349,7 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__right-logo-link-organization" aria-label="footer logo social icon">
           <span class="footer__name-org footer__name-org-index">HTML Academy</span>
           <svg xmlns="http://www.w3.org/2000/svg" class="footer__right-logo-link-organization svg" width="27"
-            height="34.09" viewBox="0 0 27.943 34.09">
+            height="34" viewBox="0 0 27.943 34.09">
             <path
               d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
             </svg>

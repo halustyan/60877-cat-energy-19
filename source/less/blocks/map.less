@@ -1,8 +1,13 @@
-@import url("variables.less");
+@import "../variables.less";
 
 .map__communicating {
   padding-top: 28px;
   padding-bottom: 26px;
+}
+
+.map__iframe-thing {
+  width: 100%;
+  height: 400px;
 }
 
 .map__communicating-main-text {
@@ -21,6 +26,10 @@
     border: 0;
     height: 363px;
     width: 100%;
+  }
+
+  .map__iframe-thing {
+    height: 362px;
   }
 
   .map__communicating-main-text {
@@ -53,12 +62,11 @@
 
   .map__communicating-form {
     background-color: #f2f2f2;
-    max-width: 320px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
   .map__img {
-    background-image: url("../img/bg-map-mobile@1x.png");
     width: 100%;
     height: 363px;
     background-position: -1px -39px;
@@ -76,18 +84,18 @@
 
   .map {
     margin: 0 auto;
-    max-width: 320px;
+    max-width: 100%;
   }
 }
 
 @media (min-width: @tablet) {
   .map {
     margin: 0 auto;
-    max-width: 768px;
+    max-width: 100%;
   }
 
   .map__communicating-form {
-    max-width: 768px;
+    max-width: 100%;
     margin-top: 77px;
     background-color: #f2f2f2;
   }
@@ -138,13 +146,7 @@
     margin-top: 20px;
   }
 
-  .communicating__index {
-    padding-top: 17px;
-    padding-bottom: 57px;
-  }
-
   .map__img {
-    background-image: url("../img/bg-map-tablet@1x.png");
     height: 396px;
     background-position: 100% -5px;
     position: relative;
@@ -184,7 +186,6 @@
   }
 
   .map__img-form {
-    background-image: url("../img/bg-map-tablet@1x.png");
     height: 394px;
     background-position: 100% -8px;
     position: relative;
@@ -199,17 +200,21 @@
     padding-top: 28px;
     margin-top: 53px;
   }
+
+  .map__iframe-form {
+    margin-left: 0;
+  }
+
+  .map__iframe-thing {
+    height: 400px;
+  }
 }
 
 @media (min-width: @desktop) {
   .map {
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
     position: relative;
-  }
-
-  br {
-    display: none;
   }
 
   .map__desktop-block {
@@ -222,6 +227,10 @@
     max-width: 570px;
     left: 110px;
     top: 17px;
+  }
+
+  .map__iframe-form {
+    height: 400px;
   }
 
   .map__communicating--catalog-block {
@@ -258,7 +267,7 @@
   }
 
   .map__communicating__we-offer-form {
-    margin-top: 36px;
+    margin-top: 62px;
   }
 
   .map__communicating-address-city {
@@ -269,14 +278,14 @@
   }
 
   .map__communicating__address-form {
-    margin-top: 35px;
+    margin-top: 61px;
     display: flex;
     flex-direction: column;
   }
 
   .map__communicating-address-catalog {
     text-align: left;
-    margin-right: 56px;
+    margin-right: 42px;
     margin-top: 36px;
   }
 
@@ -292,7 +301,6 @@
   }
 
   .map__img {
-    background-image: url("../img/bg-map-desktop@1x.png");
     background-position: 0 0;
     height: 396px;
   }
@@ -306,5 +314,39 @@
     top: 151px;
     left: 69.4%;
     width: 122px;
+  }
+
+  .map__communicating-form {
+    left: 110px;
+    top: 17px;
+    max-width: 549px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1300px){
+  .map__communicating-form {
+    left: 35px;
+  }
+}
+
+@media (min-width: @desktopBig) {
+  .map__communicating-form {
+    left: 111px;
+    padding-bottom: 59px;
+    top: 41px;
+  }
+
+  .map__communicating__we-offer-form {
+    margin-top: 39px;
+  }
+
+  .map__communicating__address-form {
+    margin-top: 37px;
+    margin-left: -1px;
+  }
+
+  .map__communicating--catalog-block {
+    top:16px;
   }
 }
