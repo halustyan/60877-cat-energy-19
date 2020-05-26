@@ -1,254 +1,242 @@
 <!doctype html>
 <html lang="ru">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Подбор программы занятий</title>
-  <link href="css/normalize.css" rel="stylesheet" type="text/css">
-  <link href="css/style.min.css" rel="stylesheet" type="text/css">
-  <script src="js/picturefill.js"></script>
-</head>
-
-<body class="body">
-  <svg width="0" height="0" style="display: none;">
-    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" id="icon-mail">
-      <path
-        d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z">
-      </path>
-    </symbol>
-    <symbol xmlns="http://www.w3.org/2000/svg" fill="#78bf4d" viewBox="0 0 21.1 15.5" id="icon-tick">
-      <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z"></path>
-    </symbol>
-    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" id="m-fb">
-      <path
-        d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z">
-      </path>
-    </symbol>
-    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12" id="m-vk">
-      <path
-        d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9s.8-.4 1-.4h3.1c.1 0 .4.1.7.3.3.2.4.5.5.6.7 1.5 1.5 2.8 2.6 4 .1-.4.2-1.4.1-2.3 0-.4-.1-.8-.2-1-.1-.1-.3-.2-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5c.9 0 1.2.1 1.6.1 1.2.3 1.2 1.3 1.1 2.5v1.6c0 .3 0 .8.1 1 .2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5-.3.3-.5.6-.7.9-.5.4-.9 1-.9 1.1s.5.5.9.9c1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.9zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9c.1 0 .3-.1.4-.1 0 0 0-.1-.1-.1-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1.2-.2.4-.5.7-.8 1.1-1.4 1.4-2 1.5-2.3h-3.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4-.1 0-.3 0-.4-.1-.7-.4-.7-1.4-.7-2.1V2.6c.1-1.3 0-1.3-.3-1.4-.3-.1-.5-.1-1.4-.1H10c-.5 0-1 0-1.4.1l.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3-.1 0-.2.1-.4.1-.6 0-1.3-.7-2.5-2.5C5 2.9 4.5 1.8 4.5 1.8s0-.1-.1-.1-.2-.1-.2-.1h-3c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4s.2 0 .2-.1v-.1c0-.2 0-2 1.2-2.3h.2z">
-      </path>
-    </symbol>
-    <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.1 16" id="m-insta">
-      <path
-        d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z">
-      </path>
-      <path
-        d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1S9.7 11.1 8 11.1 4.9 9.7 4.9 8 6.3 4.9 8 4.9m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z">
-      </path>
-      <circle cx="12.3" cy="3.7" r=".9"></circle>
-    </symbol>
-    <symbol id="footer-logo-htmlacademy" xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 52 54">
-      <path
-        d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Подбор программы занятий</title>
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.min.css" rel="stylesheet" type="text/css">
+    <script src="js/picturefill.js"></script>
+  </head>
+  <body class="body">
+    <svg width="0" height="0" style="display: none;">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 13" id="icon-mail">
+        <path
+          d="M15.6 11.6H1.4V5.8H0V13h17V5.8h-1.4v5.8zM0 0v2.3l8.5 7.1L17 2.3V0H0zm15.6 1.6L8.5 7.5 1.4 1.6v-.2h14.2v.2z">
+        </path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" fill="#78bf4d" viewBox="0 0 21.1 15.5" id="icon-tick">
+        <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z"></path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 19" id="m-fb">
+        <path
+          d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z">
+        </path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 12" id="m-vk">
+        <path
+          d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9s.8-.4 1-.4h3.1c.1 0 .4.1.7.3.3.2.4.5.5.6.7 1.5 1.5 2.8 2.6 4 .1-.4.2-1.4.1-2.3 0-.4-.1-.8-.2-1-.1-.1-.3-.2-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5c.9 0 1.2.1 1.6.1 1.2.3 1.2 1.3 1.1 2.5v1.6c0 .3 0 .8.1 1 .2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5-.3.3-.5.6-.7.9-.5.4-.9 1-.9 1.1s.5.5.9.9c1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.9zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9c.1 0 .3-.1.4-.1 0 0 0-.1-.1-.1-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1.2-.2.4-.5.7-.8 1.1-1.4 1.4-2 1.5-2.3h-3.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4-.1 0-.3 0-.4-.1-.7-.4-.7-1.4-.7-2.1V2.6c.1-1.3 0-1.3-.3-1.4-.3-.1-.5-.1-1.4-.1H10c-.5 0-1 0-1.4.1l.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3-.1 0-.2.1-.4.1-.6 0-1.3-.7-2.5-2.5C5 2.9 4.5 1.8 4.5 1.8s0-.1-.1-.1-.2-.1-.2-.1h-3c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4s.2 0 .2-.1v-.1c0-.2 0-2 1.2-2.3h.2z">
+        </path>
+      </symbol>
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.1 16" id="m-insta">
+        <path
+          d="M11.8 1C13.6 1 15 2.4 15 4.2v7.7c0 1.7-1.4 3.1-3.1 3.1H4.2C2.4 15 1 13.6 1 11.8V4.2C1 2.4 2.4 1 4.2 1h7.6m0-1H4.2C1.9 0 0 1.9 0 4.2v7.7C0 14.1 1.9 16 4.2 16h7.7c2.3 0 4.2-1.9 4.2-4.2V4.2C16 1.9 14.1 0 11.8 0z">
+        </path>
+        <path
+          d="M8 4.9c1.7 0 3.1 1.4 3.1 3.1S9.7 11.1 8 11.1 4.9 9.7 4.9 8 6.3 4.9 8 4.9m0-1C5.7 3.9 3.9 5.7 3.9 8s1.8 4.1 4.1 4.1 4.1-1.8 4.1-4.1S10.3 3.9 8 3.9z">
+        </path>
+        <circle cx="12.3" cy="3.7" r=".9"></circle>
+      </symbol>
+      <symbol id="footer-logo-htmlacademy" xmlns="http://www.w3.org/2000/svg" width="35" height="34" viewBox="0 0 52 54">
+        <path
+          d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17
           36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8
           7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z" />
-    </symbol>
-  </svg>
-  <header class="page-header">
-    <div class="page-header__menu">
-      <div class="page-header__menu-logos-links">
-        <a href="index.html" class="page-header__logo-site" aria-label="header logo">
-
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo" src="img/logo-mobile.svg" alt="Logo" height="37" width="33">
-          </picture>
-
-        </a>
-        <button class="page-header__logo-mobile_menu">
+      </symbol>
+    </svg>
+    <header class="page-header">
+      <div class="page-header__menu">
+        <div class="page-header__menu-logos-links">
+          <a href="index.html" class="page-header__logo-site" aria-label="header logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="page-header__logo" src="img/logo-mobile.svg" alt="Logo" height="37" width="33">
+            </picture>
+          </a>
+          <button class="page-header__logo-mobile_menu">
           <span class="page-header__logo-mobile_menu-close"></span>
-        </button>
-      </div>
-      <nav class="page-header__menu-main">
-        <ul class="page-header__menu-main-sub">
-          <li class="page-header__menu-main-sub-menu-elem "><a href="index.html"
+          </button>
+        </div>
+        <nav class="page-header__menu-main">
+          <ul class="page-header__menu-main-sub">
+            <li class="page-header__menu-main-sub-menu-elem "><a href="index.html"
               class="page-header__menu-main-sub-menu-elem-link page-header__menu-main-sub-menu-elem-link--form ">Главная</a>
-          </li>
-          <li class="page-header__menu-main-sub-menu-elem "><a href="catalog.html"
+            </li>
+            <li class="page-header__menu-main-sub-menu-elem "><a href="catalog.html"
               class="page-header__menu-main-sub-menu-elem-link page-header__menu-main-sub-menu-elem-link--form">Каталог
               продукции</a>
-          </li>
-          <li class="page-header__menu-main-sub-menu-elem page-header__form-li-active"><a href="form.html"
+            </li>
+            <li class="page-header__menu-main-sub-menu-elem page-header__form-li-active"><a href="form.html"
               class="page-header__menu-main-sub-menu-elem-link page-header__menu-main-sub-menu-elem-link--form ">Подбор
               программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main class="main-form">
-
-    <form action="https://echo.htmlacademy.ru" class="form">
-      <div class="main-form__wrapper">
-      <div class="main-form__content">
-        <h1 class="main-form__how-u-can-choose-program">Подбор программы</h1>
-        <span class="main-form__full-anket">Заполните анкету и мы подберем программу питания для вашего кота</span>
-        <div class="main-form__contact-inputs-radio-main">
-          <div class="main-form__contact-inputs">
-            <div class="main-form__sub main-form__first-three-inputs">
-              <label for="name" class="main-form__sub-label-input-text main-form__sub-label-name">Имя:*</label>
-              <input type="text" placeholder="Барсик" id="name" name="name"
-                class="form__sub-input-text main-form__sub-label-input-name" required>
-            </div>
-            <div class="main-form__sub main-form__sub-weight main-form__first-three-inputs">
-              <label for="weight" class="main-form__sub-label-input-text main-form__sub-label-weight">Вес (кг):*</label>
-              <input type="text" placeholder="7" id="weight" name="weight"
-                class="main-form__sub-input-text main-form__sub-label-input-weight" required>
-            </div>
-            <div class="main-form__sub main-form__sub-age main-form__first-three-inputs main-form__first-three-inputs-custom-border">
-              <label for="age"
-                class="main-form__sub-label-input-text main-form__sub-label-age main-form__first-three-inputs-last-child">Возраст
-                (лет):</label>
-              <input type="text" placeholder="7" id="age" name="age" class="main-form__sub-input-text main-form__sub-input-age">
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-form">
+      <form action="https://echo.htmlacademy.ru" class="main-form__form">
+        <div class="main-form__wrapper">
+          <div class="main-form__content">
+            <h1 class="main-form__how-u-can-choose-program">Подбор программы</h1>
+            <span class="main-form__full-anket">Заполните анкету и мы подберем программу питания для вашего кота</span>
+            <div class="main-form__contact-inputs-radio-main">
+              <div class="main-form__contact-inputs">
+                <div class="main-form__sub main-form__first-three-inputs">
+                  <label for="name" class="main-form__sub-label-input-text main-form__sub-label-name">Имя:*</label>
+                  <input type="text" placeholder="Барсик" id="name" name="name"
+                    class="main-form__sub-label-input-name" required>
+                </div>
+                <div class="main-form__sub main-form__sub-weight main-form__first-three-inputs">
+                  <label for="weight" class="main-form__sub-label-input-text main-form__sub-label-weight">Вес (кг):*</label>
+                  <input type="text" placeholder="7" id="weight" name="weight"
+                    class="main-form__sub-input-text main-form__sub-label-input-weight" required>
+                </div>
+                <div class="main-form__sub main-form__sub-age main-form__first-three-inputs main-form__first-three-inputs-custom-border">
+                  <label for="age"
+                    class="main-form__sub-label-input-text main-form__sub-label-age main-form__first-three-inputs-last-child">Возраст
+                  (лет):</label>
+                  <input type="text" placeholder="7" id="age" name="age" class="main-form__sub-input-text main-form__sub-input-age">
+                </div>
+              </div>
+              <div class="main-form__radio-part">
+                <div class="main-form__sub-radio">
+                  <input type="radio" name="losing-weight" id="losing-weight" checked class="main-form__sub-input-radio">
+                  <label for="losing-weight" class="main-form__sub-label-input-radio">Похудение</label>
+                </div>
+                <div class="main-form__sub-radio">
+                  <input type="radio" name="losing-weight" id="mass-gain" class="main-form__sub-input-radio">
+                  <label for="mass-gain" class="main-form__sub-label-input-radio">Набор массы</label>
+                </div>
+                <div class="main-form__sub-radio">
+                  <input type="radio" name="losing-weight" id="do-not-know" class="main-form__sub-input-radio">
+                  <label for="do-not-know" class="main-form__sub-label-input-radio">Не знаю (нужен ваш совет)</label>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="main-form__radio-part">
-            <div class="main-form__sub-radio">
-              <input type="radio" name="losing-weight" id="losing-weight" checked class="main-form__sub-input-radio">
-              <label for="losing-weight" class="main-form__sub-label-input-radio">Похудение</label>
+          <div class="main-form__contact">
+            <h2 class="main-form__contact-data-for-cat-owner">
+              Контактные данные (владельца кота)
+            </h2>
+          </div>
+          <div class="main-form__contact__email-plus-phone">
+            <div class="main-form__sub main-form__contact-data-cat-owner-email">
+              <label for="email" class="main-form__sub-label-email main-form__sub-contact-cat-data">E-mail:*</label>
+              <input type="email" placeholder="kuklachev@gmail.com" id="email" name="email"
+                class="main-form__sub-input-text-email" required>
+              <svg class="main-form__email-input-img" width="17" height="13">
+                <use xlink:href="#icon-mail"></use>
+              </svg>
             </div>
-            <div class="main-form__sub-radio">
-              <input type="radio" name="losing-weight" id="mass-gain" class="main-form__sub-input-radio">
-              <label for="mass-gain" class="main-form__sub-label-input-radio">Набор массы</label>
+            <div class="main-form__sub main-form__contact-data-cat-owner-telephone">
+              <label for="telephone" class="main-form__sub-label-telephone main-form__sub-contact-cat-data">Телефон:*</label>
+              <input type="tel" placeholder="8 (960) 900-60-90" id="telephone" name="telephone"
+                class="main-form__sub-input-text-telephone" required>
+              <img src="img/icon-phone.svg" alt="phone icon" width="20" height="20" class="main-form__phone-image">
             </div>
-            <div class="main-form__sub-radio">
-              <input type="radio" name="losing-weight" id="do-not-know" class="main-form__sub-input-radio">
-              <label for="do-not-know" class="main-form__sub-label-input-radio">Не знаю (нужен ваш совет)</label>
+          </div>
+          <div class="main-form__commentary">
+            <span class="main-form__commentary-comment">
+            Комментарий
+            </span>
+          </div>
+          <div class="main-form__textarea">
+            <textarea name="commentary" class="main-form__commentary-textarea">Расскажите обо всех повадках кота
+            </textarea>
+          </div>
+          <div class="main-form__sub-additional">
+            <span class="main-form__sub-add">Дополнительно</span>
+          </div>
+          <div class="main-form__checkboxes">
+            <div class="main-form__sub-two-checkbox">
+              <div class="main-form__sub-checkbox">
+                <input type="checkbox" name="sugarchange" id="sugarchange"
+                  class="main-form__sub-input-sugarchange main-form__checkboxes-sub-input" checked>
+                <label for="sugarchange"
+                  class="main-form__sub-label-sugarchange main-form__sub-contact-additional-data main-form__checkbox-label">Сахарозаменитель</label>
+              </div>
+              <div class="main-form__sub-checkbox">
+                <input type="checkbox" id="drink-water" name="drink-water"
+                  class="main-form__sub-input-drink-water main-form__checkboxes-sub-input">
+                <label for="drink-water"
+                  class="main-form__sub-label-drink-water main-form__sub-contact-additional-data main-form__checkbox-label">Питьевая
+                вода</label>
+              </div>
             </div>
+            <div class="main-form__sub-two-checkbox">
+              <div class="main-form__sub-checkbox">
+                <input type="checkbox" name="milk" id="milk" class="main-form__sub-input-milk main-form__checkboxes-sub-input">
+                <label for="milk"
+                  class="main-form__sub-label-milk main-form__sub-contact-additional-data main-form__checkbox-label">Молоко</label>
+              </div>
+              <div class="main-form__sub-checkbox">
+                <input type="checkbox" id="vitamines" name="vitamines"
+                  class="main-form__sub-input-vitamines main-form__checkboxes-sub-input">
+                <label for="vitamines"
+                  class="main-form__sub-label-vitamines main-form__sub-contact-additional-data main-form__checkbox-label">Витамины</label>
+              </div>
+            </div>
+          </div>
+          <div class="main-form__submit">
+            <input type="submit" class="main-form__submit-input" value="Отправить заявку">
+            <span class="main-form__required-fields-text">* — Обязательные поля</span>
           </div>
         </div>
-      </div>
-      <div class="main-form__contact">
-        <!--<div class="main-form__contact-data-for-cat-owner-left-line"></div>-->
-        <h2 class="main-form__contact-data-for-cat-owner">
-          Контактные данные (владельца кота)
-        </h2>
-        <!--<div class="main-form__contact-data-for-cat-owner-line"></div>-->
-      </div>
-      <div class="main-form__contact__email-plus-phone">
-        <div class="main-form__sub main-form__contact-data-cat-owner-email">
-          <label for="email" class="main-form__sub-label-email main-form__sub-contact-cat-data">E-mail:*</label>
-          <input type="email" placeholder="kuklachev@gmail.com" id="email" name="email"
-            class="main-form__sub-input-text-email" required>
-          <svg class="main-form__email-input-img" width="17" height="13">
-            <use xlink:href="#icon-mail"></use>
-          </svg>
-        </div>
-        <div class="main-form__sub main-form__contact-data-cat-owner-telephone">
-          <label for="telephone" class="main-form__sub-label-telephone main-form__sub-contact-cat-data">Телефон:*</label>
-          <input type="tel" placeholder="8 (960) 900-60-90" id="telephone" name="telephone"
-            class="main-form__sub-input-text-telephone" required>
-          <img src="img/icon-phone.svg" alt="phone icon" width="20" height="20" class="main-form__phone-image">
-        </div>
-      </div>
-      <div class="main-form__commentary">
-        <!--<div class="main-form__commentary-left-line"></div>-->
-        <span class="main-form__commentary-comment">
-          Комментарий
-        </span>
-        <!--<div class="main-form__commentary-line"></div>-->
-      </div>
-      <div class="main-form__textarea">
-        <textarea name="commentary" class="main-form__commentary-textarea">Расскажите обо всех повадках кота
-          </textarea>
-      </div>
-      <div class="main-form__sub-additional">
-        <!--<div class="main-form__sub-additional-left-line"></div>-->
-        <span class="main-form__sub-add">Дополнительно</span>
-        <!--<div class="main-form__sub-additional-line"></div>-->
-      </div>
-      <div class="main-form__checkboxes">
-        <div class="main-form__sub-two-checkbox">
-          <div class="main-form__sub-checkbox">
-            <input type="checkbox" name="sugarchange" id="sugarchange"
-              class="main-form__sub-input-sugarchange main-form__checkboxes-sub-input" checked>
-            <label for="sugarchange"
-              class="main-form__sub-label-sugarchange main-form__sub-contact-additional-data main-form__checkbox-label">Сахарозаменитель</label>
-          </div>
-          <div class="main-form__sub-checkbox">
-            <input type="checkbox" id="drink-water" name="drink-water"
-              class="main-form__sub-input-drink-water main-form__checkboxes-sub-input">
-            <label for="drink-water"
-              class="main-form__sub-label-drink-water main-form__sub-contact-additional-data main-form__checkbox-label">Питьевая
-              вода</label>
-          </div>
-        </div>
-        <div class="main-form__sub-two-checkbox">
-          <div class="main-form__sub-checkbox">
-            <input type="checkbox" name="milk" id="milk" class="main-form__sub-input-milk main-form__checkboxes-sub-input">
-            <label for="milk"
-              class="main-form__sub-label-milk main-form__sub-contact-additional-data main-form__checkbox-label">Молоко</label>
-          </div>
-          <div class="main-form__sub-checkbox">
-            <input type="checkbox" id="vitamines" name="vitamines"
-              class="main-form__sub-input-vitamines main-form__checkboxes-sub-input">
-            <label for="vitamines"
-              class="main-form__sub-label-vitamines main-form__sub-contact-additional-data main-form__checkbox-label">Витамины</label>
-          </div>
-        </div>
-      </div>
-      <div class="main-form__submit">
-        <input type="submit" class="main-form__submit-input" value="Отправить заявку">
-        <span class="main-form__required-fields-text">* — Обязательные поля</span>
-      </div>
-    </div>
-    </form>
-  </main>
-  <div class="map">
-    <div
-      class="map__communicating map__communicating-form map__communicating-form-transformed map__communicating-com-information">
-      <div class="map__communicating-main-text">
-        <span class="map__communicating-offer-communicating map__communicating__we-offer-form">приглашаем<br
+      </form>
+    </main>
+    <div class="map">
+      <div
+        class="map__communicating map__communicating-form map__communicating-form-transformed map__communicating-com-information">
+        <div class="map__communicating-main-text">
+          <span class="map__communicating-offer-communicating map__communicating__we-offer-form">приглашаем<br
             class="map__desktop-block" /> к
           сотрудничеству дилеров!</span>
-        <span class="map__communicating-address map__communicating__address-form">ул. Большая Конюшенная, д. 19/8 <span
+          <span class="map__communicating-address map__communicating__address-form">ул. Большая Конюшенная, д. 19/8 <span
             class="map__communicating-address-city map__communicating-address-city--form">Санкт-Петербург</span></span>
+        </div>
       </div>
+      <iframe class="map__iframe-thing" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6099477678288!2d30.323261120376586!3d59.93861426452755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2sDokhodnyy%20Dom%20N.%20A.%20Mel&#39;tsera!5e0!3m2!1sen!2sua!4v1590414500268!5m2!1sen!2sua" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
-    <iframe class="map__iframe-thing" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.6099477678288!2d30.323261120376586!3d59.93861426452755!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2sDokhodnyy%20Dom%20N.%20A.%20Mel&#39;tsera!5e0!3m2!1sen!2sua!4v1590414500268!5m2!1sen!2sua" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-  </div>
-  <footer class="footer footer-index footer-catalog footer-form">
-    <div class="footer__footer-content">
-      <div class="footer__logo footer__logo-index footer-logo-form">
-        <a href="catenergy.html" aria-label="footer catenergy"><img src="img/logo-footer.svg" alt="logo-footer" class="footer__logo-image"></a>
+    <footer class="footer footer-index footer-catalog footer-form">
+      <div class="footer__footer-content">
+        <div class="footer__logo footer__logo-index footer-logo-form">
+          <a href="catenergy.html" aria-label="footer catenergy"><img src="img/logo-footer.svg" alt="logo-footer" class="footer__logo-image"></a>
+        </div>
+        <ul class="footer__social-links">
+          <li class="footer__social-links-li">
+            <a href="https://vk.com" class="footer__vk-link" aria-label="vk logo social icon">
+              <svg width="22" height="12" class="footer__social-image footer__social-image-vk footer__soc-image">
+                <use xlink:href="#m-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-links-li footer__social-links-li-instagramm-form">
+            <a href="https://instagramm.com" class="footer__instagramm-link" aria-label="insta logo social icon">
+              <svg width="16" height="16" class="footer__social-image footer__social-image-insta footer__soc-image">
+                <use xlink:href="#m-insta"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-links-li footer__social-links-li-facebook footer__social-links-li-facebook-form">
+            <a href="https://facebook.com" class="footer__facebook-link" aria-label="facebook logo social icon">
+              <svg width="10" height="19" class="footer__social-image footer__social-image-fb footer__soc-image">
+                <use xlink:href="#m-fb"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__right-logo">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__right-logo-link-organization" aria-label="footer right logo">
+            <span class="footer__name-org"> HTML Academy</span>
+            <svg class="footer__right-logo-organization" height="34" width="27">
+              <use xlink:href="#footer-logo-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
-      <ul class="footer__social-links">
-        <li class="footer__social-links-li">
-          <a href="https://vk.com" class="footer__vk-link" aria-label="vk logo social icon">
-            <svg width="22" height="12" class="footer__social-image footer__social-image-vk footer__soc-image">
-              <use xlink:href="#m-vk"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__social-links-li footer__social-links-li-instagramm-form">
-          <a href="https://instagramm.com" class="footer__instagramm-link" aria-label="insta logo social icon">
-            <svg width="16" height="16" class="footer__social-image footer__social-image-insta footer__soc-image">
-              <use xlink:href="#m-insta"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="footer__social-links-li footer__social-links-li-facebook footer__social-links-li-facebook-form">
-          <a href="https://facebook.com" class="footer__facebook-link" aria-label="facebook logo social icon">
-            <svg width="10" height="19" class="footer__social-image footer__social-image-fb footer__soc-image">
-              <use xlink:href="#m-fb"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="footer__right-logo">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__right-logo-link-organization" aria-label="footer right logo">
-          <span class="footer__name-org"> HTML Academy</span>
-          <svg class="footer__right-logo-organization" height="34" width="27">
-            <use xlink:href="#footer-logo-htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
-
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
